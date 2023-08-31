@@ -1,0 +1,74 @@
+.project {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Add a bit of space between paragraphs so we can read them better.*/
+.project p {
+  margin-bottom: 1rem;
+}
+
+.project img {
+  margin-bottom: 1rem;
+}
+
+/* Use this class for a full-width section. */
+.full {
+  grid-column: 1 / -1;
+}
+@media (min-width: 640px) {
+}
+
+/* Use this class for a section half the width of the content zone. */
+.half {
+  grid-column: span 4; /* In mobile or narrow screens, span the entire width. */
+}
+@media (min-width: 640px) {
+  .half {
+    grid-column: span 2; /* Normally, span half the available columns. */
+  }
+}
+
+/* And this for a video. */
+.video {
+  grid-column: 1 / -1;
+}
+
+hr {
+  grid-column: span 4;
+}
+
+/* This is little intro section at the top of every assignment. */
+.assignment {
+  font-size: 150%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* Use the H2 tag for the title under each assignment section.  We'll make this pop a bit. */
+.assignment h2 {
+  font-size: 2rem;
+  color: red;
+  line-height: 110%;
+}
+
+/* Let's give a little space to the headers. */
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* WHOA, let's make a point! */
+blockquote {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 100px;
+  line-height: 90%;
+}
+/* Let's remove some of the padding for half-sized sections. */
+.half blockquote {
+  padding: 0;
+}
+
+/* Just some arbitrary space at the bottom. */
+footer {
+  height: 300px;
+}
