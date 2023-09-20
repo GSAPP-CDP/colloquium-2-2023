@@ -4,18 +4,186 @@ layout: blank.liquid
 tags:
 - students
 ---
-
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    
-    <title>Matthew Heaton</title>
-
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<head>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/os-gui/windows-default.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
+<body>
+    
+<div class="window-body" id="splash-window">
+    <textarea id="command-prompt" rows="25" cols="80" autofocus>C:\> MS CDP_HEATON Startup Menu
+        =============================
+        1. Normal
+        2. Logged (\BOOTLOG.TXT)
+        3. Safe Mode
+        4. Step-by-step confirmation
+        5. Command prompt only
+        6. Safe mode command prompt only
 
-<body></body>
+        F5=Safe Mode Shift+F5=Command prompt Shift+F8= Step-by-step confirmation [N]
+        
+or press escape to continue to webpage</textarea>
+</div>
+
+<div class="windows-container">
+    <div class="window half" id="bio">
+        <div class="title-bar">
+            <div class="title-bar-text">Assignment 01: PROPOSAL ONE</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body text-content">
+            <div class="">
+                <p>I am interested in constructing a custom instrument-device that sonifies+graphs parameters exposed by the FCC open data portal + atmospheric, terrain, and other conditions local to each node in the vast physical network of US telecommunications. The instrument close a recursive loop between space, sound, and transmission + integrate the performer/performance as a breakpoint.
+                </p>
+                <p>To do this, I would design and fabricate a physical device (modeled loosely after an ‘etch-a-sketch’) that allows a user to tune their device to “survey” a network of internet radio nodes. Tune along the interpolated lines between nearest nodes; rescale the map using sliders on the X and Y axes of the central ’sketch’ screen, which in turn adjusts sonic responsiveness between stations; switch between user-controlled scan/pan behavior and an auto-pan that creates an effect like finding yourself between stations on a road trip. 
+                </p>
+                <p>The instrument will be standalone 3D printed or CNC cut physical interface with simple OLED display that enables adjustment of the application’s parameters with encoders and sliders. Most likely it will be driven by an Arduino microprocessor, although designing with discrete components on a printed circuit board would be a fun reach project.
+                </p>
+                <br>    
+            </div>
+        </div>
+        </div>
+</div>
+
+    <div class="windows-container">
+        <div class="window half about" style="left: 15%">
+            <div class="title-bar">
+                <div class="title-bar-text">Assignment 01: PROPOSAL TWO</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize" class="maximize-button"></button>
+                    <button aria-label="Restore" class="restore-button"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body text-content">
+                <p>A second project could bridge the divide between analog terrestrial radio infrastructure and intangible digital streaming infrastructures, specifically as they relate to discovery.
+                </p>
+                <p>In the context of popular music (in contrast to "classical"), this act of discovery has meaningful cultural, social, cultural, and financial consequences as artists and listeners alike rely on centralized platforms for transmission. Whereas conventional radio and its listeners are intractably linked to a geographic center, streaming platforms typically prompt the discovery of music and speech through opaque, aspatial metadata-based systems of recommendation. 
+                </p>
+                <p>This project could attempt to reclaim (or reconceptualize) the deeply geographic and spatial methods in which an artist or musician practices their craft. how far does the internet go? *where* are genre linkages in the post-streaming/file sharing age...how can we think about +visualize the linkages?
+                </p>
+            </div>
+        </div>
+    
+        <div class="window quarter about" style="right: 10%";>
+            <div class="title-bar">
+                <div class="title-bar-text">Assignment 01: PROPOSAL THREE</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize" class="maximize-button"></button>
+                    <button aria-label="Restore" class="restore-button"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body text-content">
+                <p>A third idea could concern other generalizable methods of spatial data sonification - how can we hear a map, and what are the creative+practical uses of cross-sensory thinking and navigation? How can multi sensory interpretation of space and place alter a person’s cognition and perception? Are there ramifications on attention+memory?
+                </p>
+                <p>Eg: the frequency of contour lines on a topographic map (or bands in a DEM) could be interpreted as pitches in a scale (frequency of change). Or the terrain can be sampled as a graphic “wavetable” and generate a waveform for a digital oscillator.
+                </p>
+                <p>......a place can be mapped onto a piece of music, and vice-versa.
+                </p>
+            </div>
+        </div>
+    
+        <!-- <div class="windows-container">
+            <div class="window half about" style="left: 15%; width:50%">
+                <div class="title-bar">
+                    <div class="title-bar-text">A note on AI authorship</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize" class="maximize-button"></button>
+                        <button aria-label="Restore" class="restore-button"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body" id="content-container">           
+                        </div>
+                </div>
+            </div>
+            -->
+    </div>
+
+  
+    <div class="window" id="window-ticker">
+        <div class="title-bar">
+            <div class="title-bar-text">A Very Important Message</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body ticker-container text-content">
+            <h1 class="ticker-text">I LOVE TO MAKE WEBSITES NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+        </div>
+        <div class="status-bar">
+            <p class="status-bar-field" id="cpu">CPU Usage: 1000000000000000000000000000000000000%</p>
+        </div>
+    </div>
+
+
+<div class="window half" style="margin: 8%; width: 250px; height: 105px;">
+    <div class="title-bar">
+        <div class="title-bar-text">
+            Hello people
+        </div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="window-body" style="bottom: 8px;">
+        <div style="text-align: center">
+            <img class="" src="assets/gifs/link.gif"></img>
+            <img class="" src="assets/gifs/cd.gif"></img>
+            <img class="" src="assets/gifs/link.gif"></img>
+            </div>
+        <section class="field-row" style="justify-content: center;">
+            <button id="refresh-button">OK</button>
+        </section>
+    </div>
+</div>
+
+
+<div class="window" style="margin: 8%; width: 250px; height: 105px; left: 60%;">
+    <div class="title-bar">
+        <div class="title-bar-text">
+            That's it for now
+        </div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="window-body" style="bottom: 8px;">
+        <p>see you later!</p>
+        <section class="field-row" style="justify-content: center;">
+            <button id="refresh-button-2">bye</button>
+        </section>
+    </div>
+</div>
+
+
+<div class="bouncing-container"></div>
+
+<script src="js/script.js"></script>
+
+</body>
 </html>
