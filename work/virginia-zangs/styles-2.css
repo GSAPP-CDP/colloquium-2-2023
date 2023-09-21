@@ -1,0 +1,17 @@
+body, html {
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+    background-color: black;
+    overflow-y: scroll;
+    height: 100%;
+    margin: 50;
+    padding: 0;
+}
+
+.chapter h1 {
+    font-size: 6em;
+}
+
+.chapter h2 {
+    font-size: 2em;
+}
