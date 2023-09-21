@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f5f7;
+    margin: 0;
+    padding: 40px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.body-content {
+    flex: 0 0 50%; /* This sets the body content to take up 50% of the parent container's width */
+    padding-right: 15px; /* A few spaces to the right of the body text */
+    box-sizing: border-box; /* This ensures padding is included in the width calculation */
+}
+
+.image-content {
+    flex: 0 0 auto; /* This means the image content won't grow or shrink and will take up only the space it needs */
+    padding-top: 24px; /* This pushes the image down to align with the subheading. Adjust as needed. */
+}
+
+.image-content img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* This ensures the image covers the entire 200x200 area without distortion */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 
+    {border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+    margin-bottom: 80px;}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
