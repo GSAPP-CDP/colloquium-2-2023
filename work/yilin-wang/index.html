@@ -25,10 +25,6 @@ tags:
 </head>
 
 <body>
-<<<<<<< Updated upstream
-    asfergrtjhyuk
-</body>
-=======
   <header class="container">
     <div class="header-context">
       <div class="h2">
@@ -70,56 +66,92 @@ tags:
               <li><a href="#assignment-1">1 &ndash; Idea1</a></li>
               <li><a href="#assignment-2">2 &ndash; Idea2</a></li>
               <li><a href="#assignment-3">3 &ndash; Idea3</a></li>
-              <li><a href="#assignment-4">4 &ndash; Governance</a></li>
-              <li><a href="#assignment-5">5 &ndash; Behavior</a></li>
+
             </ul>
           </div>
 
           <div class="full assignment">
             <h1 id="assignment-1">1 &ndash; Idea1</h1>
-            <h2>Exploration of Diversity Generation of NYC Pocket Park Schemes Based on Machine Learning</h2>
-            <p></p>
+            <h2>Smart Building Energy Design Platform</h2>
+            
           </div>
 
           <div class="half"
             <img src="pocket park examples.png">
           </div>
 
-          <div class="half">
-            <h2>NYC pocket parks</h2>
+          <div class="full">
+            <h2>Concept and Research questions for project</h2>
             <p>
-                This project signifies a transformative approach to urban rejuvenation in NYC. 
-                As parking buildings become more prevalent, redesigning ground-level garages into pocket parks 
-                can enhance urban livability, providing green spaces and fostering community engagement in previously 
-                areas. Through ML workflow, designers are able to finish some repetitive tasks and come out some ideas more rapidly.
+              How can a combination of machine learning and generative design be utilized in real-time optimzation for architectural energy efficiency 
+              and environmental adaptability?
+            </p>
+            
+            <h2>Computational tools and design methods</h2>
+            <p>
+              Data Collection & Preprocessing: Collection of existing architectural design parameters, environmental factors, historical energy consumption.
+
+            </p>
+            <p>
+              Machine Learning Models: Development of regression analysis and time series prediction models for forecasting energy demand and 
+              environmental performance.
+
+            </p>
+            <p>
+              Generative Design Integration: Incorporation of ML inputs with generative design tools like Grasshopper for visualizing design 
+              models and corresponding metrics.
 
             </p>
           </div>
 
           <div class="half">
-            <h2>The workflow flow of the idea</h2>
+            <h2>related precedents</h2>
             <p>
-                1.Data Collection: First, a large amount of design data for NYC pocket parks, including plans and photos, needs to be collected.
-                2.Data Preprocessing: Convert this data into a format that can be processed by Machine learning model like GAN, such as resizing images to a consistent size.
-                3.Training the Model: Use the collected data to train the ML model until the generator can produce high-quality pocket park designs.
-                4.Generating Design Proposals: Use the trained GAN to generate a multitude of design proposals by changing the input.
-                5.Evaluation and Selection: Evaluate the generated design proposals and select the optimal design.
+              Delve is an innovative tool that leverages machine learning and generative design to optimize urban development projects. 
+              It assists in creating designs that maximize overall value while considering various constraints and requirements.
 
             </p>
+
+            <p>
+              There are some open-source repos available on GitHub that employ machine learning algorithms for predicting building energy 
+              consumption. These projects utilize historical energy use data, environmental conditions to train and 
+              validate their predictive models, offering a base for understanding and forecasting energy demands in different types of buildings.
+
+            </p>
+            
+            <h2>Data for exploration</h2>
+            <p>
+              Need access to datasets containing building parameters and constraints, environmental conditions, user behavior, and energy consumption. 
+              This data need to be found on publicly available datasets.
+
+            </p>
+            <h2>Project Scales</h2>
+            <p>
+              The project operates on multiple scales, from individual buildings to urban blocks.
+
+            </p>
+            <h2>Sketches and Audiences</h2>
+            <p>
+              The sketch is a user interface where designers input building parameters and receive real-time feedback as well as energy consumption prediction.
+              The primary audience would be architects and urban designers.
+
+            </p>
+            <img src="1005/I1_sketch1.jpg">
           </div>
 
           <div class="half">
-            <img src="pocket park examples.png">
+            <img src="1005/delve1.jpeg">
+            <img src="1005/ml_recession1.png">
           </div>
 
           <hr>
 
           <div class="half">
-            <img src="I1_method1.png">
+            <img src="">
           </div>
 
           <div class="half">
-            <img src="I1_imagine_result.png">
+            <img src="">
           </div>
 
 
@@ -127,124 +159,163 @@ tags:
 
           <div class="full assignment">
             <h1 id="assignment-2">2 &ndash; Idea2</h1>
-            <h2>Co-authorship: NYC Public Cultural Life System</h2>
+            <h2>Generate cities from cities</h2>
             <p></p>
           </div>
 
-
           <div class="full">
-            <img src="I2_MIT example.png">
-          </div>
-
-          <div class="half">
-            <img src="I2_MIT_example2.png">
-          </div>
-
-          <div class="half">
-            <h2>"The Disappear Nearby"</h2>
-
+            <h2>Research Question</h2>
             <p>
-                Under the influence of the internet and social media, people have become more inclined to 
-                stay indoors rather than socialize outside. Additionally, the uniformity in urban design has rendered 
-                many communities indistinguishable from one another. This project aims to reintroduce individuals to the 
-                "local" world around them. 
+              How can the pix2pix GAN, trained on urban satellite imagery, assist designers in generating 
+              prospective urban layouts for areas under development or transformation?
+            </p>
+            
+            <h2>Computational tools and design methods</h2>
+            <p>
+              Data Collection & Preprocessing: Utilizing urban satellite imagery, specifically focusing on the patterns of differnet varieties of 
+              urban spaces.
+
+            </p>
+            <p>
+              ML - pix2pix: Implementing and training a pix2pix GAN that learns the characteristics of these urban spaces
+              from the collected images.
             </p>
 
             <p>
-                By getting images from social media within a city, the project
-                seeks to compare the visual similarities and differences of urban interfaces across various neighborhoods. 
-                Utilizing computer vision techniques, the project explores scenes and objects that represent distinct 
-                geographical information. The ultimate goal is to encourage the creation of unique elements in each 
-                community and to involve the public actively in the design process.
+              Design Generation & Visualization(in GH): Applying the trained model to images of areas under development, generating and visualizing 
+              potential urban layouts that follow the learned patterns.
+            </p> 
+          </div>
+
+
+          <div class="half">
+            <img src="1005/i2_pix2pix.png">
+            <img src="1005/i2_city_scope1.png">
+            <img src="1005/i2-city_scope2.png">
+            
+            
+          </div>
+
+        
+
+          <div class="half">
+            <h2>Related Precedents</h2>
+
+            <p>
+              pix2pix Projects: Existing applications of pix2pix in image-to-image translation tasks, particularly those related to spatial or 
+              architectural design. These GAN algorithms nowadays are quite mature.
             </p>
 
+            <p>
+              MIT media lab: The Deep Image of the City: the project utilizes GANs to create deep images of cities, 
+              which are essentially synthesized representations of urban areas that don't necessarily exist in reality but are plausible 
+              based on the learned patterns and features from real urban imagery. 
+            </p>
+
+            <h2>Data for Exploration</h2>
+
+            <p>
+              Collection of diverse urban satellite images, preferably annotated or categorized based on the urban planning variety(for example, the road, natural condition), 
+              to train the pix2pix model effectively.
+            </p>
+
+            <h2>Project Scales</h2>
+            <p>
+              While initial tests may focus on specific districts or areas within cities, the methodology can be also applied to villages(for example, traditional villages in China)
+            </p>
+
+            <h2>Sketches and Audiences</h2>
+            <p>
+              Sketches will depict the workflow from satellite image input, pix2pix processing, to generated urban layout output and visualize the 2d images in 3d way.
+              The target audience includes urban designers, architects, and city planners as well as public.
+            </p>
+
+            <img src="1005/i2-sketch1.png">
+            <img src="1005/i2_sketch2.png">
+            <img src="1005/i2_sketch3.jpg">
+
+
           </div>
 
-
           <div class="half">
-            <img src="I2_CV_technique.png">
-          </div>
-
-          <div class="half">
-            <img src="I2_CV_2.png">
+            <img src="">
           </div>
 
         
 
           <div class="full assignment">
             <h1 id="assignment-3">3 &ndash; </h1>Idea3
-            <h2>Real Estate: Flowing Credit Product</h2>
-            <p>Housing Wealth Evaluation in Manhattan</p>
+            <h2> Research Question: Can we develop architectural elements that adapt in real-time to environmental changes, using Machine Learning 
+              and environmental sensors?</h2>
+            <p></p>
           </div>
 
           <hr>
 
           <div class="half">
-            <img src="I3_housing.png">
+            <img src="">
           </div>
 
           <div class="half">
-            <img src="I3_housing2.png">
+            <img src="">
           </div>
 
           <hr>
 
           <div class="full">
+            <h2>Computational Tools and Design Methods</h2>
+
             <p>
-                This project aims to explore how the architectural forms of real estate in Manhattan 
-                are influenced by economic data and fluctuations in property prices. By linking economic data 
-                with real estate price volatility as inputs, changes in apartment layouts and the overall building 
-                form are generated within Grasshopper , ultimately presented on a UI. 
-                In other words, it treats yet-to-be-designed real estate as a commodity similar to stocks or futures, allowing people to conduct advance trades on an app.
+              Data Collection & Preprocessing: Implement environmental sensors to gather real-time data on factors like temperature, humidity, 
+              light intensity, and air quality.
             </p>
+
+            <p>
+              Responsive Architectural Elements: Develop elements like dynamic facades, adjustable louvers, or smart windows that react to the 
+              analyzed data, adapting their configurations to maintain interior comfort and energy efficiency.
+            </p>
+
+          
 
           </div>
 
           
 
           <div class="half">
-            <img src="I3_hoousing3.png">
+            <img src="0927//I3-Autodesk.png">
+            <img src="0927//I1-Autodesk.png">
+
 
     
 
           </div>
 
-          <div class="half">
-            <img src="I3_housing4.png">
-          </div>
+          
 
           <div class="half">
+            <h2>Data for Exploration</h2>
             <p>
+              Sensors will continuously gather environmental data. Ensure accessibility to this data stream for analysis and response triggering 
+              in the architectural elements.
+            </p>
+            <h2>Project Scale</h2>
+            <p>
+              The project can be applicable to single architectural elements or even entire building facades,etc.
+              
+            </p>
+
+            <h2>related precedents</h2>
+            <p>
+              Autodesk Project Dasher employs environmental sensors to gather continuous data on various parameters like 
+              temperature, humidity, occupancy, and energy consumption. This sensor-derived data is then dynamically mapped onto the building's 3D 
+              BIM model. Through this integration, Project Dasher provides a comprehensive, real-time overview of the building's performance and 
+              environmental conditions, enabling architects, engineers, and facility managers to understand and optimize the operation of buildings 
+              effectively.
               
             </p>
           </div>
 
-          <div class="full assignment">
-            <h1 id="assignment-4">4 &ndash; Governance</h1>
-            <h2>$ AR Plant Implying Emotional Change $</h2>
-            <p>A profile of governance.</p>
-          </div>
-
-          <div class="full">
-            <video src="emotion_recognition_video.mp4" controls>
           
-          </div>
-
-          <div class="full">
-            <img src="Recognition_dragram.jpg">
-          
-          </div>
-
-          <div class="full">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XX64m7Dl_QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
-          </div>
-
-          <div class="full assignment">
-            <h1 id="assignment-5">5 &ndash; Behavior</h1>
-            <h2>$ Lender Money $</h2>
-            <p>Modeling agents of the system.</p>
-          </div>
 
         </div>
       </div>
@@ -254,6 +325,5 @@ tags:
   </main>
 </body>
 
->>>>>>> Stashed changes
 </html>
 
