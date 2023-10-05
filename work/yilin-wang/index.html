@@ -66,15 +66,14 @@ tags:
               <li><a href="#assignment-1">1 &ndash; Idea1</a></li>
               <li><a href="#assignment-2">2 &ndash; Idea2</a></li>
               <li><a href="#assignment-3">3 &ndash; Idea3</a></li>
-              <li><a href="#assignment-4">4 &ndash; Governance</a></li>
-              <li><a href="#assignment-5">5 &ndash; Behavior</a></li>
+
             </ul>
           </div>
 
           <div class="full assignment">
             <h1 id="assignment-1">1 &ndash; Idea1</h1>
-            <h2>Use machine learning to optimize efficiency and environmental performance for architecture</h2>
-            <p></p>
+            <h2>Smart Building Energy Design Platform</h2>
+            
           </div>
 
           <div class="half"
@@ -84,20 +83,23 @@ tags:
           <div class="full">
             <h2>Concept and Research questions for project</h2>
             <p>
-              How can data generated from parametric designs in Grasshopper be effectively formatted/exported for use by ML(GAN) algorithms 
-              when it comes to performance-driven architectural design? 
-              How do we establish a seamless, real-time data flow between GH parameters(inputs&metrics) and ML algorithms?
-              How should the ML models be trained and deployed to efficiently interact with GH models and parameters?
-
-              How might a user interface be designed to allow designers to interact intuitively with the ML tools and GH parameters?
-
+              How can a combination of machine learning and generative design be utilized in real-time optimzation for architectural energy efficiency 
+              and environmental adaptability?
             </p>
+            
             <h2>Computational tools and design methods</h2>
             <p>
-              The research engages with Grasshopper for parametric design, GAN for implementing machine-learning 
-              algorithms, and data visualization tools d3.js to interpret the results meaningfully. These tools collectively 
-              address the spatial and environmental aspects crucial to architectural design, providing a comprehensive 
-              approach to exploring energy efficiency through computational design methods.
+              Data Collection & Preprocessing: Collection of existing architectural design parameters, environmental factors, historical energy consumption.
+
+            </p>
+            <p>
+              Machine Learning Models: Development of regression analysis and time series prediction models for forecasting energy demand and 
+              environmental performance.
+
+            </p>
+            <p>
+              Generative Design Integration: Incorporation of ML inputs with generative design tools like Grasshopper for visualizing design 
+              models and corresponding metrics.
 
             </p>
           </div>
@@ -105,37 +107,41 @@ tags:
           <div class="half">
             <h2>related precedents</h2>
             <p>
-              Projects such as Autodesk’s Project Dasher are relevant precedents that demonstrate the current progress 
-              in the field.
+              Delve is an innovative tool that leverages machine learning and generative design to optimize urban development projects. 
+              It assists in creating designs that maximize overall value while considering various constraints and requirements.
 
             </p>
-            <h2>sketches and audience</h2>
+
             <p>
-              Sketches would visualize a user interface in Grasshopper, the workflow of data between the design model 
-              and the ML algorithm, and examples of optimized design outcomes. The primary audience includes architects 
-              and environmental design consultants.
+              There are some open-source repos available on GitHub that employ machine learning algorithms for predicting building energy 
+              consumption. These projects utilize historical energy use data, environmental conditions to train and 
+              validate their predictive models, offering a base for understanding and forecasting energy demands in different types of buildings.
 
             </p>
+            
             <h2>Data for exploration</h2>
             <p>
-              Exploratory data includes architectural design parameters and corresponding energy efficiency and environmental
-              performance metrics. Proof of concept requires access to databases of architectural designs and environmental 
-              performance data.
+              Need access to datasets containing building parameters and constraints, environmental conditions, user behavior, and energy consumption. 
+              This data need to be found on publicly available datasets.
 
             </p>
             <h2>Project Scales</h2>
             <p>
-              The project investigates at the scale of individual buildings.
+              The project operates on multiple scales, from individual buildings to urban blocks.
 
             </p>
+            <h2>Sketches and Audiences</h2>
             <p>
-              Specculative: extends to urban scale (for example a few blocks) for broader energy efficiency analysis.
+              The sketch is a user interface where designers input building parameters and receive real-time feedback as well as energy consumption prediction.
+              The primary audience would be architects and urban designers.
 
             </p>
+            <img src="1005/I1_sketch1.jpg">
           </div>
 
           <div class="half">
-            <img src="0927//I1-Autodesk.png">
+            <img src="1005/delve1.jpeg">
+            <img src="1005/ml_recession1.png">
           </div>
 
           <hr>
@@ -153,75 +159,82 @@ tags:
 
           <div class="full assignment">
             <h1 id="assignment-2">2 &ndash; Idea2</h1>
-            <h2>How can data visualization and machine learning analysis of urban public space usage patterns inform and 
-              guide more effective spatial design?</h2>
+            <h2>Generate cities from cities</h2>
             <p></p>
           </div>
 
-
           <div class="full">
-            <img src="I2_MIT example.png">
+            <h2>Research Question</h2>
+            <p>
+              How can the pix2pix GAN, trained on urban satellite imagery, assist designers in generating 
+              prospective urban layouts for areas under development or transformation?
+            </p>
+            
+            <h2>Computational tools and design methods</h2>
+            <p>
+              Data Collection & Preprocessing: Utilizing urban satellite imagery, specifically focusing on the patterns of differnet varieties of 
+              urban spaces.
+
+            </p>
+            <p>
+              ML - pix2pix: Implementing and training a pix2pix GAN that learns the characteristics of these urban spaces
+              from the collected images.
+            </p>
+
+            <p>
+              Design Generation & Visualization(in GH): Applying the trained model to images of areas under development, generating and visualizing 
+              potential urban layouts that follow the learned patterns.
+            </p> 
           </div>
 
+
           <div class="half">
-            <img src="I2_MIT_example2.png">
+            <img src="1005/i2_pix2pix.png">
+            <img src="1005/i2_city_scope1.png">
+            <img src="1005/i2-city_scope2.png">
+            
+            
           </div>
 
-          <div class="half">
-            <h2>Computational Tools and Design Methods</h2>
-
-            <p>
-              Engage with Data Visualization Tools: These tools will be utilized to visually represent the data collected 
-              about public space usage, offering a clear and comprehensible insight into the user patterns and behaviors.
-            </p>
-
-            <p>
-              Utilize Machine Learning Algorithms: ML will be employed to analyze the usage patterns and behaviors in urban 
-              public spaces, identifying trends, preferences, and areas for improvement in the existing spatial designs.
-            </p>
-
-            <p>
-              Engage Meaningfully with the Concept: The combination of data visualization and ML will not only provide a 
-              deeper understanding of how public spaces are utilized but also offer evidence-based guidelines for enhancing 
-              the effectiveness of spatial design.
-            </p>
-
-          </div>
+        
 
           <div class="half">
-            <h2>Precedent Projects</h2>
+            <h2>Related Precedents</h2>
 
             <p>
-              Look into current projects that utilize data to inform urban design, such as the projects undertaken by 
-              MIT’s Senseable City Lab or other urban data analysis initiatives.
+              pix2pix Projects: Existing applications of pix2pix in image-to-image translation tasks, particularly those related to spatial or 
+              architectural design. These GAN algorithms nowadays are quite mature.
             </p>
 
-            <h2>Sketches and Audiences</h2>
             <p>
-              Sketches will visualize the process from data collection to analysis and finally to design recommendation. 
-              The audience for this project primarily includes urban designers, architects, and city planners who are engaged
-              in creating or renovating public spaces.
+              MIT media lab: The Deep Image of the City: the project utilizes GANs to create deep images of cities, 
+              which are essentially synthesized representations of urban areas that don't necessarily exist in reality but are plausible 
+              based on the learned patterns and features from real urban imagery. 
             </p>
 
             <h2>Data for Exploration</h2>
 
             <p>
-              The project requires data on public space usage, including but not limited to foot traffic, dwell time, 
-              user demographics, and activities performed in these spaces. The proof of concept depends on access to such 
-              data, either through public datasets, partnerships with local governments, or independent data collection 
-              initiatives.
+              Collection of diverse urban satellite images, preferably annotated or categorized based on the urban planning variety(for example, the road, natural condition), 
+              to train the pix2pix model effectively.
             </p>
 
             <h2>Project Scales</h2>
             <p>
-              The project will initially focus on specific public spaces for in-depth analysis
+              While initial tests may focus on specific districts or areas within cities, the methodology can be also applied to villages(for example, traditional villages in China)
             </p>
 
-          </div>
+            <h2>Sketches and Audiences</h2>
+            <p>
+              Sketches will depict the workflow from satellite image input, pix2pix processing, to generated urban layout output and visualize the 2d images in 3d way.
+              The target audience includes urban designers, architects, and city planners as well as public.
+            </p>
+
+            <img src="1005/i2-sketch1.png">
+            <img src="1005/i2_sketch2.png">
+            <img src="1005/i2_sketch3.jpg">
 
 
-          <div class="half">
-            <img src="I2_CV_technique.png">
           </div>
 
           <div class="half">
@@ -232,8 +245,8 @@ tags:
 
           <div class="full assignment">
             <h1 id="assignment-3">3 &ndash; </h1>Idea3
-            <h2> Develop interactive architectural elements that respond to the environment and user behavior through 
-              the use of machine learning and sensor technology</h2>
+            <h2> Research Question: Can we develop architectural elements that adapt in real-time to environmental changes, using Machine Learning 
+              and environmental sensors?</h2>
             <p></p>
           </div>
 
@@ -253,29 +266,16 @@ tags:
             <h2>Computational Tools and Design Methods</h2>
 
             <p>
-              Engage with Sensor Technologies to collect data related to user behavior and environmental changes. 
-              These data would form the basis for the ML algorithms to learn and adapt.
-              Utilize Machine Learning Algorithms to analyze user behavior and environmental data, with the objective of 
-              developing responsive architectural elements.
-              Employ Grasshopper and other computational design tools for the simulation and visualization of the 
-              proposed design solutions.
+              Data Collection & Preprocessing: Implement environmental sensors to gather real-time data on factors like temperature, humidity, 
+              light intensity, and air quality.
             </p>
 
-            <h2>Research gaps</h2>
             <p>
-              Are there existing gaps in integrating sensor technology and ML in developing truly responsive architectural 
-              elements?
-              Is there a lack of methodologies that effectively utilize the data collected from sensors to inform and adapt 
-              architectural designs dynamically?
+              Responsive Architectural Elements: Develop elements like dynamic facades, adjustable louvers, or smart windows that react to the 
+              analyzed data, adapting their configurations to maintain interior comfort and energy efficiency.
             </p>
 
-            <h2>Research gaps</h2>
-            <p>
-              Sketches will visualize the interactive architectural elements, their response mechanisms to user behavior 
-              and environmental changes, and how they might be integrated into architectural designs. 
-              The intended audience includes architects, designers, and researchers interested in interactive and responsive 
-              architecture.
-            </p>
+          
 
           </div>
 
@@ -283,6 +283,8 @@ tags:
 
           <div class="half">
             <img src="0927//I3-Autodesk.png">
+            <img src="0927//I1-Autodesk.png">
+
 
     
 
@@ -293,12 +295,22 @@ tags:
           <div class="half">
             <h2>Data for Exploration</h2>
             <p>
-              Exploratory data would involve both user behavior within specific architectural spaces and environmental data,
-              the interaction of which would inform the development of responsive architectural elements.
+              Sensors will continuously gather environmental data. Ensure accessibility to this data stream for analysis and response triggering 
+              in the architectural elements.
             </p>
             <h2>Project Scale</h2>
             <p>
+              The project can be applicable to single architectural elements or even entire building facades,etc.
               
+            </p>
+
+            <h2>related precedents</h2>
+            <p>
+              Autodesk Project Dasher employs environmental sensors to gather continuous data on various parameters like 
+              temperature, humidity, occupancy, and energy consumption. This sensor-derived data is then dynamically mapped onto the building's 3D 
+              BIM model. Through this integration, Project Dasher provides a comprehensive, real-time overview of the building's performance and 
+              environmental conditions, enabling architects, engineers, and facility managers to understand and optimize the operation of buildings 
+              effectively.
               
             </p>
           </div>
