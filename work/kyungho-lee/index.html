@@ -1,21 +1,205 @@
 ---
-student: Kyungho Lee
-layout: blank.liquid
-tags:
-- students
+student: Student Name
+tags: students
+image: hospital_site_selection_michigan.JPG
 ---
 
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    
+  <head lang="en">
+    <meta charset="UTF-8" />
+
     <title>Kyungho Lee</title>
 
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-</head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body></body>
+  <body>
+    <section class="assignment">
+      <article>
+        <h1>I. Equitable Hospital Sites Identification Methodology</h1>
+        <h3>Inequalities in Access to Health Services in America</h3>
+        <p>
+          Largely there are geographic and economic factors that cause
+          inequalities in access to health services throughout the United
+          states. First, residents in rural areas often experience barriers to
+          health services due to travel distances and medical workforce
+          shortages. As of September 2022, 65.6% of Primary Care Health
+          Professional Shortage Areas were located in rural areas. Second,
+          lower-income Americans are less likely to have health insurance
+          coverage and therefore lose the chance to prevent serious diseases.
+          The rate of avoidable hospital conditions(AHC), hospitalization
+          avoidable through timely and quality primary and preventive care, is
+          particularly high with lower-income minorities.
+          <u
+            >So how do I avoid these systematic inequalities in creating
+            hospital sites selection tools?</u
+          >
+        </p>
+        <img src="./images/hpsa-primary-care-guide.jpg" />
+
+        <h3>
+          Inequalities in the current demand estimate model for health services
+        </h3>
+        <p>
+          <a
+            href="https://bhw.hrsa.gov/data-research/projecting-health-workforce-supply-demand/technical-documentation/modeling-demand-health-care"
+            >HRSA</a
+          >(Health Resources & Services Administration) runs The Health
+          Workforce Simulation Model(HWSM) to estimate the current and the
+          future demand for health care. Projections of demand from HWSM inform
+          policies to provide adequate supply of health care workers at the
+          national, state, and local levels. The problem is that the current
+          estimate model heavily relies on medical insurance data and leaves out
+          the uninsured population. Those people with higher-income are more
+          likely to have regular physical examinations with medical insurance
+          and therefore documented in the database as medical demand. If the
+          hospital site selection process depends on such databases, then the
+          system will make the current medical inequality worse.
+          <u
+            >Are there alternative ways leveraging computational methods to
+            equitably estimate population in medical needs which include
+            uninsured and left out minorities in the current biased model?</u
+          >
+        </p>
+        <img src="./images/supply_demand.JPG" />
+
+        <h3>Hospital Sites Selection Precedents</h3>
+        <p>
+          The Department of Geography at Michigan State University has done
+          research on the hospital site selection process for the state of
+          Michigan. As many medical studies suggest that the 30 minutes
+          threshold is critical for the survival of patients, the research
+          concentrated on identifying populations with long drive times to
+          existing community hospitals. Areas falling outside of the 30 minutes
+          threshold are identified as limited access areas, which now inform
+          state policy in evaluation of new local hospital proposals. The
+          research points out geographic inequality in access to health
+          services, but it does not mention low-income groups without health
+          insurance and racial or ethnic minorities.
+        </p>
+        <img src="./images/hospital_site_selection_michigan.JPG" />
+
+        <h3>New Audiences in Reduced Barrier Scenario</h3>
+        <ul>
+          <li>Policy makers pursuing equity in health services</li>
+          <li>Uninsured patients</li>
+          <li>Medicaid recipients</li>
+        </ul>
+        <p>
+          With recent initiatives such as Healthy People 2030 by the US
+          government, national and state goals are to remove barriers that
+          contribute to inequities in use of health services. This will greatly
+          affect medical demand estimates from the Medical Expenditure Panel
+          Survey(MEPS) data.
+          <u
+            >The equitable hospital site identification research will include
+            the vulnerables such as uninsured patients and medicaid recipients
+            based on the new demand from reduced barrier scenario.</u
+          >
+        </p>
+        <br /><br />
+
+        <h3>Datasets to address current medical inequalities</h3>
+        <ul>
+          <li>
+            current distribution of hospitals in the US
+            <img src="./images/distribution of hospitals.JPG" />
+          </li>
+          <li>
+            <b>Social Vulnerability Index (SVI)</b> uses 16 U.S. census
+            variables(age, race, employment, education, etc) to help local
+            officials identify communities that may need support before, during,
+            or after disasters.
+            <img src="./images/svi_interactive_map.jpg" />
+          </li>
+          <li>
+            <b>Years of Potential Life Lost (YPLL)</b> represents
+            community-specific health vulnerability in the United States by
+            measuring rates of premature death
+          </li>
+          <br />
+          <li>
+            <b>Medicaid Enrollment</b> provides free health insurance for
+            low-income adults and children. The enrollment eligibility depends
+            on income, disability, and employment status.
+          </li>
+          <br />
+          <li>
+            <b>Avoidable Hospital Conditions (AHC)</b> is inpatient stays that
+            evidence suggests may be avoidable through timely and quality
+            primary and preventive care. The rate of hospital discharges for AHC
+            is used to represent inequality in some research.
+          </li>
+        </ul>
+        <p>
+          Above datasets can be used to pinpoint the most vulnerable site for
+          future hospital proposals with equity. Besides these data, I plan to
+          further research on the new equitable medical demand estimate
+          methodology from HRSA (Health Resources & Services Administration).
+        </p>
+      </article>
+
+      <article>
+        <h1>II. Participatory Urban Planning</h1>
+        <h3>
+          GIS mapping with AI to guide citizens to make data-driven decision for
+          equity
+        </h3>
+        <p>
+          Since the last decade, there have been many participatory urban
+          planning initiatives such as NYC’s participatory budgeting(PB) and
+          Barcelona’s PB on Decidim, Barcelona’s digital platform for democratic
+          citizen participation in municipality budgeting. These efforts have
+          made public budgeting decisions to be aligned with residents’
+          knowledge of local conditions and shifted public spending priorities
+          towards more equitable public investments in general. On the other
+          hand, a case study of Chicago wards, in the first three years after
+          adopting PB, showed that higher income neighborhoods had benefited
+          disproportionally from PB. In some of Chicago wards, economically
+          advantaged residents participated more actively in PB and decided to
+          spend public spending more on higher income neighborhoods.
+          <b
+            >How do I leverage AI and GIS mapping to guide them to make
+            data-driven decisions for social equity rather than making decisions
+            for their economic interests?</b
+          >
+        </p>
+        <img src="./images/NYC_participatory_budgeting.JPG" />
+
+        <h3>
+          Leveraging AI to guide residents to make equitable decision based on
+          data prior to participation
+        </h3>
+        <p>
+          The city of Tacoma’s Office of Human Rights in Washington State worked
+          with Ohio State University to develop an opportunity index to
+          highlight social disparities and integrated the index as a tool in
+          making city council decisions and city budget proposals.
+        </p>
+        <img src="./images/opportunity_index.JPG" />
+        <p>
+          The use of opportunity index has affected the city council’s decision
+          on spending the public budget in a more equitable way. For example, in
+          2019 Public Works had a $200k budget to add 200 new streetlights for
+          public safety. After taking into account the opportunity index along
+          with a safety factor, the Public Works’ decision on installation
+          locations slightly changed to support lower-income neighborhoods.
+        </p>
+        <img src="./images/street_lights_tacoma.JPG" />
+
+        <h3>
+          Can AI provide proper datasets to support equitable data-driven
+          decisions for participatory planning?
+        </h3>
+        <img src="./images/AI_supported_participatory_planning.JPG" />
+      </article>
+    </section>
+  </body>
 </html>
