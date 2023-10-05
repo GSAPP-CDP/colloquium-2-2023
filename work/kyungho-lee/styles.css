@@ -1,0 +1,36 @@
+.assignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+article {
+  width: 800px;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+ul {
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 40px;
+}
