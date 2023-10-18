@@ -1,8 +1,8 @@
 ---
 student: Matthew Heaton
-layout: blank.liquid
 tags:
 - students
+image: combined.gif
 ---
 <!DOCTYPE html>
 <html>
@@ -10,11 +10,12 @@ tags:
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/os-gui/windows-default.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 </head>
 <body>
     
@@ -33,6 +34,45 @@ tags:
 or press escape to continue to webpage</textarea>
 </div>
 
+<!-- <div class="windows-container">
+    <div class="window" style="margin: 10px;">
+        <div class="title-bar">
+        <div class="title-bar-text">A Window With Tabs and Groups</div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+        </div>
+        </div>
+        <div class="window-body">
+        <menu role="tablist">
+            <button aria-selected="true" aria-controls="music">Music</button>
+            <button aria-controls="dogs">Dogs</button>
+            <button aria-controls="food">Food</button>
+        </menu>
+        <article role="tabpanel" id="" style="width: 100%;">
+            <p>PANELPANELPANELPANELPANELPANELPANELPANELPANEL</p>
+            </article>
+    
+        <article role="tabpanel" hidden id="dogs">
+            <img style="width: auto" src=na/>
+        </article>
+    
+        <article role="tabpanel" hidden id="food">
+            <p>
+            You create the content for each tab by using an <code>article</code> tag.
+            </p>
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/TODJBQ0tnow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+        <section class="field-row" style="justify-content: flex-end">
+            <button>OK</button>
+            <button>Cancel</button>
+        </section>
+        </div>
+    </div>
+</div> -->
+  
+
 <div class="windows-container">
     <div class="window half" id="bio">
         <div class="title-bar">
@@ -48,9 +88,9 @@ or press escape to continue to webpage</textarea>
             <div class="">
                 <p>I am interested in constructing a custom instrument-device that sonifies+graphs parameters exposed by the FCC open data portal + atmospheric, terrain, and other conditions local to each node in the vast physical network of US telecommunications. The instrument close a recursive loop between space, sound, and transmission + integrate the performer/performance as a breakpoint.
                 </p>
-                <p>To do this, I would design and fabricate a physical device (modeled loosely after an ‘etch-a-sketch’) that allows a user to tune their device to “survey” a network of internet radio nodes. Tune along the interpolated lines between nearest nodes; rescale the map using sliders on the X and Y axes of the central ’sketch’ screen, which in turn adjusts sonic responsiveness between stations; switch between user-controlled scan/pan behavior and an auto-pan that creates an effect like finding yourself between stations on a road trip. 
+                <p>To do this, I would design and fabricate a physical device (modeled loosely after an &quot;etch-a-sketch&quot;) that allows a user to tune their device to &quot;survey&quot; a network of internet radio nodes. Tune along the interpolated lines between nearest nodes; rescale the map using sliders on the X and Y axes of the central &quot;sketch&quot; screen, which in turn adjusts sonic responsiveness between stations; switch between user-controlled scan/pan behavior and an auto-pan that creates an effect like finding yourself between stations on a road trip. 
                 </p>
-                <p>The instrument will be standalone 3D printed or CNC cut physical interface with simple OLED display that enables adjustment of the application’s parameters with encoders and sliders. Most likely it will be driven by an Arduino microprocessor, although designing with discrete components on a printed circuit board would be a fun reach project.
+                <p>The instrument will be standalone 3D printed or CNC cut physical interface with simple OLED display that enables adjustment of the application&apos;s parameters with encoders and sliders. Most likely it will be driven by an Arduino microprocessor, although designing with discrete components on a printed circuit board would be a fun reach project.
                 </p>
                 <br>    
             </div>
@@ -90,9 +130,9 @@ or press escape to continue to webpage</textarea>
                 </div>
             </div>
             <div class="window-body text-content">
-                <p>A third idea could concern other generalizable methods of spatial data sonification - how can we hear a map, and what are the creative+practical uses of cross-sensory thinking and navigation? How can multi sensory interpretation of space and place alter a person’s cognition and perception? Are there ramifications on attention+memory?
+                <p>A third idea could concern other generalizable methods of spatial data sonification - how can we hear a map, and what are the creative+practical uses of cross-sensory thinking and navigation? How can multi sensory interpretation of space and place alter a person&apos;s cognition and perception? Are there ramifications on attention+memory?
                 </p>
-                <p>Eg: the frequency of contour lines on a topographic map (or bands in a DEM) could be interpreted as pitches in a scale (frequency of change). Or the terrain can be sampled as a graphic “wavetable” and generate a waveform for a digital oscillator.
+                <p>Eg: the frequency of contour lines on a topographic map (or bands in a DEM) could be interpreted as pitches in a scale (frequency of change). Or the terrain can be sampled as a graphic &quot;wavetable&quot; and generate a waveform for a digital oscillator.
                 </p>
                 <p>......a place can be mapped onto a piece of music, and vice-versa.
                 </p>
@@ -117,7 +157,28 @@ or press escape to continue to webpage</textarea>
             -->
     </div>
 
-  
+
+<div class="windows-container">
+    <div class="window half" id="bio">
+        <div class="title-bar">
+            <div class="title-bar-text">Review 01</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body text-content">
+            <div class="">
+                <a href="https://docs.google.com/document/d/13INDqTf2GcjcwHOXjmIx8lWKisPALoLSkM1JO42uqqY/edit">TEXT AND THOUGHTS AND IMAGES HERE</a>
+                <br>    
+            </div>
+        </div>
+        </div>
+</div>
+
+
     <div class="window" id="window-ticker">
         <div class="title-bar">
             <div class="title-bar-text">A Very Important Message</div>
@@ -131,10 +192,70 @@ or press escape to continue to webpage</textarea>
         <div class="window-body ticker-container text-content">
             <h1 class="ticker-text">I LOVE TO MAKE WEBSITES NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
         </div>
+        <div class="window-body ticker-container text-content">
+            <h1 class="ticker-text">                           <br>UPDATE OCTOBER 2023: NEVERMIND!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+        </div>
         <div class="status-bar">
             <p class="status-bar-field" id="cpu">CPU Usage: 1000000000000000000000000000000000000%</p>
         </div>
     </div>
+    
+
+    <div class="windows-container">
+
+        <div class="window full" id="">
+            <div class="title-bar">
+                <div class="title-bar-text">AM radio propagation based on terrain</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize" class="maximize-button"></button>
+                    <button aria-label="Restore" class="restore-button"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body img">
+                <div class="">
+                    <img class="" src="assets/images/sketches_oct23-03.jpg"></img>
+                </div>
+            </div>
+            </div>
+
+
+        <div class="window half" id="">
+            <div class="title-bar">
+                <div class="title-bar-text">IMAGEOSC</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize" class="maximize-button"></button>
+                    <button aria-label="Restore" class="restore-button"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body img">
+                <div class="">
+                    <img class="" src="assets/gifs/imgOSC.gif"></img>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <div class="window half" id="" style="left: 2%;">
+        <div class="title-bar">
+            <div class="title-bar-text">OPTIMIZATION STRATEGIES FOR MINIMAL COMPUTING</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body img">
+            <div class="">
+                <img class="" src="assets/images/sketches_oct23-02.jpg"></img>
+            </div>
+        </div>
+        </div>
+</div>
 
 
 <div class="window half" style="margin: 8%; width: 250px; height: 105px;">

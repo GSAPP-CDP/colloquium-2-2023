@@ -8,7 +8,8 @@ html {
 }
 
 body {
-  font-family: 'Perfect DOS VGA 437', monospace;
+  /* font-family: 'Perfect DOS VGA 437', monospace; */
+  /* font-family: Tahoma,Verdana,sans-serif;  */
   margin: 0;
   padding: 0;
   height: 100%;
@@ -47,6 +48,7 @@ button {
   overflow: hidden; /* Hide content that overflows the window */
   margin:2px;
   height:auto;
+  background: rgb(F0F0F0);
   /* display: flex; Use flexbox to center content vertically and horizontally */
   /* flex-direction: column; Stack content vertically */
   /* align-items: center; Center content horizontally */
@@ -84,7 +86,8 @@ button {
   width: auto;
   cursor: url('../assets/cursors/arrow.cur'), auto;
   margin: 0;
-
+  overflow: hidden;
+  
 }
 
 /* Style videos, images, and text-content to fit their containers */
@@ -92,10 +95,13 @@ button {
 .window-body img,
 .window-body .text-content {
   font-size: large;
+  width: auto;
+  height: auto;
   max-width: 100%;
   max-height: 100%;
   height: auto;
   cursor: url('../assets/cursors/arrow.cur'), auto;
+  display: block;
 
 }
 
