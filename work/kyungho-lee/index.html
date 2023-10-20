@@ -22,6 +22,7 @@ image: hospital_site_selection_michigan.JPG
 
   <body>
     <section class="assignment">
+
       <article>
         <h1>Equitable Identification of Healthcare Sites & Typologies</h1>
         <h3>Inequalities in Access to Health Services in America</h3>
@@ -43,7 +44,9 @@ image: hospital_site_selection_michigan.JPG
           >
         </p>
         <img src="./images/hpsa-primary-care-guide.jpg" />
+      </article>
 
+      <article>
         <h3>
           Inequalities in the current demand estimate model for health services
         </h3>
@@ -66,7 +69,9 @@ image: hospital_site_selection_michigan.JPG
           >
         </p>
         <img src="./images/health insurance percentage.jpg" />
-
+      </article>
+      
+      <article>
         <h3>New Audiences in Reduced Barrier Scenario</h3>
         <p>
           With recent initiatives such as Healthy People 2030 by the US
@@ -81,57 +86,95 @@ image: hospital_site_selection_michigan.JPG
           >
         </p>
         <img src="./images/sketch01.jpg">
-        <br /><br />
-
-        <h3>Datasets for Patients (equitable healthcare)</h3>
+      </article>
+        
+      <article>
+        <h3>Conventional Datasets for healthcare business</h3>
+        <p>
+          Healthcare business owners, developers, and professionals first consider 
+          feasibility, profitability, and operational efficiency when selecting a 
+          site for healthcare. Most of the existing hospitals have been located after 
+          thorough consideration of the categories below. 
+        </p>
         <ul>
+          <li><b>Affordability:</b> real estate costs can vary greatly depending on location including costs to develop particular sites based on existing infrastructure. Opportunities to repurpose existing infrastructure to accommodate new healthcare facilities can make the project affordable. 
+          </li>
+          <br />
+          <li><b>Demographics & Population Density:</b> factors such as population’s age, income, insurance coverage, overall health status, and population density largely affect profitability.</li>
+          <br />
+          <li><b>Zoning & land use:</b> ensure that the zoning and land use laws allow healthcare business in the proposed location.</li>
+          <br />
+          <li><b>Accessibility:</b> convenient access to healthcare facilities is crucial, whether through personal transportation, or public transit.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Datasets for the Vulnerable Population (equitable healthcare)</h3>
+        <p>
+          Based on the combined datasets below, I will try to answer my hypothesis that vulnerable people in the US are left out in the current healthcare systems. Then, I will pinpoint those areas where vulnerable populations have limited geographic access to healthcare services. Those places will be used for ideal locations for the future hospitals to reduce the current inequalities in access to healthcare services.
+        </p>
+        <ul>
+
           <li>
-            current distribution of hospitals in the US
+            <b><a href="https://www.atsdr.cdc.gov/placeandhealth/svi/index.html">Social Vulnerability Index (SVI):</a></b> Centers for Disease Control and Prevention(CDC) provides SVI index based on 16 U.S. census variables(age, race, employment, education, etc) to help local officials identify communities that may need support before, during, or after disasters.
+          </li>
+          <br />
+          <li>
+            <b><a href="https://www.health.ny.gov/health_care/medicaid/enrollment/">Medicaid / Medicare Enrollment:</a></b> Medicaid provides free health insurance for low-income adults and children. The enrollment eligibility depends on income, disability, and employment status. 
+          </li>
+          <br />
+          <li>
+            <b><a href="https://www.cdc.gov/places/index.html">Uninsured Population:</a></b> CDC in collaboration with Robert Wood Johnson Foundation provides ‘PLACES: Local Data for Better Health’ data which include uninsured population measurement at the scale of counties and Census tracts.
+          </li>
+          <br />
+          <li>
+            <b><a href="https://hcup-us.ahrq.gov/reports/statbriefs/sb259-Potentially-Preventable-Hospitalizations-2017.jsp">Potentially preventable hospitalization(PPH):</a></b> inpatient stays that evidence suggests may be avoidable through timely and quality primary and preventive care. The rate of hospital discharges for PPH is high among the vulnerable populations. 
+          </li>
+          <br />
+          <li>
+            <b><a href="https://www.bls.gov/tus/">American Time Use Survey:</a></b>  one’s daily routines show difference in time spent on healthcare service between rural and urban areas. 
+            <img src="./images/healthcare daily routine.JPG">
+          </li>
+          <br />
+          <li>
+            <b><a href="https://geodata.library.columbia.edu/catalog/stanford-rc511bx5059">Hospital Distribution:</a></b> the current distribution of hospitals in the United States.
             <img src="./images/distribution of hospitals.JPG" />
           </li>
-          <li>
-            <b>Social Vulnerability Index (SVI)</b> uses 16 U.S. census
-            variables(age, race, employment, education, etc) to help local
-            officials identify communities that may need support before, during,
-            or after disasters.
-            <img src="./images/svi_interactive_map.jpg" />
-          </li>
-          <li>
-            <b>Years of Potential Life Lost (YPLL)</b> represents
-            community-specific health vulnerability in the United States by
-            measuring rates of premature death
-          </li>
           <br />
           <li>
-            <b>Medicaid Enrollment</b> provides free health insurance for
-            low-income adults and children. The enrollment eligibility depends
-            on income, disability, and employment status.
-          </li>
-          <br />
-          <li>
-            <b>Avoidable Hospital Conditions (AHC)</b> is inpatient stays that
-            evidence suggests may be avoidable through timely and quality
-            primary and preventive care. The rate of hospital discharges for AHC
-            is used to represent inequality in some research.
+            <b><a href="https://www.ers.usda.gov/data-products/chart-gallery/gallery/chart-detail/?chartId=106760">Primary Care Physicians Distribution:</a></b> The number of primary care physicians per 10,000 residents.
+            <img src="./images/primary care physicians distribution.png">
           </li>
         </ul>
+      </article>
+
+      <article>
+        <h3>How Computational Relationships Manifest</h3>
         <p>
-          Above datasets can be used to pinpoint the most vulnerable site for
-          future hospital proposals with equity. Besides these data, I plan to
-          further research on the new equitable medical demand estimate
-          methodology from HRSA (Health Resources & Services Administration).
+          In my capstone project, the digital agency will compute input data such as existing hospital locations, SVI, public transportations, and travel time to filter and narrow down sites for equitable future healthcare. The digital tool will function like a survey, equipped with spatial data and maps, to collect site options at scale from multiple stakeholders. Then it will process and analyze collected site options from the survey and give insights on what criteria each stakeholder values the most. The digital agency is not only for down selecting optimal sites for individuals but also for managing and mediating competing priorities to draw an optimal site from consensus. 
         </p>
-        <br /><br />
-
-        <h3>Stakeholders in Detail</h3>
-        <img src="./images/sketch02.jpg" />
-
-        <h3>Digital Mediator</h3>
-        <img src="./images/sketch01.jpg" />
-
-        <h3>Hospital Sites Selection Precedents</h3>
+        <ul>
+          <li>
+            <b>Down Selection Process</b>
+            <img src="./images/distribution of hospitals zoom in.JPG">
+          </li>
+          <br />
+          <li>
+            <b>Mediate Multiple Stakeholders</b>
+            <img src="./images/mediating stakeholders.jpg">
+          </li>
+          <br />
+          <li>
+            <b>Propositions for Healthcare Typologies</b>
+            <img src="./images/Healthcare typologies.JPG">
+          </li>
+        </ul>
+      </article>
+        
+      <article>
+        <h3>Precedent Works</h3>
         <p>
-          The Department of Geography at Michigan State University has done
+          <u>1. The Department of Geography at Michigan State University</u> has done
           research on the hospital site selection process for the state of
           Michigan. As many medical studies suggest that the 30 minutes
           threshold is critical for the survival of patients, the research
@@ -144,7 +187,22 @@ image: hospital_site_selection_michigan.JPG
           insurance and racial or ethnic minorities.
         </p>
         <img src="./images/hospital_site_selection_michigan.JPG" />
+        <br /><br /><br />
+
+        <p>
+          <u>2. Scout from KPF UI</u> empowers clients or community members to engage in design decision making processes. stakeholders including community members are able to contribute their voice to the design phase with Scout. I want to know how Scout helps a design team to collect, analyze, and present design ideas from many stakeholders. And what process a design team has to go through, equipped with Scout, to narrow down multiple design options and distill one collective design? What is the role of the digital agency(Scout) in mediating conflicting priorities from multiple stakeholders?
+        </p>
+        <img src="./images/scout_explore.JPG">
+        <img src="./images/scout_collection.JPG">
+        <br /><br /><br />
+
+        <p>
+          3. KPF Urban Interface team developed a design paradigm that relied on multivalent collaboration, where AI acted in the role of the spatial negotiagor
+        </p>
+        <img src="./images/KPF_AI_Collaboration01.JPG">
+        <img src="./images/KPF_AI_Collaboration02.JPG">
       </article>
+
     </section>
   </body>
 </html>
