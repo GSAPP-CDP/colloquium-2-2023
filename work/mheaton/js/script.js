@@ -542,3 +542,8 @@ updateZoom();
 
 // Listen for the window resize event
 window.addEventListener('resize', updateZoom);
+
+//////////////////////////////////////////
+//IMAGEOSC//
+
+//?????????
