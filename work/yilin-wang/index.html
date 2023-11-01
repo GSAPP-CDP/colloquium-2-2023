@@ -63,16 +63,16 @@ tags:
           <div class="toc full">
             <h2>Table of Contents</h2>
             <ul>
-              <li><a href="#assignment-1">1 &ndash; Idea1</a></li>
-              <li><a href="#assignment-2">2 &ndash; Idea2</a></li>
-              <li><a href="#assignment-3">3 &ndash; Idea3</a></li>
+              <li><a href="#assignment-1">1 &ndash; Capstone Project Review2</a></li>
+              <!-- <li><a href="#assignment-2">2 &ndash; Idea2</a></li> -->
+              <!-- <li><a href="#assignment-3">3 &ndash; Idea3</a></li> -->
 
             </ul>
           </div>
 
           <div class="full assignment">
-            <h1 id="assignment-1">1 &ndash; Idea1</h1>
-            <h2>Smart Building Energy Design Platform</h2>
+            <h1 id="assignment-1">1 &ndash; Capstone Project Idea</h1>
+            <h2>Urban Morphology Generator responsive to local climate by GAN</h2>
             
           </div>
 
@@ -81,83 +81,187 @@ tags:
           </div>
 
           <div class="full">
-            <h2>Concept and Research questions for project</h2>
+            <h2>Research Question and Research Gap</h2>
             <p>
-              How can a combination of machine learning and generative design be utilized in real-time optimzation for architectural energy efficiency 
-              and environmental adaptability?
+              The realm of computational urban design (CUrbD) is multifaceted, with designs shaped by factors like 
+              street block shape, orientation, program, density, and greenery. While micro-climate considerations 
+              usually come into play during outcome evaluation, their potential as adaptive factors in initial stages 
+              is often overlooked.
+            </p>
+
+            <p>
+              Current CUrbD approaches employing GANs, especially models like pix2pix, primarily predict urban texture 
+              and imageability, focusing on visual representation due to the 2D limitations of these models. Meanwhile
+              the problem of AI is that it could only generates believable images instead of understanding them, not 
+              even to say automate our design process.
+            </p>
+
+            <p>
+              This raises the pivotal questions: Can we seamlessly integrate AI into adaptive urban morphology planning 
+              grounded in local climate systems? And, is it possible to fully automate this design process, emphasizing 
+              adaptive design over mere visual representation? Can we redefine the CUrbD framework by using climate 
+              data (GIS images) as initial inputs, allowing urban morphology to dynamically respond to local climate 
+              variations?
             </p>
             
             <h2>Computational tools and design methods</h2>
             <p>
-              Data Collection & Preprocessing: Collection of existing architectural design parameters, environmental factors, historical energy consumption.
+              Data Collection & Preprocessing:  I'm focusing on obtaining meteorological information and city plan images from major cities around the world. The rationale behind this selection is twofold:
+
+              Diverse Climates: By targeting a range of cities, the dataset will encompass a broad spectrum of climatic conditions, ensuring that the GAN model is trained with comprehensive and diverse information.
+              
+              Urban Complexity: Major cities typically exhibit complex urban structures, which would provide a more challenging and rich dataset. This would test the efficacy of the GAN model in predicting urban morphologies across varied urban layouts.
 
             </p>
             <p>
-              Machine Learning Models: Development of regression analysis and time series prediction models for forecasting energy demand and 
-              environmental performance.
+              Machine Learning Models: pix2pix model.By feeding the preprocessed GIS images into this model, 
+              the aim is to transform these 2D climate representations into predicted urban layouts that are inherently 
+              adaptive to the depicted climates.
 
             </p>
             <p>
-              Generative Design Integration: Incorporation of ML inputs with generative design tools like Grasshopper for visualizing design 
-              models and corresponding metrics.
+              Generative Design Integration: After the machine learning phase, Grasshopper will be instrumental in the 
+              responsive generation of 3D urban models. This tool will be employed to extract 3D data from the 2D 
+              outcomes produced by the GAN, leading to the creation of adaptive urban morphologies that not only 
+              visually represent but functionally respond to the local climate conditions.
+
+
 
             </p>
           </div>
 
           <div class="half">
-            <h2>related precedents</h2>
+            <h2>related precedent1</h2>
             <p>
-              Delve is an innovative tool that leverages machine learning and generative design to optimize urban development projects. 
-              It assists in creating designs that maximize overall value while considering various constraints and requirements.
+              DeepScope is a platform that allows designers to test multiple urban designs and observe the Image of 
+              the City in real time. 
 
             </p>
 
             <p>
-              There are some open-source repos available on GitHub that employ machine learning algorithms for predicting building energy 
-              consumption. These projects utilize historical energy use data, environmental conditions to train and 
-              validate their predictive models, offering a base for understanding and forecasting energy demands in different types of buildings.
+              Inspired by Kevin Lynch’s The Image of the City and The View from the Road, Deepscope helps designers 
+              think about urban imageability: readability, continuity, legibility, image of the city.
+
+            </p>
+
+            <p>
+              method & process:1.With each design iteration, a 3D streetscape model is created; 2.the model is fed into 
+              a DCGAN neural network; 3.that generates a realistic street-view visualization.
+
+            </p>
+          </div>
+
+          <div class="half">
+            <img src="1101/deep_question.png">
+            
+            
+          </div>
+
+          <div class="half">
+            <img src="1101/deep method.png">
+            
+            
+            
+          </div>
+
+          <div class="half">
+            <img src="1101/Deep method2.jpg">
+            
+          </div>
+          
+
+          <div class="half">
+            
+            <h2>related precedent2</h2>
+            <p>
+              KPF UI utilized its interactive tool Scout and developed a ‘digital twin’ to help understand how the 
+              fictional rust-belt city of Leeside could adapt its built environment to become a climate haven for 
+              climate migrants from the coasts of the United States by the year 2040.
+
+            </p>
+
+            <p>
+              method & process: 1.To analyze conditions in Rust Belt cities to create the fictional conditions of 
+              Leeside (1mile * 1mile); 2.To look into the physical characteristics of rust- belt city: street grid, 
+              building height, lot size etc; 3. To define the parameters that people can control through digital twin 
+              by Scout.
 
             </p>
             
-            <h2>Data for exploration</h2>
-            <p>
-              Need access to datasets containing building parameters and constraints, environmental conditions, user behavior, and energy consumption. 
-              This data need to be found on publicly available datasets.
-
-            </p>
-            <h2>Project Scales</h2>
-            <p>
-              The project operates on multiple scales, from individual buildings to urban blocks.
-
-            </p>
-            <h2>Sketches and Audiences</h2>
-            <p>
-              The sketch is a user interface where designers input building parameters and receive real-time feedback as well as energy consumption prediction.
-              The primary audience would be architects and urban designers.
-
-            </p>
-            <img src="1005/I1_sketch1.jpg">
           </div>
 
           <div class="half">
-            <img src="1005/delve1.jpeg">
-            <img src="1005/ml_recession1.png">
+            <img src="1101/leeside2.png">
           </div>
 
-          <hr>
-
-          <div class="half">
-            <img src="">
+          <div class="full">
+            <img src="1101/leeside1.png">
           </div>
 
           <div class="half">
-            <img src="">
+            
+            <h2>Data Exploration and pix2pix algorithm</h2>
+            <p>
+              1.Local Climate mapping data: From World Urban Database and Access Portal Tools (WUDAPT) webite, to download
+              satellite raster data.
+            </p>
+            <p>
+              2.paired urban morphology(building outline, green, water, street) of LCP maps from Mapbox Streets v7 and 
+              combine building heights data from OSM.
+            </p>
+            <p>
+              <img src="1101/logic1.png">
+            </p>
+
+            
           </div>
 
+          <div class="half">
+            <img src="1101/pix2pix2.png">
+          </div>
+
+          <div class="half">
+
+          <div class="half">
+            <img src="1101/lcz map.png">
+          </div>
+  
+          
+          </div>
+          <div class="half">
+            <img src="1101/mapbox1.png">
+          </div>
+
+
+          <div class="half">
+            
+            <h2>The process of responsive generation</h2>
+            <p>
+              After traing pix2pix model, partial 3D models can be constructed in Grasshopper from those generated urban plans.  
+            </p>
+
+            <p>
+              3D models capable of swiftly responding to alterations in Local climate offered promising potential for 
+              applications in further local climate research. In the right image, when local climate map is modified,
+              the changes in generated plans and 3D morphology are also occured. 
+            </p>
+
+            <p>
+              To sum up, the project proposes a design framework for generating urban 3D morphology that can rapidly responds to local climate
+              changes. Due to the challenges associated with obtaining high-definition remote-sensing images and the 
+              limitation of traditional 3D platform in dynamically generating 3D models, the GAN training methods combining
+              local climate data and urban morphology is a innovative way to predict 3D models responsively and rapidly. 
+            </p>
+
+            
+          </div>
+          <div class="half">
+            <img src="1101/responsive method.jpg">
+          </div>
 
           
 
-          <div class="full assignment">
+          <!-- <div class="full assignment">
             <h1 id="assignment-2">2 &ndash; Idea2</h1>
             <h2>Generate cities from cities</h2>
             <p></p>
@@ -313,7 +417,7 @@ tags:
               effectively.
               
             </p>
-          </div>
+          </div> -->
 
           
 
