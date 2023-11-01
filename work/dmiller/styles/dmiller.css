@@ -1,0 +1,102 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+    font-family: inherit;
+}
+
+
+.dmiller h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.dmiller h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--secondary-color);
+}
+
+.dmiller h4 {
+    color: var(--secondary-color);
+}
+
+.dmiller .project{
+    width: 100%;
+    max-width: inherit;
+}
+
+.dmiller .post-header {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    margin-left: 0;
+}
+
+.dmiller .post-body {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.dmiller .half{
+    grid-column: span 3;
+}
+
+.dmiller .full{
+    grid-column: 1 / -1;
+}
+
+
+
+.sans-serif {
+    font-family: acumin-pro, sans-serif;
+}
+
+.mono {
+    font-family: interstate-mono, monospace;
+}
+
+.serif {
+    font-family: proforma, serif;
+}
+
+
+.section{
+    display: grid;
+    gap: var(--grid-gap);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-1{
+    grid-column-start: 1;
+}
+
+.grid-2{
+    grid-column-start: 2;
+}
+
+.grid-3{
+    grid-column: 2 / 6;
+}
+
+.grid-chat-3{
+    grid-column: 3 / 5;
+}
+
+.grid-4{
+    grid-column-start: 4;
+}
+
+.grid-5{
+    grid-column: 5 / -1;
+}
+
+.grid-6{
+    grid-column-start: 6;
+}
+
+#image1 {
+    width: 100%;
+    height: auto;
+}
+
+#placesWhere {
+    width: 100%;
+    height: auto;
+    border: 1px solid black; 
+}
+
