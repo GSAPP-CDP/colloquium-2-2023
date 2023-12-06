@@ -1,0 +1,188 @@
+---
+student: Jonathan Marcos
+layout: blank.liquid
+tags:
+- students
+---
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    
+    <title>Jonathan Marcos</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+
+</head>
+
+<body>
+    <header>
+        <!-- Your header content goes here -->
+        <h1><div class="typewriter" data-typewriter='JONATHAN MARCOS'></div></h1>
+        <h5><div class="typewriter" data-typewriter='Colloquium II'></div></h5>
+    </header>
+<hr>
+
+<div class="buffer-container">
+    <div class="buffer-content">
+        <div class="container">
+            <div class="third-width">
+                <p></p>
+                <h1><b>Biting the Big Apple</b></h1>
+                <h4><b>An Investigation Into NYC's Food <s>Desert</s> Insecurity Situation</b></h4>
+            </div>
+            <div class="two-thirds-width">
+                
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="buffer-container">
+        <div class="buffer-content">
+            <div class="container">
+                <div class="third-width">
+                    <h3>Abstract:</h3>
+                    <p>New York City's various hotspots of food insecurity bring unobtainable access and affordability for healthier food options and lifestyles throughout various neighborhoods in the City. Particularly speaking, these neighborhoods are typically those that have lower average income and also have easier access to energy-dense options, in the form of fast-food restaurants and bodegas.</p>
+                    <p>Unfortunately, there are many issues linked to prolonged exposure to unhealthy diets, including higher risks of diabetes, blood pressure and other chronic diseases. Nonetheless, neighborhoods suffering from food insecurities find themselves in a place where they are more inclined to access energy-dense options due to their superior affordability and accessibility.</p>
+                    <p><i>Biting the Big Apple</i> will investigate on the urban scale by identifying which areas are most likely suffering from food insecurity by correlating certain financial, social, and vendor-based parameters. The results grabbed from this analysis will ultimately dive into a rigorous qualitative analysis of these food-insecure areas. This study will ultimately clear any of the voids the quantitative analysis could not cover and will be pivotal in discussing various potential urban policies and interventions on a case by case basis.</p>
+                    <p>Ultimately, this proposal will be a public interest technology (PIT) that sets to bring a custom definition of a food insecurity in the context of New York City, and display the cultural and social significance of food insecurities within affected communities.</p>
+                </div>
+                <div class="two-thirds-width">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="image-container">
+                        <img src="/images/streetviewforcolloquium.gif">
+                    </div>
+                    <h5>Above: Stop-Motion Streetview Collage of 8th Avenue Chinatown, 60th-53rd street.</h5>
+                </div>
+            </div>
+        </div>
+
+    <hr>
+
+    <div class="buffer-container">
+        <div class="buffer-content">
+            <div class="container">
+                <div class="third-width">
+                    <br>
+                    <br>
+                    <h3>01: Painting the Food-Insecurity Landscape</h3>
+                    <p>There are many defining parameters that make up food insecurity. Acording to the USDA, food insecurity in the urban context is an area that does not have a supermarket within 1/2 of a mile reach. Communities with lower-income and higher minority concentrations are also more likely to be food deserts</p>
+                    <p>However, the USDA definition is too broad and doesn't accurately target food insecurity in NYC. Adi Segal, former researcher from Columbia College's Urban Studies Program, speculates that food insecurities in the City are found through vendors selling energy-dense foods, especially bodegas and fast food chains. One of Urban Analyist Olivia Limone's criteria of areas with food insecurity are places that don't have accessible physical proximity to healthier options.</p>
+                    <p>Taking in data from fast food restaurants (source: Filtered Content from <i>Restaurant Inspection Results, NYCOpendata</i>), bodegas (source: NYS Clearinghouse, Food Vendors, with flooring less than 3000 sq. ft.), income and food stamp prevalence (source: US Census), a visualization can be made of some fundemental culinary and economic context of this food insecurity investigation</p>
+                </div>
+                <div class="two-thirds-width">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="image-container">
+                        <iframe src="https://jon-marchos.github.io/3dmap/" width=100% height="600px"></iframe>
+                    </div>
+                    <h5>Above: Abstract Landscape of the Food Insecurity Landscape in order to visualize different magnitudes of existing conditions</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="buffer-container">
+        <div class="buffer-content">
+            <div class="container">
+                <div class="two-thirds-width">
+                    <div class="slideshow-container">
+                        <div class="slides">
+                            <div class="slide">
+                                <h2>Food Stamp Prevalence vs. Bodega Prevalence</h2>
+                                    <iframe src="/scatterplots/foodstampvsbodega/index.html" width=100% height=525px></iframe>
+                                <h5>Radius & Fill of Points associated with #of supermarkets (big=more, vice versa)</h5>
+                            </div>
+                            <div class="slide">
+                                <h2>Bodega Prevalence vs. Supermarket Prevalence</h2>
+                                    <iframe src="/scatterplots/bodegavsincome/index.html" width=100% height=525px></iframe>
+                                <h5>Radius & Fill of Points associated with Average Income (big=more, vice versa)</h5>
+                            </div>
+                            <div class="slide">
+                                <h2>Income vs. Population with associated Supermarket Accessibility</h2>
+                                    <iframe src="/scatterplots/populationincomesupermarkets/index.html" width=100% height=525px></iframe>
+                                <h5>Green = High accessibility to supermarkets, Pink = Lower accessibility to supermarkets</h5>
+                            </div>
+                            <div class="slide">
+                                <h2>Income vs. Population with associated Supermarket Accessibility</h2>
+                                    <iframe src="/scatterplots/populationincomebodegas/index.html" width=100% height=525px></iframe>
+                                <h5>Red = Higher accessibility to bodegas, Blue = Lower accessibility to supermarkets</h5>
+                            </div>
+                            <div class="slide">
+                                <h2>Final Results from Ratio Calculations</h2>
+                                    <div class="image-container">
+                                        <img src="/images/ratiotest2.png">
+                                    </div>
+                                <h5>Higher Score: Neighborhoods more likely to be food deserts</h5>
+                            </div>
+                            <!-- Add more slides as needed -->
+                            <!-- https://jon-marchos.github.io/MapForColloqium/ -->
+                        </div>
+                        <button class="prev-button">Previous</button>
+                        <button class="next-button">Next</button>
+                    </div>
+                </div>
+                <div class="third-width">
+                    <br>
+                    <br>
+                    <h3>02: Correlating Parameters</h3>
+                    <p>Various parameters, such as income, population, supermarket counts, bodega counts, etc. individually cannot paint a complete picture of where food insecurities may be. Rather, combining these datasets (i.e. income vs. bodega count) can unveil more patterns that may give a better understanding of where food insecurities are.</p>
+                    <p>With these graphs, a series of ratios were assessed in order to rank neighborhoods by likeliness of food insecurity prevalence:</p>
+                    <p><b>01: Population / Supermarket #</b>: The greater # of people that occupy a supermarket, there may be a lack of consistent, readily-accessible resources.</p>
+                    <p><b>02: Bodega # / Supermarket #</b>: The greater bodegas outpopulate supermarkets, the more likely individuals from this neighborhood are accessing bodegas and their resources instead of supermarkets.</p>
+                    <p><b>03: Income / (Bodega # / Supermarket #)</b>: Groups that have a great Bodega/Supermarket ratio are most likely to suffer from food insecurities when they have lower average incomes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="buffer-container">
+        <div class="buffer-content">
+            <div class="container">
+                <div class="third-width">
+                    <br>
+                    <br>
+                    <h3>03: Deeper Qualitative Analysis</h3>
+                    <p>After determining which areas to explore into further depth, there will be a deeper analysis of each neighborhood's conditions of food accessibility. Walking down each chosen neighborhood's commercial arteries, a variety of normal values will be taken in, such as prices of apples, prices of frozen chicken tenders, circulars, fast food restaurants and bodegas vs. supermarkets, walking distance in between supermarkets, etc. These personalized surveys, in conjunction with the data from the quantitative investigation, will paint a clearer picture of what food insecurities look like, and how they actively affect NYC's neighborhoods through a variety of different lenses.</p>
+                    <p>These individualized observations will also give insight on optimal solutions for each neighborhood's food insecurity problem, whether that comes down to  (but not limited to) urban policy or architectural intervention. For instance, neighborhoods with higher amounts of bodegas could incentivize a cash-bonus for these smaller vendors if 25% of their products are fresh produce, places with low supermarket access may offer cash incentives for developers to build supermarkets in vacant areas, etc. </p>
+                </div>
+                <div class="two-thirds-width">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="image-container">
+                        <iframe src="./mapforqualitative/index.html" width=100% height="600px"></iframe>
+                    </div>
+                    <h5>Above: Map showing prospective game plan for neighborhoods of investigation</h5>
+                    <div class="image-container">
+                        <img src="./images/gridmock.jpg">
+                    </div>
+                    <h5>Above: Grid showing found qualities from Central Harlem exploration</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="slides.js"></script>
+    <script src="main.js"></script>
+    <script src="buffer.js"></script>
+</body>
+
+</html>
