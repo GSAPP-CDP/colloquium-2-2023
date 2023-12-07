@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    margin: 25PX;
+    padding: 0;
+}
+
+.title-section h1 {
+    font-size: 6vw; /* Responsive font size */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    max-font-size: 60px; /* Maximum font size */
+}
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically on small screens */
+    width: 100%;
+    max-width: 1200px; /* Maximum width */
+}
+
+.content-block img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.content-block .text-block {
+    width: 100%;
+    padding: 10px;
+}
+
+.quote-section {
+    font-size: 1vw; /* Responsive font size */
+    text-align: center;
+    margin: 40px 20px;
+    padding: 20px;
+    max-width: 50%; /* Maximum font size */
+}
+
+blockquote {
+    font-style: italic;
+}
+
+/* Responsive Design for Tablets and Desktops */
+@media (min-width: 768px) {
+    .content-block {
+        flex-direction: row; /* Side-by-side image and text */
+    }
+
+    .content-block img, .content-block .text-block {
+        width: 50%;
+    }
+}
