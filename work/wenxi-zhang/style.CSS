@@ -1,0 +1,52 @@
+/* 导航栏的基本样式 */
+.navbar {
+    background-color: darkgray; /* 深灰色背景 */
+    display: flex;              /* 使用flex布局 */
+    justify-content: space-between; /* 左右两侧内容分隔开 */
+    padding: 10px 20px;         /* 上下10px，左右20px的内边距 */
+}
+
+  /* 导航栏标题样式 */
+.navbar-title {
+    font-family: 'Helvetica', sans-serif; /* 使用Helvetica字体 */
+    font-weight: bold;         /* 字体加粗 */
+    font-size: 24px;           /* 字体大小 */
+}
+  /* 导航链接的基本样式 */
+.navbar-links a {
+    font-family: 'Helvetica', sans-serif; /* 使用Helvetica字体 */
+    font-size: 18px;           /* 字体大小 */
+    margin-left: 20px;         /* 左侧间距 */
+    text-decoration: none;     /* 去掉下划线 */
+    color: white;              /* 字体颜色 */
+}
+
+  /* 链接鼠标悬停效果 */
+.navbar-links a:hover {
+    text-decoration: underline; /* 添加下划线 */
+}
+
+  /* 页面内容区域的样式（仅为示例） */
+div[id^="section"] {
+    height: 500px;              /* 每个区块高度500px */
+    margin-top: 20px;          /* 上方间距 */
+    border: 1px solid #ccc;    /* 边框 */
+}
+
+.preview-container {
+    display: flex;              /* 使用flex布局 */
+    justify-content: center;    /* 居中对齐 */
+    align-items: center;        /* 垂直居中 */
+    margin-top: 20px;           /* 上方间距 */
+}
+
+#previewIframe {
+    width: 80%;                 /* iframe宽度 */
+    height: 500px;              /* iframe高度 */
+    border: none;               /* 去掉边框 */
+}
+
+#prevBtn, #nextBtn {
+    padding: 10px 20px;         /* 内边距 */
+    margin: 0 10px;             /* 外边距 */
+}
