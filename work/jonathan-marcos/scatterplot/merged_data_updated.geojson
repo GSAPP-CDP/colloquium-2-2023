@@ -1,0 +1,1562 @@
+[
+    {
+        "B19013_001E": 44828.21052631579,
+        "B01001_001E": 99534.0,
+        "supermarket_count": 12,
+        "ntacode": "BK88",
+        "ntaname": "Borough Park",
+        "bodega_counts": 156
+    },
+    {
+        "B19013_001E": 54956.38888888889,
+        "B01001_001E": 25274.0,
+        "supermarket_count": 1,
+        "ntacode": "QN52",
+        "ntaname": "East Flushing",
+        "bodega_counts": 16
+    },
+    {
+        "B19013_001E": 72593.57777777778,
+        "B01001_001E": 20240.0,
+        "supermarket_count": 2,
+        "ntacode": "QN48",
+        "ntaname": "Auburndale",
+        "bodega_counts": 7
+    },
+    {
+        "B19013_001E": 58011.380952380954,
+        "B01001_001E": 28355.0,
+        "supermarket_count": 2,
+        "ntacode": "BK95",
+        "ntaname": "Erasmus",
+        "bodega_counts": 56
+    },
+    {
+        "B19013_001E": 54960.57575757576,
+        "B01001_001E": 50102.0,
+        "supermarket_count": 8,
+        "ntacode": "QN51",
+        "ntaname": "Murray Hill",
+        "bodega_counts": 29
+    },
+    {
+        "B19013_001E": 55923.61538461538,
+        "B01001_001E": 18752.0,
+        "supermarket_count": 1,
+        "ntacode": "QN27",
+        "ntaname": "East Elmhurst",
+        "bodega_counts": 18
+    },
+    {
+        "B19013_001E": 44608.568181818184,
+        "B01001_001E": 30318.0,
+        "supermarket_count": 6,
+        "ntacode": "BX46",
+        "ntaname": "Parkchester",
+        "bodega_counts": 27
+    },
+    {
+        "B19013_001E": 29203.03846153846,
+        "B01001_001E": 41100.0,
+        "supermarket_count": 2,
+        "ntacode": "BX35",
+        "ntaname": "Morrisania-Melrose",
+        "bodega_counts": 87
+    },
+    {
+        "B19013_001E": 0.0,
+        "B01001_001E": 6864.0,
+        "supermarket_count": 1,
+        "ntacode": "BX98",
+        "ntaname": "Rikers Island",
+        "bodega_counts": 1
+    },
+    {
+        "B19013_001E": 58131.22891566265,
+        "B01001_001E": 98046.0,
+        "supermarket_count": 10,
+        "ntacode": "QN28",
+        "ntaname": "Jackson Heights",
+        "bodega_counts": 100
+    },
+    {
+        "B19013_001E": 34731.041666666664,
+        "B01001_001E": 36454.0,
+        "supermarket_count": 1,
+        "ntacode": "BX55",
+        "ntaname": "Soundview-Bruckner",
+        "bodega_counts": 55
+    },
+    {
+        "B19013_001E": 77562.1081081081,
+        "B01001_001E": 20714.0,
+        "supermarket_count": 1,
+        "ntacode": "QN07",
+        "ntaname": "Hollis",
+        "bodega_counts": 22
+    },
+    {
+        "B19013_001E": 46511.0625,
+        "B01001_001E": 23769.0,
+        "supermarket_count": 2,
+        "ntacode": "MN06",
+        "ntaname": "Manhattanville",
+        "bodega_counts": 27
+    },
+    {
+        "B19013_001E": 75830.10344827586,
+        "B01001_001E": 27046.0,
+        "supermarket_count": 3,
+        "ntacode": "QN02",
+        "ntaname": "Springfield Gardens North",
+        "bodega_counts": 16
+    },
+    {
+        "B19013_001E": 63258.38888888889,
+        "B01001_001E": 23694.0,
+        "supermarket_count": 1,
+        "ntacode": "QN71",
+        "ntaname": "Old Astoria",
+        "bodega_counts": 32
+    },
+    {
+        "B19013_001E": 55457.27027027027,
+        "B01001_001E": 46725.0,
+        "supermarket_count": 9,
+        "ntacode": "BX13",
+        "ntaname": "Co-op City",
+        "bodega_counts": 17
+    },
+    {
+        "B19013_001E": 77876.94285714286,
+        "B01001_001E": 42718.0,
+        "supermarket_count": 3,
+        "ntacode": "QN46",
+        "ntaname": "Bayside-Bayside Hills",
+        "bodega_counts": 22
+    },
+    {
+        "B19013_001E": 56009.77272727273,
+        "B01001_001E": 49945.0,
+        "supermarket_count": 3,
+        "ntacode": "MN11",
+        "ntaname": "Central Harlem South",
+        "bodega_counts": 56
+    },
+    {
+        "B19013_001E": 38255.142857142855,
+        "B01001_001E": 0.0,
+        "supermarket_count": 1,
+        "ntacode": "SI99",
+        "ntaname": "park-cemetery-etc-Staten Island",
+        "bodega_counts": 1
+    },
+    {
+        "B19013_001E": 67984.54347826086,
+        "B01001_001E": 35946.0,
+        "supermarket_count": 4,
+        "ntacode": "QN38",
+        "ntaname": "Pomonok-Flushing Heights-Hillcrest",
+        "bodega_counts": 18
+    },
+    {
+        "B19013_001E": 46180.76470588235,
+        "B01001_001E": 18938.0,
+        "supermarket_count": 1,
+        "ntacode": "QN68",
+        "ntaname": "Queensbridge-Ravenswood-Long Island City",
+        "bodega_counts": 61
+    },
+    {
+        "B19013_001E": 25858.23076923077,
+        "B01001_001E": 27974.0,
+        "supermarket_count": 3,
+        "ntacode": "BX33",
+        "ntaname": "Longwood",
+        "bodega_counts": 70
+    },
+    {
+        "B19013_001E": 98370.0,
+        "B01001_001E": 52941.0,
+        "supermarket_count": 2,
+        "ntacode": "MN15",
+        "ntaname": "Clinton",
+        "bodega_counts": 61
+    },
+    {
+        "B19013_001E": 62264.49230769231,
+        "B01001_001E": 44817.0,
+        "supermarket_count": 3,
+        "ntacode": "BK25",
+        "ntaname": "Homecrest",
+        "bodega_counts": 58
+    },
+    {
+        "B19013_001E": 66402.79166666667,
+        "B01001_001E": 28213.0,
+        "supermarket_count": 5,
+        "ntacode": "QN18",
+        "ntaname": "Rego Park",
+        "bodega_counts": 32
+    },
+    {
+        "B19013_001E": 44113.28571428572,
+        "B01001_001E": 28444.0,
+        "supermarket_count": 1,
+        "ntacode": "BX59",
+        "ntaname": "Westchester-Unionport",
+        "bodega_counts": 47
+    },
+    {
+        "B19013_001E": 85321.06976744186,
+        "B01001_001E": 32376.0,
+        "supermarket_count": 3,
+        "ntacode": "BK68",
+        "ntaname": "Fort Greene",
+        "bodega_counts": 31
+    },
+    {
+        "B19013_001E": 82178.21739130435,
+        "B01001_001E": 19500.0,
+        "supermarket_count": 2,
+        "ntacode": "QN41",
+        "ntaname": "Fresh Meadows-Utopia",
+        "bodega_counts": 8
+    },
+    {
+        "B19013_001E": 123739.39682539682,
+        "B01001_001E": 27754.0,
+        "supermarket_count": 21,
+        "ntacode": "MN17",
+        "ntaname": "Midtown-Midtown South",
+        "bodega_counts": 99
+    },
+    {
+        "B19013_001E": 123317.2923076923,
+        "B01001_001E": 50121.0,
+        "supermarket_count": 7,
+        "ntacode": "MN19",
+        "ntaname": "Turtle Bay-East Midtown",
+        "bodega_counts": 52
+    },
+    {
+        "B19013_001E": 67633.27586206897,
+        "B01001_001E": 43840.0,
+        "supermarket_count": 6,
+        "ntacode": "BK30",
+        "ntaname": "Dyker Heights",
+        "bodega_counts": 51
+    },
+    {
+        "B19013_001E": 108352.97530864198,
+        "B01001_001E": 82085.0,
+        "supermarket_count": 10,
+        "ntacode": "MN31",
+        "ntaname": "Lenox Hill-Roosevelt Island",
+        "bodega_counts": 50
+    },
+    {
+        "B19013_001E": 20790.795454545456,
+        "B01001_001E": 35190.0,
+        "supermarket_count": 2,
+        "ntacode": "BX01",
+        "ntaname": "Claremont-Bathgate",
+        "bodega_counts": 51
+    },
+    {
+        "B19013_001E": 58842.21428571428,
+        "B01001_001E": 54859.0,
+        "supermarket_count": 4,
+        "ntacode": "QN26",
+        "ntaname": "North Corona",
+        "bodega_counts": 97
+    },
+    {
+        "B19013_001E": 79131.54838709677,
+        "B01001_001E": 21990.0,
+        "supermarket_count": 2,
+        "ntacode": "QN47",
+        "ntaname": "Ft. Totten-Bay Terrace-Clearview",
+        "bodega_counts": 7
+    },
+    {
+        "B19013_001E": 56302.02857142857,
+        "B01001_001E": 67938.0,
+        "supermarket_count": 5,
+        "ntacode": "BK60",
+        "ntaname": "Prospect Lefferts Gardens-Wingate",
+        "bodega_counts": 106
+    },
+    {
+        "B19013_001E": 77422.52702702703,
+        "B01001_001E": 53151.0,
+        "supermarket_count": 6,
+        "ntacode": "QN08",
+        "ntaname": "St. Albans",
+        "bodega_counts": 48
+    },
+    {
+        "B19013_001E": 67993.18309859154,
+        "B01001_001E": 65274.0,
+        "supermarket_count": 8,
+        "ntacode": "QN54",
+        "ntaname": "Richmond Hill",
+        "bodega_counts": 90
+    },
+    {
+        "B19013_001E": 153229.60227272726,
+        "B01001_001E": 54413.0,
+        "supermarket_count": 6,
+        "ntacode": "MN40",
+        "ntaname": "Upper East Side-Carnegie Hill",
+        "bodega_counts": 48
+    },
+    {
+        "B19013_001E": 36205.23880597015,
+        "B01001_001E": 58354.0,
+        "supermarket_count": 2,
+        "ntacode": "BX05",
+        "ntaname": "Bedford Park-Fordham North",
+        "bodega_counts": 84
+    },
+    {
+        "B19013_001E": 52502.77777777778,
+        "B01001_001E": 57146.0,
+        "supermarket_count": 6,
+        "ntacode": "QN25",
+        "ntaname": "Corona",
+        "bodega_counts": 48
+    },
+    {
+        "B19013_001E": 34107.64179104478,
+        "B01001_001E": 55000.0,
+        "supermarket_count": 7,
+        "ntacode": "BX09",
+        "ntaname": "Soundview-Castle Hill-Clason Point-Harding Park",
+        "bodega_counts": 41
+    },
+    {
+        "B19013_001E": 50411.26829268293,
+        "B01001_001E": 52510.0,
+        "supermarket_count": 3,
+        "ntacode": "MN04",
+        "ntaname": "Hamilton Heights",
+        "bodega_counts": 77
+    },
+    {
+        "B19013_001E": 23057.060606060608,
+        "B01001_001E": 28962.0,
+        "supermarket_count": 2,
+        "ntacode": "BX06",
+        "ntaname": "Belmont",
+        "bodega_counts": 86
+    },
+    {
+        "B19013_001E": 76302.83950617284,
+        "B01001_001E": 80664.0,
+        "supermarket_count": 10,
+        "ntacode": "QN55",
+        "ntaname": "South Ozone Park",
+        "bodega_counts": 100
+    },
+    {
+        "B19013_001E": 24833.21568627451,
+        "B01001_001E": 41879.0,
+        "supermarket_count": 3,
+        "ntacode": "BX34",
+        "ntaname": "Melrose South-Mott Haven North",
+        "bodega_counts": 97
+    },
+    {
+        "B19013_001E": 98332.5625,
+        "B01001_001E": 22759.0,
+        "supermarket_count": 1,
+        "ntacode": "BK40",
+        "ntaname": "Windsor Terrace",
+        "bodega_counts": 16
+    },
+    {
+        "B19013_001E": 70167.03174603175,
+        "B01001_001E": 57774.0,
+        "supermarket_count": 5,
+        "ntacode": "BK73",
+        "ntaname": "North Side-South Side",
+        "bodega_counts": 102
+    },
+    {
+        "B19013_001E": 47787.920634920636,
+        "B01001_001E": 28214.0,
+        "supermarket_count": 3,
+        "ntacode": "BX37",
+        "ntaname": "Van Nest-Morris Park-Westchester Square",
+        "bodega_counts": 61
+    },
+    {
+        "B19013_001E": 83781.94736842105,
+        "B01001_001E": 27296.0,
+        "supermarket_count": 3,
+        "ntacode": "QN06",
+        "ntaname": "Jamaica Estates-Holliswood",
+        "bodega_counts": 20
+    },
+    {
+        "B19013_001E": 74896.75,
+        "B01001_001E": 41116.0,
+        "supermarket_count": 7,
+        "ntacode": "BK44",
+        "ntaname": "Madison",
+        "bodega_counts": 62
+    },
+    {
+        "B19013_001E": 63168.475,
+        "B01001_001E": 34898.0,
+        "supermarket_count": 3,
+        "ntacode": "BK41",
+        "ntaname": "Kensington-Ocean Parkway",
+        "bodega_counts": 55
+    },
+    {
+        "B19013_001E": 46504.63492063492,
+        "B01001_001E": 68838.0,
+        "supermarket_count": 6,
+        "ntacode": "MN28",
+        "ntaname": "Lower East Side",
+        "bodega_counts": 55
+    },
+    {
+        "B19013_001E": 76863.57894736843,
+        "B01001_001E": 42612.0,
+        "supermarket_count": 3,
+        "ntacode": "QN21",
+        "ntaname": "Middle Village",
+        "bodega_counts": 41
+    },
+    {
+        "B19013_001E": 120397.81034482758,
+        "B01001_001E": 43647.0,
+        "supermarket_count": 7,
+        "ntacode": "BK33",
+        "ntaname": "Carroll Gardens-Columbia Street-Red Hook",
+        "bodega_counts": 66
+    },
+    {
+        "B19013_001E": 20470.146341463416,
+        "B01001_001E": 26181.0,
+        "supermarket_count": 5,
+        "ntacode": "BX27",
+        "ntaname": "Hunts Point",
+        "bodega_counts": 69
+    },
+    {
+        "B19013_001E": 54730.08235294118,
+        "B01001_001E": 82536.0,
+        "supermarket_count": 7,
+        "ntacode": "QN29",
+        "ntaname": "Elmhurst",
+        "bodega_counts": 90
+    },
+    {
+        "B19013_001E": 111730.4,
+        "B01001_001E": 22301.0,
+        "supermarket_count": 1,
+        "ntacode": "BK64",
+        "ntaname": "Prospect Heights",
+        "bodega_counts": 25
+    },
+    {
+        "B19013_001E": 90549.76363636364,
+        "B01001_001E": 39245.0,
+        "supermarket_count": 6,
+        "ntacode": "BK69",
+        "ntaname": "Clinton Hill",
+        "bodega_counts": 61
+    },
+    {
+        "B19013_001E": 61183.6875,
+        "B01001_001E": 104103.0,
+        "supermarket_count": 2,
+        "ntacode": "BK42",
+        "ntaname": "Flatbush",
+        "bodega_counts": 155
+    },
+    {
+        "B19013_001E": 58609.056603773584,
+        "B01001_001E": 42943.0,
+        "supermarket_count": 3,
+        "ntacode": "BX52",
+        "ntaname": "Schuylerville-Throgs Neck-Edgewater Park",
+        "bodega_counts": 32
+    },
+    {
+        "B19013_001E": 72266.23255813954,
+        "B01001_001E": 31749.0,
+        "supermarket_count": 7,
+        "ntacode": "QN49",
+        "ntaname": "Whitestone",
+        "bodega_counts": 24
+    },
+    {
+        "B19013_001E": 135812.75,
+        "B01001_001E": 74137.0,
+        "supermarket_count": 5,
+        "ntacode": "BK37",
+        "ntaname": "Park Slope-Gowanus",
+        "bodega_counts": 91
+    },
+    {
+        "B19013_001E": 33542.044444444444,
+        "B01001_001E": 35319.0,
+        "supermarket_count": 2,
+        "ntacode": "BX08",
+        "ntaname": "West Farms-Bronx River",
+        "bodega_counts": 77
+    },
+    {
+        "B19013_001E": 61481.914893617024,
+        "B01001_001E": 37538.0,
+        "supermarket_count": 4,
+        "ntacode": "QN37",
+        "ntaname": "Kew Gardens Hills",
+        "bodega_counts": 21
+    },
+    {
+        "B19013_001E": 84728.30120481928,
+        "B01001_001E": 87668.0,
+        "supermarket_count": 7,
+        "ntacode": "QN17",
+        "ntaname": "Forest Hills",
+        "bodega_counts": 48
+    },
+    {
+        "B19013_001E": 111812.41666666667,
+        "B01001_001E": 46466.0,
+        "supermarket_count": 9,
+        "ntacode": "MN25",
+        "ntaname": "Battery Park City-Lower Manhattan",
+        "bodega_counts": 48
+    },
+    {
+        "B19013_001E": 79079.44117647059,
+        "B01001_001E": 22376.0,
+        "supermarket_count": 3,
+        "ntacode": "QN60",
+        "ntaname": "Kew Gardens",
+        "bodega_counts": 22
+    },
+    {
+        "B19013_001E": 60425.380952380954,
+        "B01001_001E": 23789.0,
+        "supermarket_count": 1,
+        "ntacode": "QN50",
+        "ntaname": "Elmhurst-Maspeth",
+        "bodega_counts": 27
+    },
+    {
+        "B19013_001E": 57237.431818181816,
+        "B01001_001E": 33580.0,
+        "supermarket_count": 4,
+        "ntacode": "BK27",
+        "ntaname": "Bath Beach",
+        "bodega_counts": 58
+    },
+    {
+        "B19013_001E": 56844.148148148146,
+        "B01001_001E": 89889.0,
+        "supermarket_count": 7,
+        "ntacode": "BK28",
+        "ntaname": "Bensonhurst West",
+        "bodega_counts": 154
+    },
+    {
+        "B19013_001E": 68405.35714285714,
+        "B01001_001E": 43761.0,
+        "supermarket_count": 1,
+        "ntacode": "QN35",
+        "ntaname": "Briarwood-Jamaica Hills",
+        "bodega_counts": 31
+    },
+    {
+        "B19013_001E": 86498.78260869565,
+        "B01001_001E": 34554.0,
+        "supermarket_count": 7,
+        "ntacode": "BK76",
+        "ntaname": "Greenpoint",
+        "bodega_counts": 81
+    },
+    {
+        "B19013_001E": 94893.09756097561,
+        "B01001_001E": 41724.0,
+        "supermarket_count": 4,
+        "ntacode": "SI54",
+        "ntaname": "Great Kills",
+        "bodega_counts": 23
+    },
+    {
+        "B19013_001E": 68728.39583333333,
+        "B01001_001E": 32159.0,
+        "supermarket_count": 2,
+        "ntacode": "QN30",
+        "ntaname": "Maspeth",
+        "bodega_counts": 40
+    },
+    {
+        "B19013_001E": 68049.75342465754,
+        "B01001_001E": 65167.0,
+        "supermarket_count": 8,
+        "ntacode": "BK17",
+        "ntaname": "Sheepshead Bay-Gerritsen Beach-Manhattan Beach",
+        "bodega_counts": 69
+    },
+    {
+        "B19013_001E": 115659.84848484848,
+        "B01001_001E": 23758.0,
+        "supermarket_count": 1,
+        "ntacode": "BK09",
+        "ntaname": "Brooklyn Heights-Cobble Hill",
+        "bodega_counts": 20
+    },
+    {
+        "B19013_001E": 104141.390625,
+        "B01001_001E": 46573.0,
+        "supermarket_count": 6,
+        "ntacode": "BK38",
+        "ntaname": "DUMBO-Vinegar Hill-Downtown Brooklyn-Boerum Hill",
+        "bodega_counts": 83
+    },
+    {
+        "B19013_001E": 44133.16216216216,
+        "B01001_001E": 42665.0,
+        "supermarket_count": 2,
+        "ntacode": "QN12",
+        "ntaname": "Hammels-Arverne-Edgemere",
+        "bodega_counts": 24
+    },
+    {
+        "B19013_001E": 49462.4,
+        "B01001_001E": 57757.0,
+        "supermarket_count": 3,
+        "ntacode": "QN15",
+        "ntaname": "Far Rockaway-Bayswater",
+        "bodega_counts": 38
+    },
+    {
+        "B19013_001E": 47528.41025641026,
+        "B01001_001E": 52529.0,
+        "supermarket_count": 6,
+        "ntacode": "MN01",
+        "ntaname": "Marble Hill-Inwood",
+        "bodega_counts": 59
+    },
+    {
+        "B19013_001E": 22238.345454545455,
+        "B01001_001E": 44166.0,
+        "supermarket_count": 4,
+        "ntacode": "BX17",
+        "ntaname": "East Tremont",
+        "bodega_counts": 85
+    },
+    {
+        "B19013_001E": 58676.8870967742,
+        "B01001_001E": 54754.0,
+        "supermarket_count": 6,
+        "ntacode": "QN61",
+        "ntaname": "Jamaica",
+        "bodega_counts": 114
+    },
+    {
+        "B19013_001E": 73406.83720930232,
+        "B01001_001E": 37849.0,
+        "supermarket_count": 4,
+        "ntacode": "QN76",
+        "ntaname": "Baisley Park",
+        "bodega_counts": 33
+    },
+    {
+        "B19013_001E": 78016.4,
+        "B01001_001E": 20485.0,
+        "supermarket_count": 1,
+        "ntacode": "SI25",
+        "ntaname": "Oakwood-Oakwood Beach",
+        "bodega_counts": 5
+    },
+    {
+        "B19013_001E": 78348.73076923077,
+        "B01001_001E": 21208.0,
+        "supermarket_count": 2,
+        "ntacode": "SI45",
+        "ntaname": "New Dorp-Midland Beach",
+        "bodega_counts": 25
+    },
+    {
+        "B19013_001E": 31152.916666666668,
+        "B01001_001E": 22409.0,
+        "supermarket_count": 2,
+        "ntacode": "BX75",
+        "ntaname": "Crotona Park East",
+        "bodega_counts": 43
+    },
+    {
+        "B19013_001E": 56287.87755102041,
+        "B01001_001E": 41942.0,
+        "supermarket_count": 4,
+        "ntacode": "QN63",
+        "ntaname": "Woodside",
+        "bodega_counts": 58
+    },
+    {
+        "B19013_001E": 65772.0425531915,
+        "B01001_001E": 43789.0,
+        "supermarket_count": 2,
+        "ntacode": "QN01",
+        "ntaname": "South Jamaica",
+        "bodega_counts": 43
+    },
+    {
+        "B19013_001E": 54520.90476190476,
+        "B01001_001E": 27262.0,
+        "supermarket_count": 1,
+        "ntacode": "BX10",
+        "ntaname": "Pelham Bay-Country Club-City Island",
+        "bodega_counts": 30
+    },
+    {
+        "B19013_001E": 62109.17910447761,
+        "B01001_001E": 53266.0,
+        "supermarket_count": 6,
+        "ntacode": "BK32",
+        "ntaname": "Sunset Park West",
+        "bodega_counts": 103
+    },
+    {
+        "B19013_001E": 48806.05479452055,
+        "B01001_001E": 64170.0,
+        "supermarket_count": 9,
+        "ntacode": "BK34",
+        "ntaname": "Sunset Park East",
+        "bodega_counts": 166
+    },
+    {
+        "B19013_001E": 92327.0,
+        "B01001_001E": 21032.0,
+        "supermarket_count": 2,
+        "ntacode": "QN33",
+        "ntaname": "Cambria Heights",
+        "bodega_counts": 16
+    },
+    {
+        "B19013_001E": 70805.37037037036,
+        "B01001_001E": 74094.0,
+        "supermarket_count": 10,
+        "ntacode": "QN70",
+        "ntaname": "Astoria",
+        "bodega_counts": 107
+    },
+    {
+        "B19013_001E": 84713.71014492754,
+        "B01001_001E": 54518.0,
+        "supermarket_count": 6,
+        "ntacode": "QN34",
+        "ntaname": "Queens Village",
+        "bodega_counts": 47
+    },
+    {
+        "B19013_001E": 58950.42857142857,
+        "B01001_001E": 28608.0,
+        "supermarket_count": 2,
+        "ntacode": "BX49",
+        "ntaname": "Pelham Parkway",
+        "bodega_counts": 35
+    },
+    {
+        "B19013_001E": 91336.57894736843,
+        "B01001_001E": 25941.0,
+        "supermarket_count": 3,
+        "ntacode": "QN66",
+        "ntaname": "Laurelton",
+        "bodega_counts": 23
+    },
+    {
+        "B19013_001E": 92999.52542372882,
+        "B01001_001E": 45484.0,
+        "supermarket_count": 7,
+        "ntacode": "BK45",
+        "ntaname": "Georgetown-Marine Park-Bergen Beach-Mill Basin",
+        "bodega_counts": 23
+    },
+    {
+        "B19013_001E": 29603.756097560974,
+        "B01001_001E": 33742.0,
+        "supermarket_count": 1,
+        "ntacode": "BX30",
+        "ntaname": "Kingsbridge Heights",
+        "bodega_counts": 43
+    },
+    {
+        "B19013_001E": 26323.555555555555,
+        "B01001_001E": 57214.0,
+        "supermarket_count": 3,
+        "ntacode": "BX36",
+        "ntaname": "University Heights-Morris Heights",
+        "bodega_counts": 62
+    },
+    {
+        "B19013_001E": 52551.36842105263,
+        "B01001_001E": 30294.0,
+        "supermarket_count": 2,
+        "ntacode": "BK26",
+        "ntaname": "Gravesend",
+        "bodega_counts": 35
+    },
+    {
+        "B19013_001E": 75137.7356321839,
+        "B01001_001E": 78892.0,
+        "supermarket_count": 5,
+        "ntacode": "BK31",
+        "ntaname": "Bay Ridge",
+        "bodega_counts": 128
+    },
+    {
+        "B19013_001E": 66840.42647058824,
+        "B01001_001E": 53408.0,
+        "supermarket_count": 4,
+        "ntacode": "BK43",
+        "ntaname": "Midwood",
+        "bodega_counts": 55
+    },
+    {
+        "B19013_001E": 53830.225,
+        "B01001_001E": 65589.0,
+        "supermarket_count": 6,
+        "ntacode": "BK29",
+        "ntaname": "Bensonhurst East",
+        "bodega_counts": 107
+    },
+    {
+        "B19013_001E": 60284.57142857143,
+        "B01001_001E": 32780.0,
+        "supermarket_count": 3,
+        "ntacode": "SI12",
+        "ntaname": "Mariner's Harbor-Arlington-Port Ivory-Graniteville",
+        "bodega_counts": 30
+    },
+    {
+        "B19013_001E": 52421.119047619046,
+        "B01001_001E": 34814.0,
+        "supermarket_count": 1,
+        "ntacode": "BK19",
+        "ntaname": "Brighton Beach",
+        "bodega_counts": 59
+    },
+    {
+        "B19013_001E": 65363.71428571428,
+        "B01001_001E": 19293.0,
+        "supermarket_count": 1,
+        "ntacode": "SI28",
+        "ntaname": "Port Richmond",
+        "bodega_counts": 39
+    },
+    {
+        "B19013_001E": 67180.4375,
+        "B01001_001E": 23966.0,
+        "supermarket_count": 5,
+        "ntacode": "QN56",
+        "ntaname": "Ozone Park",
+        "bodega_counts": 28
+    },
+    {
+        "B19013_001E": 75321.32258064517,
+        "B01001_001E": 26447.0,
+        "supermarket_count": 1,
+        "ntacode": "SI36",
+        "ntaname": "Old Town-Dongan Hills-South Beach",
+        "bodega_counts": 19
+    },
+    {
+        "B19013_001E": 69878.08333333333,
+        "B01001_001E": 47234.0,
+        "supermarket_count": 1,
+        "ntacode": "QN72",
+        "ntaname": "Steinway",
+        "bodega_counts": 57
+    },
+    {
+        "B19013_001E": 88421.83333333333,
+        "B01001_001E": 26887.0,
+        "supermarket_count": 1,
+        "ntacode": "SI48",
+        "ntaname": "Arden Heights",
+        "bodega_counts": 3
+    },
+    {
+        "B19013_001E": 100531.68,
+        "B01001_001E": 21870.0,
+        "supermarket_count": 2,
+        "ntacode": "SI32",
+        "ntaname": "Rossville-Woodrow",
+        "bodega_counts": 5
+    },
+    {
+        "B19013_001E": 81283.0,
+        "B01001_001E": 70560.0,
+        "supermarket_count": 10,
+        "ntacode": "BK58",
+        "ntaname": "Flatlands",
+        "bodega_counts": 65
+    },
+    {
+        "B19013_001E": 106866.54411764706,
+        "B01001_001E": 78459.0,
+        "supermarket_count": 6,
+        "ntacode": "MN32",
+        "ntaname": "Yorkville",
+        "bodega_counts": 46
+    },
+    {
+        "B19013_001E": 32887.06,
+        "B01001_001E": 28293.0,
+        "supermarket_count": 1,
+        "ntacode": "BK85",
+        "ntaname": "East New York (Pennsylvania Ave)",
+        "bodega_counts": 63
+    },
+    {
+        "B19013_001E": 55825.6037735849,
+        "B01001_001E": 58553.0,
+        "supermarket_count": 6,
+        "ntacode": "MN33",
+        "ntaname": "East Harlem South",
+        "bodega_counts": 92
+    },
+    {
+        "B19013_001E": 39021.256410256414,
+        "B01001_001E": 99982.0,
+        "supermarket_count": 14,
+        "ntacode": "BK82",
+        "ntaname": "East New York",
+        "bodega_counts": 153
+    },
+    {
+        "B19013_001E": 75708.41379310345,
+        "B01001_001E": 36587.0,
+        "supermarket_count": 5,
+        "ntacode": "BK90",
+        "ntaname": "East Williamsburg",
+        "bodega_counts": 75
+    },
+    {
+        "B19013_001E": 32739.0,
+        "B01001_001E": 33828.0,
+        "supermarket_count": 1,
+        "ntacode": "BK72",
+        "ntaname": "Williamsburg",
+        "bodega_counts": 47
+    },
+    {
+        "B19013_001E": 59821.56179775281,
+        "B01001_001E": 79075.0,
+        "supermarket_count": 3,
+        "ntacode": "BK75",
+        "ntaname": "Bedford",
+        "bodega_counts": 119
+    },
+    {
+        "B19013_001E": 25050.890410958906,
+        "B01001_001E": 51236.0,
+        "supermarket_count": 12,
+        "ntacode": "BK81",
+        "ntaname": "Brownsville",
+        "bodega_counts": 105
+    },
+    {
+        "B19013_001E": 107447.10344827586,
+        "B01001_001E": 49853.0,
+        "supermarket_count": 3,
+        "ntacode": "MN20",
+        "ntaname": "Murray Hill-Kips Bay",
+        "bodega_counts": 41
+    },
+    {
+        "B19013_001E": 59024.72549019608,
+        "B01001_001E": 70238.0,
+        "supermarket_count": 1,
+        "ntacode": "BK35",
+        "ntaname": "Stuyvesant Heights",
+        "bodega_counts": 118
+    },
+    {
+        "B19013_001E": 38892.45161290323,
+        "B01001_001E": 36805.0,
+        "supermarket_count": 4,
+        "ntacode": "BK79",
+        "ntaname": "Ocean Hill",
+        "bodega_counts": 78
+    },
+    {
+        "B19013_001E": 54654.663865546216,
+        "B01001_001E": 111782.0,
+        "supermarket_count": 6,
+        "ntacode": "BK61",
+        "ntaname": "Crown Heights North",
+        "bodega_counts": 184
+    },
+    {
+        "B19013_001E": 87386.26086956522,
+        "B01001_001E": 22335.0,
+        "supermarket_count": 1,
+        "ntacode": "MN50",
+        "ntaname": "Stuyvesant Town-Cooper Village",
+        "bodega_counts": 1
+    },
+    {
+        "B19013_001E": 108670.09302325582,
+        "B01001_001E": 26497.0,
+        "supermarket_count": 3,
+        "ntacode": "MN21",
+        "ntaname": "Gramercy",
+        "bodega_counts": 29
+    },
+    {
+        "B19013_001E": 77300.39583333333,
+        "B01001_001E": 42950.0,
+        "supermarket_count": 7,
+        "ntacode": "MN22",
+        "ntaname": "East Village",
+        "bodega_counts": 79
+    },
+    {
+        "B19013_001E": 40579.29268292683,
+        "B01001_001E": 38814.0,
+        "supermarket_count": 5,
+        "ntacode": "BX07",
+        "ntaname": "Bronxdale",
+        "bodega_counts": 49
+    },
+    {
+        "B19013_001E": 48260.745762711864,
+        "B01001_001E": 48738.0,
+        "supermarket_count": 5,
+        "ntacode": "BK83",
+        "ntaname": "Cypress Hills-City Line",
+        "bodega_counts": 89
+    },
+    {
+        "B19013_001E": 54995.489795918365,
+        "B01001_001E": 39594.0,
+        "supermarket_count": 1,
+        "ntacode": "BK63",
+        "ntaname": "Crown Heights South",
+        "bodega_counts": 54
+    },
+    {
+        "B19013_001E": 49361.680555555555,
+        "B01001_001E": 54956.0,
+        "supermarket_count": 2,
+        "ntacode": "BK96",
+        "ntaname": "Rugby-Remsen Village",
+        "bodega_counts": 76
+    },
+    {
+        "B19013_001E": 46951.96,
+        "B01001_001E": 66353.0,
+        "supermarket_count": 6,
+        "ntacode": "BX44",
+        "ntaname": "Williamsbridge-Olinville",
+        "bodega_counts": 113
+    },
+    {
+        "B19013_001E": 58814.61016949153,
+        "B01001_001E": 39738.0,
+        "supermarket_count": 2,
+        "ntacode": "BX03",
+        "ntaname": "Eastchester-Edenwald-Baychester",
+        "bodega_counts": 40
+    },
+    {
+        "B19013_001E": 64900.53191489362,
+        "B01001_001E": 31097.0,
+        "supermarket_count": 1,
+        "ntacode": "BX31",
+        "ntaname": "Allerton-Pelham Gardens",
+        "bodega_counts": 20
+    },
+    {
+        "B19013_001E": 58130.42307692308,
+        "B01001_001E": 54801.0,
+        "supermarket_count": 3,
+        "ntacode": "MN09",
+        "ntaname": "Morningside Heights",
+        "bodega_counts": 30
+    },
+    {
+        "B19013_001E": 111138.35135135135,
+        "B01001_001E": 130223.0,
+        "supermarket_count": 16,
+        "ntacode": "MN12",
+        "ntaname": "Upper West Side",
+        "bodega_counts": 69
+    },
+    {
+        "B19013_001E": 52725.25454545455,
+        "B01001_001E": 72175.0,
+        "supermarket_count": 4,
+        "ntacode": "MN35",
+        "ntaname": "Washington Heights North",
+        "bodega_counts": 89
+    },
+    {
+        "B19013_001E": 53952.26153846154,
+        "B01001_001E": 91865.0,
+        "supermarket_count": 4,
+        "ntacode": "MN36",
+        "ntaname": "Washington Heights South",
+        "bodega_counts": 106
+    },
+    {
+        "B19013_001E": 65761.43243243243,
+        "B01001_001E": 28313.0,
+        "supermarket_count": 3,
+        "ntacode": "QN57",
+        "ntaname": "Lindenwood-Howard Beach",
+        "bodega_counts": 14
+    },
+    {
+        "B19013_001E": 45442.34782608696,
+        "B01001_001E": 0.0,
+        "supermarket_count": 1,
+        "ntacode": "QN98",
+        "ntaname": "Airport",
+        "bodega_counts": 1
+    },
+    {
+        "B19013_001E": 70386.14285714286,
+        "B01001_001E": 88884.0,
+        "supermarket_count": 7,
+        "ntacode": "BK50",
+        "ntaname": "Canarsie",
+        "bodega_counts": 61
+    },
+    {
+        "B19013_001E": 44776.53846153846,
+        "B01001_001E": 12553.0,
+        "supermarket_count": 3,
+        "ntacode": "BK93",
+        "ntaname": "Starrett City",
+        "bodega_counts": 2
+    },
+    {
+        "B19013_001E": 53696.42857142857,
+        "B01001_001E": 25281.0,
+        "supermarket_count": 6,
+        "ntacode": "SI37",
+        "ntaname": "Stapleton-Rosebank",
+        "bodega_counts": 45
+    },
+    {
+        "B19013_001E": 59465.5,
+        "B01001_001E": 21480.0,
+        "supermarket_count": 1,
+        "ntacode": "SI08",
+        "ntaname": "Grymes Hill-Clifton-Fox Hills",
+        "bodega_counts": 10
+    },
+    {
+        "B19013_001E": 117773.14545454546,
+        "B01001_001E": 63920.0,
+        "supermarket_count": 10,
+        "ntacode": "MN14",
+        "ntaname": "Lincoln Square",
+        "bodega_counts": 19
+    },
+    {
+        "B19013_001E": 36911.434782608696,
+        "B01001_001E": 31120.0,
+        "supermarket_count": 4,
+        "ntacode": "BK21",
+        "ntaname": "Seagate-Coney Island",
+        "bodega_counts": 38
+    },
+    {
+        "B19013_001E": 80359.80769230769,
+        "B01001_001E": 16417.0,
+        "supermarket_count": 1,
+        "ntacode": "SI14",
+        "ntaname": "Grasmere-Arrochar-Ft. Wadsworth",
+        "bodega_counts": 12
+    },
+    {
+        "B19013_001E": 42424.10526315789,
+        "B01001_001E": 17252.0,
+        "supermarket_count": 1,
+        "ntacode": "BK23",
+        "ntaname": "West Brighton",
+        "bodega_counts": 7
+    },
+    {
+        "B19013_001E": 38607.18803418803,
+        "B01001_001E": 693.0,
+        "supermarket_count": 1,
+        "ntacode": "BX99",
+        "ntaname": "park-cemetery-etc-Bronx",
+        "bodega_counts": 8
+    },
+    {
+        "B19013_001E": 17100.935483870966,
+        "B01001_001E": 53833.0,
+        "supermarket_count": 8,
+        "ntacode": "BX39",
+        "ntaname": "Mott Haven-Port Morris",
+        "bodega_counts": 122
+    },
+    {
+        "B19013_001E": 89709.73958333333,
+        "B01001_001E": 2033.0,
+        "supermarket_count": 1,
+        "ntacode": "MN99",
+        "ntaname": "park-cemetery-etc-Manhattan",
+        "bodega_counts": 3
+    },
+    {
+        "B19013_001E": 81723.52777777778,
+        "B01001_001E": 29840.0,
+        "supermarket_count": 3,
+        "ntacode": "QN42",
+        "ntaname": "Oakland Gardens",
+        "bodega_counts": 7
+    },
+    {
+        "B19013_001E": 82593.94117647059,
+        "B01001_001E": 22196.0,
+        "supermarket_count": 1,
+        "ntacode": "QN03",
+        "ntaname": "Springfield Gardens South-Brookville",
+        "bodega_counts": 8
+    },
+    {
+        "B19013_001E": 62696.44594594595,
+        "B01001_001E": 69649.0,
+        "supermarket_count": 11,
+        "ntacode": "QN31",
+        "ntaname": "Hunters Point-Sunnyside-West Maspeth",
+        "bodega_counts": 138
+    },
+    {
+        "B19013_001E": 51492.1724137931,
+        "B01001_001E": 20166.0,
+        "supermarket_count": 2,
+        "ntacode": "QN62",
+        "ntaname": "Queensboro Hill",
+        "bodega_counts": 8
+    },
+    {
+        "B19013_001E": 86003.82692307692,
+        "B01001_001E": 42160.0,
+        "supermarket_count": 6,
+        "ntacode": "SI05",
+        "ntaname": "New Springville-Bloomfield-Travis",
+        "bodega_counts": 24
+    },
+    {
+        "B19013_001E": 94276.27777777778,
+        "B01001_001E": 32077.0,
+        "supermarket_count": 7,
+        "ntacode": "SI24",
+        "ntaname": "Todt Hill-Emerson Hill-Heartland Village-Lighthouse Hill",
+        "bodega_counts": 10
+    },
+    {
+        "B19013_001E": 130638.58108108108,
+        "B01001_001E": 65393.0,
+        "supermarket_count": 12,
+        "ntacode": "MN23",
+        "ntaname": "West Village",
+        "bodega_counts": 77
+    },
+    {
+        "B19013_001E": 125944.48,
+        "B01001_001E": 77490.0,
+        "supermarket_count": 17,
+        "ntacode": "MN13",
+        "ntaname": "Hudson Yards-Chelsea-Flatiron-Union Square",
+        "bodega_counts": 88
+    },
+    {
+        "B19013_001E": 58895.67647058824,
+        "B01001_001E": 51633.0,
+        "supermarket_count": 3,
+        "ntacode": "BK91",
+        "ntaname": "East Flatbush-Farragut",
+        "bodega_counts": 57
+    },
+    {
+        "B19013_001E": 94975.6,
+        "B01001_001E": 24516.0,
+        "supermarket_count": 2,
+        "ntacode": "SI07",
+        "ntaname": "Westerleigh",
+        "bodega_counts": 30
+    },
+    {
+        "B19013_001E": 97582.9,
+        "B01001_001E": 29801.0,
+        "supermarket_count": 1,
+        "ntacode": "SI01",
+        "ntaname": "Annadale-Huguenot-Prince's Bay-Eltingville",
+        "bodega_counts": 11
+    },
+    {
+        "B19013_001E": 81216.04166666667,
+        "B01001_001E": 23834.0,
+        "supermarket_count": 3,
+        "ntacode": "SI11",
+        "ntaname": "Charleston-Richmond Valley-Tottenville",
+        "bodega_counts": 21
+    },
+    {
+        "B19013_001E": 64156.230769230766,
+        "B01001_001E": 44715.0,
+        "supermarket_count": 2,
+        "ntacode": "BX62",
+        "ntaname": "Woodlawn-Wakefield",
+        "bodega_counts": 57
+    },
+    {
+        "B19013_001E": 88111.52,
+        "B01001_001E": 25400.0,
+        "supermarket_count": 2,
+        "ntacode": "QN45",
+        "ntaname": "Douglas Manor-Douglaston-Little Neck",
+        "bodega_counts": 9
+    },
+    {
+        "B19013_001E": 86631.51282051283,
+        "B01001_001E": 26680.0,
+        "supermarket_count": 3,
+        "ntacode": "QN05",
+        "ntaname": "Rosedale",
+        "bodega_counts": 15
+    },
+    {
+        "B19013_001E": 66294.93827160494,
+        "B01001_001E": 76103.0,
+        "supermarket_count": 10,
+        "ntacode": "QN20",
+        "ntaname": "Ridgewood",
+        "bodega_counts": 124
+    },
+    {
+        "B19013_001E": 52810.403846153844,
+        "B01001_001E": 72809.0,
+        "supermarket_count": 6,
+        "ntacode": "BK78",
+        "ntaname": "Bushwick South",
+        "bodega_counts": 134
+    },
+    {
+        "B19013_001E": 56578.46575342466,
+        "B01001_001E": 56384.0,
+        "supermarket_count": 7,
+        "ntacode": "BK77",
+        "ntaname": "Bushwick North",
+        "bodega_counts": 118
+    },
+    {
+        "B19013_001E": 27247.853658536584,
+        "B01001_001E": 28366.0,
+        "supermarket_count": 2,
+        "ntacode": "BX40",
+        "ntaname": "Fordham South",
+        "bodega_counts": 63
+    },
+    {
+        "B19013_001E": 122297.125,
+        "B01001_001E": 43835.0,
+        "supermarket_count": 10,
+        "ntacode": "MN24",
+        "ntaname": "SoHo-TriBeCa-Civic Center-Little Italy",
+        "bodega_counts": 90
+    },
+    {
+        "B19013_001E": 47005.482142857145,
+        "B01001_001E": 42766.0,
+        "supermarket_count": 6,
+        "ntacode": "MN27",
+        "ntaname": "Chinatown",
+        "bodega_counts": 113
+    },
+    {
+        "B19013_001E": 29793.507246376812,
+        "B01001_001E": 54076.0,
+        "supermarket_count": 4,
+        "ntacode": "BX41",
+        "ntaname": "Mount Hope",
+        "bodega_counts": 100
+    },
+    {
+        "B19013_001E": 59905.21621621621,
+        "B01001_001E": 26949.0,
+        "supermarket_count": 3,
+        "ntacode": "QN10",
+        "ntaname": "Breezy Point-Belle Harbor-Rockaway Park-Broad Channel",
+        "bodega_counts": 23
+    },
+    {
+        "B19013_001E": 93143.23255813954,
+        "B01001_001E": 27643.0,
+        "supermarket_count": 3,
+        "ntacode": "QN43",
+        "ntaname": "Bellerose",
+        "bodega_counts": 12
+    },
+    {
+        "B19013_001E": 101497.33333333333,
+        "B01001_001E": 24631.0,
+        "supermarket_count": 1,
+        "ntacode": "QN44",
+        "ntaname": "Glen Oaks-Floral Park-New Hyde Park",
+        "bodega_counts": 16
+    },
+    {
+        "B19013_001E": 24734.4,
+        "B01001_001E": 38629.0,
+        "supermarket_count": 3,
+        "ntacode": "BX26",
+        "ntaname": "Highbridge",
+        "bodega_counts": 57
+    },
+    {
+        "B19013_001E": 25394.625,
+        "B01001_001E": 64459.0,
+        "supermarket_count": 7,
+        "ntacode": "BX14",
+        "ntaname": "East Concourse-Concourse Village",
+        "bodega_counts": 104
+    },
+    {
+        "B19013_001E": 21535.88679245283,
+        "B01001_001E": 38312.0,
+        "supermarket_count": 5,
+        "ntacode": "BX63",
+        "ntaname": "West Concourse",
+        "bodega_counts": 70
+    },
+    {
+        "B19013_001E": 45201.6,
+        "B01001_001E": 86144.0,
+        "supermarket_count": 9,
+        "ntacode": "MN03",
+        "ntaname": "Central Harlem North-Polo Grounds",
+        "bodega_counts": 95
+    },
+    {
+        "B19013_001E": 42513.04,
+        "B01001_001E": 50658.0,
+        "supermarket_count": 2,
+        "ntacode": "BX28",
+        "ntaname": "Van Cortlandt Village",
+        "bodega_counts": 56
+    },
+    {
+        "B19013_001E": 35240.078125,
+        "B01001_001E": 61330.0,
+        "supermarket_count": 5,
+        "ntacode": "MN34",
+        "ntaname": "East Harlem North",
+        "bodega_counts": 131
+    },
+    {
+        "B19013_001E": 65330.21052631579,
+        "B01001_001E": 60377.0,
+        "supermarket_count": 6,
+        "ntacode": "QN53",
+        "ntaname": "Woodhaven",
+        "bodega_counts": 60
+    },
+    {
+        "B19013_001E": 37375.28,
+        "B01001_001E": 40032.0,
+        "supermarket_count": 1,
+        "ntacode": "BX43",
+        "ntaname": "Norwood",
+        "bodega_counts": 76
+    },
+    {
+        "B19013_001E": 58919.72222222222,
+        "B01001_001E": 20364.0,
+        "supermarket_count": 1,
+        "ntacode": "BK46",
+        "ntaname": "Ocean Parkway South",
+        "bodega_counts": 13
+    },
+    {
+        "B19013_001E": 37830.47692307692,
+        "B01001_001E": 68600.0,
+        "supermarket_count": 20,
+        "ntacode": "QN22",
+        "ntaname": "Flushing",
+        "bodega_counts": 71
+    },
+    {
+        "B19013_001E": 48383.74193548387,
+        "B01001_001E": 24750.0,
+        "supermarket_count": 3,
+        "ntacode": "QN23",
+        "ntaname": "College Point",
+        "bodega_counts": 23
+    },
+    {
+        "B19013_001E": 55744.782608695656,
+        "B01001_001E": 31284.0,
+        "supermarket_count": 2,
+        "ntacode": "SI22",
+        "ntaname": "West New Brighton-New Brighton-St. George",
+        "bodega_counts": 57
+    },
+    {
+        "B19013_001E": 76511.11764705883,
+        "B01001_001E": 17349.0,
+        "supermarket_count": 1,
+        "ntacode": "SI35",
+        "ntaname": "New Brighton-Silver Lake",
+        "bodega_counts": 24
+    },
+    {
+        "B19013_001E": 71638.49612403101,
+        "B01001_001E": 328.0,
+        "supermarket_count": 3,
+        "ntacode": "BK99",
+        "ntaname": "park-cemetery-etc-Brooklyn",
+        "bodega_counts": 15
+    },
+    {
+        "B19013_001E": 86975.47368421052,
+        "B01001_001E": 28157.0,
+        "supermarket_count": 2,
+        "ntacode": "BX22",
+        "ntaname": "North Riverdale-Fieldston-Riverdale",
+        "bodega_counts": 13
+    },
+    {
+        "B19013_001E": 72579.66666666667,
+        "B01001_001E": 31123.0,
+        "supermarket_count": 6,
+        "ntacode": "BX29",
+        "ntaname": "Spuyten Duyvil-Kingsbridge",
+        "bodega_counts": 50
+    },
+    {
+        "B19013_001E": 73170.02325581395,
+        "B01001_001E": 35677.0,
+        "supermarket_count": 3,
+        "ntacode": "QN19",
+        "ntaname": "Glendale",
+        "bodega_counts": 35
+    },
+    {
+        "B19013_001E": 66773.15730337078,
+        "B01001_001E": 67.0,
+        "supermarket_count": 1,
+        "ntacode": "QN99",
+        "ntaname": "park-cemetery-etc-Queens",
+        "bodega_counts": 8
+    }
+]
