@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Student work from Colloquium 1 of the Columbia GSAPP CDP Program in 2023.">
+    <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2023/favicon.ico" sizes="any">
+    <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2023/favicon.svg" type="image/svg+xml">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Elizabeth Ogunsanya</title>
+</head>
+
+<body>
+    <header>
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <h1>Blood-soaked Decor: Movement of Cultural Artifacts away from the Kingdom of Benin</h1></span>
+        </div>
+
+    </header>
+
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="1context_thesis.html">Context and Research Question</a>
+            <a href="2data.html">Data</a>
+            <a href="3methodology.html">Methodology</a>
+            <a href="4prototypes.html">Prototypes</a>
+            <a href="5appendix.html">Appendix</a>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Project Goals</h2>
+            <ul>
+                <li>
+                    <b><i>Move away from the static model </i></b>of Digital Benin’s digital archive, using augmented reality to enhance each user’s 
+                    awareness of the intended uses of the cultural artifacts and the cultural conditions within which each object was crafted. 
+                    <ul>
+                        <li>Beginning with a physical object or set of objects that can be placed throughout the space to prompt the user to engage 
+                            with the AR versions of the object as an exercise in redefining the context of these objects by associating them with 
+                            spaces and objects familiar to the user
+                        </li>
+                        <li>
+                            Moving on to mapping and exploring less-conventional ways to do so.
+                        </li>
+                        <li>
+                            Including a physical document that presents the analyses, proposed interactions with historical artifacts, historical context, etc.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b><i>Follow the journeys of the objects through space and time</i></b> to draw attention to the individuals and groups involved 
+                    their removal and the gaps in the available information.
+                </li>
+                <li>
+                    <b><i>Change the context of how Africans interact with historical artifacts </i></b>as integral parts of our complex history with 
+                    colonialism and current wrestles with neo-colonialism. In doing so add to the practical and theoretical applications of ideas in the 
+                    realm of post-colonial, afro-futurist discourse in the realm of decolonization.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Methodology</h2>
+            <ul>
+                <li>
+                    Define what cultural artifacts to include by broadening the language: shift from <b><i>Benin Bronzes</i></b> to <b><i>Benin cultural artifacts.</i></b>
+                </li>
+                <li>
+                    Collate available data on the 5,246 cultural artifacts on Digital Benin.
+                </li>
+                <li>
+                    Collect and categorize images of these documented cultural artifacts.
+                </li>
+                <li>
+                    Spatialize the movement of artifacts:
+                    <ul>
+                        <li>
+                            General spatial displacement
+                        </li>
+                        <li>
+                            Networks of individuals and institutions participating in the displacement of these artifacts
+                        </li>
+                        <li>
+                            Connect a sample of artifacts to the aforementioned networks
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="container">
+                <img src="Images\refugee_maps.gif" alt="GIF showing some of the points on the refugee map made by The Refugee Project" class="standalone-image">
+                <p>
+                    A starting point for visualizing general spatial displacement is refugee maps that visualize the displacement of people at country levels. 
+                    The most important being the the 2022 refugee map by <a href="https://www.therefugeeproject.org/#/2022">The Refugee Project</a>. 
+                </p>
+                <img src="Images\basic_project_refugee_map.png" alt="One refugee map of the cultural artifacts of Edo, showing where the artifacts are now" class="standalone-image">
+                <img src="Images\refugee_map2.png" alt="Another refugee map of the cultural artifacts of Edo" class="standalone-image">
+            </div>
+        </section>
+
+        <section>
+            <h2>Network Analysis</h2>
+            <p>I created a new dataset to show which institutions and individuals were involved in moving the artifacts from Benin to one of the 
+            documented 131 institutions. Connecting all entities involved in the movement of each artifact from Benin to the institutions that hold 
+            them today. Used a force algorithm to disperse the network’s nodes in a manner that clusters those with stronger connections and shows 
+            which entities (British Museum, Pitt-Rivers Museum, Sydney Burney, Sotheby’s, etc.) are most connected to the rest.</p>
+            <p>Network analysis of all the individuals and institutions documented by Digital Benin as being involved in moving or repatriating the Edo cultural artifacts</p>
+            <iframe
+                width="800"
+                height="600"
+                src="https://ouestware.gitlab.io/retina/beta/#/embed/?url=https%3A%2F%2Fgist.githubusercontent.com%2FTompotmelon%2F5e39dc3fe6e52386296471a76409d0fa%2Fraw%2F4a41931348540674f875ab154bec646a4db3be9e%2Fnetwork-97518609-75c.gexf"
+                frameBorder="0"
+                title="Retina"
+                allowFullScreen></iframe>
+            <p>
+                Given the difficulty in reading these graphs, I then took a sample of that new dataset, the soldiers who participated in the British colonial military campaign and were identified by the institutions. Mapped their 
+                connections through time and visualized it to highlight the entities that connected others the most.
+                <ul>
+                    <li>Sample of 140 entities connected to 36 soldiers</li>
+                    <li>Color: communities of nodes</li>
+                    <li>Size: connectivity.</li>
+                    <li>Goal: identify the most influential entities</li>
+                </ul>
+            </p>
+            <p>
+                There are gaps in the data:
+                <ul>
+                    <li>The time that some entities possessed and handed over the artifacts</li>
+                    <li>Transfer of funds between entities</li>
+                    <li>The artisans directly attributed are those whose work was “commissioned”</li>
+                </ul>
+
+            </p>
+            <p>Network analysis of a sample set of individuals and institutions involved in moving or repatriating the Edo cultural artifacts</p>
+            <iframe
+                width="800"
+                height="600"
+                src="https://ouestware.gitlab.io/retina/beta/#/embed/?url=https%3A%2F%2Fgist.githubusercontent.com%2FTompotmelon%2Fa63f17dc4c589dafbc56bcb6912c257a%2Fraw%2F0bda6a96c68910c0afc86fa05bb4638137ff6db2%2Fnetwork-b104a68b-a0c.gexf"
+                frameBorder="0"
+                title="Retina"
+                allowFullScreen></iframe>
+            <p>
+                The smaller network analysis highlighted the influence of Edo entities in bringing back artifacts: members of the royal court of 
+                Benin, guild masters, kings. It also highlighted the role the colonial Nigerian government played in the very first restitution 
+                efforts in the 1950’s.
+            </p>
+        </section>
+
+        <section>
+            <!-- Arrow to go to the top of the page -->
+            <div id="top-arrow">↑</div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+
+    <!-- Link to your JavaScript files -->
+    <script src="script.js"></script>
+</body>
+
+</html>
