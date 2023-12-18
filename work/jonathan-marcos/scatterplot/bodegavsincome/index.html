@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Scatter Plot</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-statistics/7.0.0/simple-statistics.min.js"></script>
+    <style>
+        body {
+            background-color: #b9c3be;
+        }
+
+        #tooltip {
+            position: absolute;
+            opacity: 0;
+            background-color: white;
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="tooltip"></div>
+    <script>
+        // Load the geojson data
+        d3.json("../combinedneighborhood.geojson").then(function(geojsonData) {
+            // Extract the required data from geojsonData
+                    const data = geojsonData.features.map(function(feature) {
+            return {
+                ntaname: feature.properties.ntaname || "N/A",
+                bodega_counts: feature.properties.bodega_counts || 0,
+                count_supermarkets: feature.properties.count_supermarkets || 0,
+                B19013_001E: feature.properties.B19013_001E || 0
+            };
+        });
+            // Set the dimensions of the canvas / graph
+            const margin = {top: 30, right: 20, bottom: 70, left: 50},
+                width = 800 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+
+            // Set up the SVG container
+            const svg = d3.select("body").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            // Set the scales
+            const x = d3.scaleLinear().domain([0, d3.max(data, d => d.bodega_counts)]).range([0, width]);
+            const y = d3.scaleLinear().domain([0, (d3.max(data, d => d.count_supermarkets)+2)]).range([height, 0]);
+            const radiusScale = d3.scaleSqrt().domain(d3.extent(data, d => d.B19013_001E)).range([0.01, 10]);
+            const colorScale = d3.scaleSequential(d3.interpolateRdYlGn).domain(d3.extent(data, d => d.B19013_001E));
+
+            // Create a tooltip
+            const tooltip = d3.select("#tooltip");
+
+            // Tooltip mouseover event handler
+// Tooltip mouseover event handler
+// function onMouseOver(event, d) {
+//     console.log(d.ntaname)
+//     tooltip.transition()
+//         .duration(200)
+//         .style("opacity", .9);
+//     tooltip.html("NTA Name: " + (d.ntaname || "N/A") 
+//                     + "<br/>Bodegas Count: " + (d.bodega_counts || 0)
+//                     + "<br/>Supermarkets Count: " + (d.count_supermarkets || 0)
+//                     + "<br/>B19013_001E: " + (d.B19013_001E || 0))
+//         .style("left", (event.pageX) + "px")
+//         .style("top", (event.pageY - 28) + "px");
+// }
+            // // Tooltip mouseout event handler
+            // function onMouseOut(d) {
+            //     tooltip.transition()
+            //         .duration(500)
+            //         .style("opacity", 0);
+            // }
+            
+            // Add the X Axis
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x));
+
+            // Add X Axis legend
+            svg.append("text")             
+                .attr("transform", "translate(" + (width/2) + " ," + (height + margin.top + 20) + ")")
+                .style("text-anchor", "middle")
+                .style("font-family", "Helvetica") // Set the font-family to Helvetica
+                .style("font-size", "14px")
+                .text("Bodegas Count");
+
+            // Add the Y Axis
+            svg.append("g")
+                .call(d3.axisLeft(y));
+
+            // Add Y Axis legend
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 0 - margin.left)
+                .attr("x",0 - (height / 2))
+                .attr("dy", "1em")
+                .style("text-anchor", "middle")
+                .style("font-family", "Helvetica") // Set the font-family to Helvetica
+                .style("font-size", "14px")
+                .text("Supermarkets Count");
+
+// Add the scatterplot points
+svg.selectAll(".dot-group")
+    .data(data)
+    .enter()
+    .append("g")
+    .attr("class", "dot-group")
+    .on("mouseover", function (event, d) {
+        // Mouseover event handler
+        const group = d3.select(this);
+        const label = group.select(".label");
+
+        label.style("opacity", 1); // Show the label
+        onMouseOver(event, d);
+    })
+    .on("mouseout", function () {
+        // Mouseout event handler
+        const group = d3.select(this);
+        group.select(".label")
+            .style("opacity", 0); // Hide the label
+        onMouseOut();
+    })
+    .each(function (d) {
+        const group = d3.select(this);
+
+        group.append("circle")
+            .attr("r", d => radiusScale(d.B19013_001E))
+            .attr("cx", d => x(d.bodega_counts))
+            .attr("cy", d => y(d.count_supermarkets))
+            .style("stroke", "none")
+            .style("fill", d => colorScale(d.B19013_001E));
+
+        // Add the label with initial opacity set to 0
+        const label = group.append("text")
+            .attr("class", "label")
+            .style("font-family", "Helvetica") // Set the font-family to Helvetica
+            .style("font-size", "12px")
+            .style("fill", "black")
+            .style("text-anchor", "start")
+            .style("opacity", 0); // Initial opacity set to 0
+
+        // Add the "ntaname" property to the label
+        label.append("tspan")
+            .text("NTA Name: " + (d.ntaname || "N/A"))
+            .attr("x", () => {
+                return width - 250;
+            })
+            .attr("y", 10) // Move the label down by 25 pixels
+            .attr("dy", "1.3em");
+
+        // Add the label text with line breaks
+        label.append("tspan")
+            .text("Average Income: " + (d.B19013_001E || 0))
+            .attr("x", () => {
+                return width - 250;
+            })
+            .attr("y", 25) // Adjust the vertical position for the second line
+            .attr("dy", "1.3em");
+
+        label.append("tspan")
+            .text("Bodegas Count: " + (d.bodega_counts || 0))
+            .attr("x", () => {
+                return width - 250;
+            })
+            .attr("y", 40) // Adjust the vertical position for the third line
+            .attr("dy", "1.3em");
+
+        label.append("tspan")
+            .text("Supermarkets Count: " + (d.count_supermarkets || 0))
+            .attr("x", () => {
+                return width - 250;
+            })
+            .attr("y", 55) // Adjust the vertical position for the fourth line
+            .attr("dy", "1.3em");
+
+        // Check for label collisions and adjust position
+        const labelNodes = label.nodes();
+        for (let i = 1; i < labelNodes.length; i++) {
+            const prevLabel = labelNodes[i - 1];
+            const currLabel = labelNodes[i];
+            const prevLabelBox = prevLabel.getBBox();
+            const currLabelBox = currLabel.getBBox();
+
+            // Check if the current label overlaps with the previous label
+            if (currLabelBox.y < prevLabelBox.y + prevLabelBox.height) {
+                // Move the current label below the previous label
+                const yOffset = prevLabelBox.y + prevLabelBox.height - currLabelBox.y + 5;
+                d3.select(currLabel).attr("transform", `translate(0, ${yOffset})`);
+            }
+        }
+    });
+
+        });
+    </script>
+</body>
+</html>
+
