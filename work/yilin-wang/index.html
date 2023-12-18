@@ -3,6 +3,7 @@ student: Yilin Wang
 layout: blank.liquid
 tags:
 - students
+image: final_review/cover image.png
 ---
 
 <!DOCTYPE html>
@@ -35,7 +36,7 @@ tags:
 
     <div class="header-title">
       <div class="h1">
-        <a class="fade" href="/">Computational Design Practices</a>
+        <a class="fade" href="/">Computational Design Practice</a>
       </div>
       <div class="h2">GSAPP CDP 2023-4 Colloquium II</div>
     </div>
@@ -61,9 +62,10 @@ tags:
           <!-- ALL WORK SHOULD BE CONTAINED HERE. -->
 
           <div class="toc full">
-            <h2>Table of Contents</h2>
+            <h2>[ Urban-Climate GAN ]
+            </h2>
             <ul>
-              <li><a href="#assignment-1">1 &ndash; Capstone Project Review2</a></li>
+              <li><a > Final Review of Colloquium2: Explore/ Explain/ Propose</a></li>
               <!-- <li><a href="#assignment-2">2 &ndash; Idea2</a></li> -->
               <!-- <li><a href="#assignment-3">3 &ndash; Idea3</a></li> -->
 
@@ -71,193 +73,417 @@ tags:
           </div>
 
           <div class="full assignment">
-            <h1 id="assignment-1">1 &ndash; Capstone Project Idea</h1>
-            <h2>Urban Morphology Generator responsive to local climate by GAN</h2>
+            <h1 id="assignment-1">1 &ndash; Explore</h1>
+            <h2>Urban 3D Morphology prediction model adaptive to local climate zones(lcz) classification
+            </h2>
             
-          </div>
-
-          <div class="half"
-            <img src="pocket park examples.png">
           </div>
 
           <div class="full">
-            <h2>Research Question and Research Gap</h2>
+            <h2>Explore/ Experience</h2>
             <p>
-              The realm of computational urban design (CUrbD) is multifaceted, with designs shaped by factors like 
-              street block shape, orientation, program, density, and greenery. While micro-climate considerations 
-              usually come into play during outcome evaluation, their potential as adaptive factors in initial stages 
-              is often overlooked.
+              At the first few weeks of this semester, I explored on issues how AI plays the role as a tool in Computational
+              Design. And I have tried some experienment on different aspects of this issue.
+            </p>
+
+          </div>
+
+          <div class="half">
+            <h2>Experience on combining AI with design / data visualziation           </h2>
+            <p>
+              The first experience is combining parametric design with stable diffusion rendering. Stable Diffusion Webui
+              is originally a text/image to image algorithm, which would be great for architectural designers to make renderings
+              much more conveniently. I combine this AI part with grasshopper parametric design, so as to make renders interactively
+              and conveniently as parametric architectural model changes to every option.
             </p>
 
             <p>
-              Current CUrbD approaches employing GANs, especially models like pix2pix, primarily predict urban texture 
-              and imageability, focusing on visual representation due to the 2D limitations of these models. Meanwhile
-              the problem of AI is that it could only generates believable images instead of understanding them, not 
-              even to say automate our design process.
+              The second experience is to integrate advanced Computer Vision technologies with data visualization in javascript
+              /mapbox. The method for creating dataset is to firstly utilize google api to download street view images and then employ
+              computer vision to make semantic segmentation for each image, and finally calculate each components' ratio in images.
+
+
+            </p>
+          </div>
+
+          
+
+          <div class="half">
+            <video  controls>
+              <source src="final_review/final_presentation_short.mp4" type="video/mp4">
+              您的浏览器不支持视频标签。
+            </video>
+            
+          </div>
+
+          <div class="half">
+            <img src="final_review/SD1.png">
+          </div>
+
+          <div class="half">
+            <img src="final_review/SD2.png">
+          </div>
+
+          <div class="half">
+            <h2>Research on GAN (pix2pix) algorithm           </h2>
+            <p>
+              Generative Adversarial Networks (GANs) are a type of deep learning model consisting of two parts: 
+              a generator and a discriminator. The generator is responsible for creating realistic-looking data, 
+              while the discriminator's job is to distinguish between data produced by the generator and real data. 
+              Through this adversarial process, the generator learns to produce increasingly realistic data.
+
             </p>
 
             <p>
-              This raises the pivotal questions: Can we seamlessly integrate AI into adaptive urban morphology planning 
-              grounded in local climate systems? And, is it possible to fully automate this design process, emphasizing 
-              adaptive design over mere visual representation? Can we redefine the CUrbD framework by using climate 
-              data (GIS images) as initial inputs, allowing urban morphology to dynamically respond to local climate 
-              variations?
+              Pix2pix is a specialized form of GAN designed for paired image-to-image translation. It learns to 
+              transform an input image into an output image through training, making it suitable for tasks like style 
+              transfer, colorization, and more. Pix2pix trains with paired input and output images, enabling it to 
+              learn how to convert one type of image into another.
+
+
+
+            </p>
+          </div>
+
+          <div class="half">
+            <img src="final_review/pix2pix diagram.jpg">
+            
+          </div>
+
+          <div class="full">
+            <img src="final_review/pix2pix(1).png">
+            
+          </div>
+          
+
+          <div class="full">
+            
+            <h2>Existing Research on GAN as a tool for city planning</h2>
+            <p>
+              Here is a piece of paper on how to use GAN in urban planning. The first one is to utilize GAN to generate imagined
+              building footprint for blocks and then designers make 3D model based on this. The paired input and 
+              output images are empty block boundaries and the ground truth building footprint in respective blocks.
+
             </p>
             
-            <h2>Computational tools and design methods</h2>
-            <p>
-              Data Collection & Preprocessing:  I'm focusing on obtaining meteorological information and city plan images from major cities around the world. The rationale behind this selection is twofold:
+          </div>
 
-              Diverse Climates: By targeting a range of cities, the dataset will encompass a broad spectrum of climatic conditions, ensuring that the GAN model is trained with comprehensive and diverse information.
+          <div class="half">
+            <img src="final_review/R1.1.png">
+          </div>
+
+          <div class="half">
+            <img src="final_review/R1.2.png">
+          </div>
+
+          <div class="half">
+            
+            <h2>Local Climate Zone(LCZ) in micro climate analysis of urban planning            </h2>
+            <p>
+              Urban has endured severe micro-climate situation such as urban heat island, urban heat wave, and flooding.
+
+            </p>
+            <p>
+              Local Climate Zones (LCZ) maps play a crucial role in urban planning by providing detailed 
+              classifications of urban and natural environments based on thermal and physical properties. These maps 
+              facilitate the understanding of microclimates within cities, aiding in designing more sustainable and 
+              climate-resilient urban spaces. 
+
+            </p>
+            <p>
+              By categorizing areas into distinct climate zones, LCZ maps help urban planners and environmental 
+              researchers to assess the impact of urban design on local temperature, air quality, and energy 
+              consumption. This data-driven approach enables informed decision-making for urban development, 
+              prioritizing both environmental sustainability and the well-being of urban inhabitants.
+
+            </p>
+            
+
+            
+          </div>
+
+          <div class="half">
+            <img src="final_review/lcz1.png">
+          </div>
+
+          <div class="half">
+            <img src="final_review/lcz2.jpg">
+          </div>
+
+          <div class="half">
+            <img src="final_review/lcz3.png">
+          </div>
+
+
+          <div class="full">
+            
+            <h2>Research / Experience on current condition of computational urban design/ parametric design
+            </h2>
+            <p>
+              While micro-climate plays an significant role in adaptive urban planning, in the following two experiences I have done in normal computational design in architecture/ urban planning, 
+              it is often considered as metric analysis for designed option instead of input parameter that 
+              designers take into account at the beginning of design process.
+            </p>  
+          </div>
+
+
+          <div class="half">
+            <img src="final_review/cd_1.gif">
+          </div>
+
+          <div class="half">
+            <video  controls>
+              <source src="final_review/prototype_How_to_Scout_short.mp4" type="video/mp4">
+              您的浏览器不支持视频标签。
+            </video>
+            
+          </div>
+
+          <div class="full">
+            
+            <h2>Research Question: Generating urban 3D morphology that rapidly responds to LCZ changes? 
+            </h2>
+            <p>
+              Current computational urban design primarily involves the generation of 3D models based on various 
+              parameters (street width, block shape, FAR, building types), followed by environmental analysis based 
+              on these models.
+
+            </p>  
+            <p>
+              Meanwhile, AI research in the field of building environment has been mainly focused on creating 
+              two-dimensional images for visual presentations or further data visualization. 
+
+
+            </p> 
+            <p>
+              Therefore, the research question for my project is: Can designers generate urban 3D morphology models 
+              using urban microclimate data(lcz maps) as parameters? Is it possible to utilize lcz maps as a design 
+              guide, so that when the color classification of lcz maps change, the urban morphology change responsively?
+
+
+            </p> 
+            <p>
+              The primary goal of the project is to utilize LCZ maps for predicting and modifying urban 3D morphology 
+              models. This innovation has the potential to influence urban planning/ design by enabling more dynamic 
+              adaptations to the local climate, thereby fostering more sustainable and responsive urban environments.
+
+            </p> 
+          </div>
+
+          <div class="full assignment">
+            <h1 id="assignment-1">2 &ndash; Explain</h1>
+            <h2>Explain a design framework for generating urban 3D morphology that rapidly responds to local climate zones(lcz) changes
+            </h2>
+            
+          </div>
+
+          <div class="full">
+            
+            <h2>Overall Methodologies 
+            </h2>
+            <p>
+              The following diagram demonstrates the overall methodologies for my capstone project.Basically it can be
+              conceived as two parts. The first part is to set up AI -parametric design workflow, the second part is to
+              utilize this workflow to generate new design options.
+
+            </p>  
+            <p>
+              The first part consists of two procedures: pix2pix and then parametric design. The paired input and output
+              images for pix2pix part are lcz classification mapping and respective scale, ground truth morphology mapping.
+              By combining this two datasets to pix2pix algorithm and training the AI model, we can generate new urban
+              morphology mapping based on new input of lcz classification mapping. Then these generated urban morphology mapping
+              will be imported into grasshopper to make parametric model for corresponding urban blocks.
+
+            </p> 
+            <p>
+              The second part is to adapt to some changes on existing lcz and road network so that simultaneously urban 3d model
+              will make responsive changes based on lcz data changes. In this case, urban 3d model will display dynamic response
+              with lcz mapping.
+
+
+            </p> 
+          </div>
+
+          <div class="full">
+            <img src="final_review/overall_methodologies.png">
+          </div>
+
+
+          <div class="full">
+            
+            <h2>Data Source -- Ground Truth Urban Morphology Mapping 
+            </h2>
+            <p>
+              As introduced before, the dataset for pix2pix model consists of paired input and output images.
+
+            </p>  
+            <p>
+              The output images for training the model are ground truth urban morphology mapping. I got city footprint 
+              from mapbox street tile v8 and make color coded for water and greenery. From OSM buildings I acquired 
+              geojson of buildings containing information of each building's height. Finally, I joined these height information
+              with building footprint and color coded them by red color. Since it requires api to get more access to height
+              information on OSM building and api is quite expensive, for this semester I only acquire New York City's and
+              Los Angeles's city center part building height information.
+
+            </p>  
+          </div>
+
+          <div class="half">
+            <img src="final_review/nyc_urban_mapping.png">
+          </div>
+
+          <div class="half">
+            <img src="final_review/LA_urban_mapping.png">
+          </div>
+
+          <div class="full">
+           
+            <p>
+              The input images for training the model are lcz classification mappings. I get access to some existing
+              lcz mapping on World Urban Database and Access Portal Tools (WUDAPT). The resolution of these data are 
+              30m, which is detailed enough to distinguish building footprint in the scale of city blocks. I have chosen
+              some metropolis to analyze lcz mapping since the mega city could have as many classifications as possible.
+              Plus, I chose main cities' central area for analysis. 
+
+            </p>  
+          </div>
+
+          <div class="half">
+            <img src="final_review/lcz_mapping1.png">
+          </div>
+
+          <div class="half">
+            <img src="final_review/lcz_mapping2.png">
+          </div>
+
+
+          <div class="full assignment">
+            <h1 id="assignment-1">3 &ndash; Propose</h1>
+            <h2>Make a prototype and list final deliverables for next semester
+            </h2>
+            
+          </div>
+
+          <div class="full">
+            
+            <h2>Make a prototype for the capstone project
+            </h2>
+            <p>
+              During this semester, I have made a prototype for preparing datasets and training pix2pix models. Their
+              position in overall methodologies is displayed below.
+
+            </p>  
+            
+          </div>
+
+          <div class="full">
+            <img src="final_review/prototype_order.png">
+          </div>
+
+          <div class="full">
+            
+            <h2>MVP for pix2pix part
+            </h2>
+            <p>
+              I have chose data of city center of New York City and Los Angeles. I have exported from QGIS the paired
+              images of lcz mapping+ road network / urban morphology mapping with building information color coded. The
+              scale of these paired images have the exact same location and dimension, and the scale is roughly 1km* 1km.
               
-              Urban Complexity: Major cities typically exhibit complex urban structures, which would provide a more challenging and rich dataset. This would test the efficacy of the GAN model in predicting urban morphologies across varied urban layouts.
 
-            </p>
-            <p>
-              Machine Learning Models: pix2pix model.By feeding the preprocessed GIS images into this model, 
-              the aim is to transform these 2D climate representations into predicted urban layouts that are inherently 
-              adaptive to the depicted climates.
-
-            </p>
-            <p>
-              Generative Design Integration: After the machine learning phase, Grasshopper will be instrumental in the 
-              responsive generation of 3D urban models. This tool will be employed to extract 3D data from the 2D 
-              outcomes produced by the GAN, leading to the creation of adaptive urban morphologies that not only 
-              visually represent but functionally respond to the local climate conditions.
-
-
-
-            </p>
-          </div>
-
-          <div class="half">
-            <h2>related precedent1</h2>
-            <p>
-              DeepScope is a platform that allows designers to test multiple urban designs and observe the Image of 
-              the City in real time. 
-
-            </p>
-
-            <p>
-              Inspired by Kevin Lynch’s The Image of the City and The View from the Road, Deepscope helps designers 
-              think about urban imageability: readability, continuity, legibility, image of the city.
-
-            </p>
-
-            <p>
-              method & process:1.With each design iteration, a 3D streetscape model is created; 2.the model is fed into 
-              a DCGAN neural network; 3.that generates a realistic street-view visualization.
-
-            </p>
-          </div>
-
-          <div class="half">
-            <img src="1101/deep_question.png">
+            </p>  
             
-            
-          </div>
-
-          <div class="half">
-            <img src="1101/deep method.png">
-            
-            
-            
-          </div>
-
-          <div class="half">
-            <img src="1101/Deep method2.jpg">
-            
-          </div>
-          
-
-          <div class="half">
-            
-            <h2>related precedent2</h2>
-            <p>
-              KPF UI utilized its interactive tool Scout and developed a ‘digital twin’ to help understand how the 
-              fictional rust-belt city of Leeside could adapt its built environment to become a climate haven for 
-              climate migrants from the coasts of the United States by the year 2040.
-
-            </p>
-
-            <p>
-              method & process: 1.To analyze conditions in Rust Belt cities to create the fictional conditions of 
-              Leeside (1mile * 1mile); 2.To look into the physical characteristics of rust- belt city: street grid, 
-              building height, lot size etc; 3. To define the parameters that people can control through digital twin 
-              by Scout.
-
-            </p>
-            
-          </div>
-
-          <div class="half">
-            <img src="1101/leeside2.png">
           </div>
 
           <div class="full">
-            <img src="1101/leeside1.png">
+            <img src="final_review/prototype_dataset1.png">
+            <img src="final_review/prototype_dataset2.png">
           </div>
 
           <div class="half">
             
-            <h2>Data Exploration and pix2pix algorithm</h2>
+            <h2>Training and testing pix2pix model
+            </h2>
             <p>
-              1.Local Climate mapping data: From World Urban Database and Access Portal Tools (WUDAPT) webite, to download
-              satellite raster data.
-            </p>
-            <p>
-              2.paired urban morphology(building outline, green, water, street) of LCP maps from Mapbox Streets v7 and 
-              combine building heights data from OSM.
-            </p>
-            <p>
-              <img src="1101/logic1.png">
-            </p>
+              Now the dataset contains 80 paired input and output images of New York City's and Los Angeles's central area
+              lcz mapping and urban morphology mapping. For the prototype of pix2pix model, I have randomly selected
+              80% of paired data for training the model; 15% for val; 5% for testing data.
 
+            </p> 
+            
+            <p>
+              The paired images on the right demonstrates two results among data for testing the model. The order of
+              these images from left to right is: existing lcz mapping; ground truth urban morphology mapping and
+              generated/faked new urban morphology mapping.
+
+            </p> 
             
           </div>
 
           <div class="half">
-            <img src="1101/pix2pix2.png">
+            <img src="final_review/prototype_testing1.png">
           </div>
 
           <div class="half">
+            
+            <h2>List for final deliverables
+            </h2>
+            <p>
+              The first part is to gather and preprocess a whole dataset. As I introduced before, the lcz data I acquired
+              for this semester is from website and they are generated by others. For next semester, I am supposed to utilize
+              lcz generator to create my own data for lcz mapping.
+
+            </p> 
+            
+            <p>
+              Another important prototype for final deliverable is setting up grasshopper custom tool that generated 3d model
+              based on imagined 3d urban morphology mapping from pix2pix model.
+
+            </p> 
+
+            <p>
+              A thorough documentation including paired images dataset, responsive 3d model, dynamic response of models,
+              website/video displaying the whole workflow will be delivered next semester.
+
+            </p> 
+            
+          </div>
 
           <div class="half">
-            <img src="1101/lcz map.png">
+            <img src="final_review/lcz generator1.jpg">
           </div>
-  
+
+          <div class="full">
+            <img src="final_review/deliverables.png">
+          </div>
+
+          <div class="full">
+            
+            <h2>Bibliography
+            </h2>
+            <p>
+              https://github.com/SerjoschDuering/StableDiffusion-Grasshopper    github repo on how to set up stable diffusion in grasshopper
+https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix    github repo on what is pix2pix and how to utilize pix2pix algorithm
+https://journals.sagepub.com/doi/full/10.1177/23998083221100550    a paper on integrating GAN to urban design
+https://link.springer.com/chapter/10.1007/978-981-33-4400-6_10#Fig2   a paper on integrating GAN to urban design
+https://www.frontiersin.org/articles/10.3389/fenvs.2021.637455/full    a paper on how to use LCZ Generator to generate lcz maps on one’s own
+https://www.wudapt.org/lcz-maps/    World Urban Database and Access Portal Tools, the website where to access lcz data and lcz generator
+https://scout.kpfui.dev/?project=tampa    a case study of KPFui on current computational urban design
+
+
+            </p> 
+            
+            <h2>Data Source
+            </h2>
+            <p>
+              https://docs.mapbox.com/  mapbox style setup and edit customize styles
+https://osmbuildings.org/  using this website api can get most buildings’ height information in the world
+
+
+            </p> 
+            
+          </div>
+
           
-          </div>
-          <div class="half">
-            <img src="1101/mapbox1.png">
-          </div>
-
-
-          <div class="half">
-            
-            <h2>The process of responsive generation</h2>
-            <p>
-              After traing pix2pix model, partial 3D models can be constructed in Grasshopper from those generated urban plans.  
-            </p>
-
-            <p>
-              3D models capable of swiftly responding to alterations in Local climate offered promising potential for 
-              applications in further local climate research. In the right image, when local climate map is modified,
-              the changes in generated plans and 3D morphology are also occured. 
-            </p>
-
-            <p>
-              To sum up, the project proposes a design framework for generating urban 3D morphology that can rapidly responds to local climate
-              changes. Due to the challenges associated with obtaining high-definition remote-sensing images and the 
-              limitation of traditional 3D platform in dynamically generating 3D models, the GAN training methods combining
-              local climate data and urban morphology is a innovative way to predict 3D models responsively and rapidly. 
-            </p>
-
-            
-          </div>
-          <div class="half">
-            <img src="1101/responsive method.jpg">
-          </div>
 
           
 
