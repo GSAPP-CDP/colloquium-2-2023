@@ -29,6 +29,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 .dmiller .post-body {
+    display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
@@ -63,10 +64,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 .grid-1{
     grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .grid-2{
     grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 .grid-3{
@@ -79,6 +82,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 .grid-4{
     grid-column-start: 4;
+    grid-column-end: -1;
 }
 
 .grid-5{
