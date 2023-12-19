@@ -1,7 +1,7 @@
 ---
 student: Hongqian Li
 tags: students
-image: data/cover.gif
+image: data/signs.gif
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +16,6 @@ image: data/cover.gif
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/base.css" rel="stylesheet" />
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/main.css" rel="stylesheet" />
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/colloquium1.css" rel="stylesheet" />
-
   <title>Hongqian Li</title>
 </head>
 
@@ -30,182 +29,182 @@ image: data/cover.gif
     </div>
  </header>
 
-  <main>
-    <div class="container">
-
-      <div class="post">
-        <div class="post-header">
-          <div class="post-title">
-            <h1>Hongqian Li</h1>
-          </div>
-        </div>
-
+ <main>
+    <div class="container" style="width: 50%; margin-left: auto; margin-right: auto;">
         <div class="post-body project content">
-          <!-- ALL WORK SHOULD BE CONTAINED HERE. -->
-
-          <div class="full assignment">
-            <h1 id="assignment-1">GAN Research</h1>
-            <h2></h2>
-          </div>
-          <div class="full">
-          <p>Gan in the architecture field right now is largely used to generate design perspectives/plans for community meetings for non-professional non-design community members. A few are Capturing different cities' street-level style/atmosphere/view as a whole and mixing different cities’ style/atmosphere/view. A few are also used as a machine learning model to predict urban development/traffic volume/… based on city’s stateline/network images. 
-          </p>
-
-            In my opinion, there are some improvements/potential projects in this field: 
-
-            <p>(1) improving the workflow of the generative design process by adding human interaction/intervention to generate content that has meanings. 
-            e.g. A Discussion on an Urban Layout Workflow Utilizing Generative Adversarial Network (GAN)
-            </p>
+        <div class="full" >
+            <h1>The Sign of the City: Reimagining the New Image of the City Through the Eyes of AI</h1>
+            <h2>Hongqian Li</h2>
+        </div>
+        <div class="full">
+            <div class="full" style="margin: 60px 0;">
             
-            <p>(2) Comparing similar places' atmosphere(styles/vibe) and its relations with other factors(demographic, noise, traffic…)e.g. Chinatown in different cities and see how the atmosphere(styles/vibe) differs and its relation to demographic and immigrant policy? 
-            OR similarly, comparing old and new, and see how the changes take place and the reason behind this…
-            e.g. HORIZONS - Certain Measures 
-            [In]distinct Cities
-            </p>
-            
-            <p>(3) Prediction of urban development/traffic volume based on imagery data
-            Right now I am leaning toward this direction.
-            Because this may address potentially interesting problems. Conventional urban machine learning models often rely heavily on vast numerical datasets, such as demographic and economic figures. However, in certain regions, particularly in developing countries or the global south, there's a scarcity of such data for analysis. In such scenarios, the image-based methodology of Generative Adversarial Networks proves beneficial. It can efficiently process and leverage satellite or density imagery, datasets that are more readily available and widespread. 
-            e.g. Spatial sensitivity analysis for urban land use prediction with physics-constrained conditional generative adversarial networks
-            </p>
-          </div>
-
-        <div class="full assignment">
-            <h1 id="assignment-2">1 &ndash; CityGAN: Imagery-Driven Sensing on Urban Dynamics</h1>
-        </div>
-
-        <div class="full">
-            <h2>What is your research question?</h2>
-            <p>This research primarily focuses on the optimization of  the predictive model on the spatial evolution of urban built environments and their intricate relationships on socio-economic factors. </p>
-            <p>The overwhelming impact of the built environment on a wide range of global issues such as climate change, energy use, and economic development and activity, is hard to overstate. As such, conventional models of the evolution of the spatial distribution of the urban built environment often rely heavily on vast numerical datasets, such as demographic and economic figures. However, in certain regions, particularly in developing countries or the global south, it is hard to find enough such data to even run the model, because their local governments simply can not afford to conduct vast detailed data collection.
-            </p>
-            <p>To address this challenge, I aim to utilize the more globally-available remote-sensing imagery data and instead of parametric datasets and design a framework deploying generative adversarial networks (GANs), to estimate the spatial change and sensitivity of urban sprawl . 
-            Contrasted with traditional models, this image-centric approach could serve as a more practical and efficient alternative, especially in numeric data-deficient regions like developing countries. 
-            Furthermore, this project aims to shift attention to often-neglected urban areas in developing nations, offering a deep dive into rapid urbanization, societal inequities, and a series of related challenges.
-            </p>
-        </div>
-
-        <div class="full">
-            <img src="data/concept.gif">
-        </div>
-
-        <div class="half">
-            <h2>Which computational tools and design methods will be best used to explore my idea?</h2>
-            <p>I plan to choose to use urban analytics tools such as GIS, machine learning algorithms. For a specific model, I plan to use Generative Adversarial Networks(GANs) as it performs well in processing imagery data. 
-            </p>
-        </div>
-
-        <div class="half">
-            <img src="data/gan.gif">
-        </div>
-
-        <div class="full">
-            <h2>Which are precedents to my research project?</h2>
-            <p>Traditional models for predicting urban growth fall into two categories: Agent-Based Modeling (ABM) and Complex Systems Modeling (CSM)[1]. Both have limitations in real-world decision-making. ABM relies on probabilities and needs a vast amount of data, like population density and land prices. Gathering this data is time-consuming, costly, and often outdated by the time it's collected. In places like Africa, where rapid urban growth is expected, such detailed data is scarce or non-existent. CSM, on the other hand, uses a physics-like approach. It's faster and simpler than ABM but fails to capture the intricate patterns of real cities[2]. Both models lack practicality, especially in data-scarce regions like Africa, and their low resolution makes them less useful for detailed planning.
-            <br>Since 2014, Generative Adversarial Networks (GANs) have addressed challenges in fields like computer vision and speech synthesis. They've been effective in land use modeling, remote sensing, and climate modeling. Previous research demonstrated GANs' capability in generating realistic urban maps. The model we're introducing now builds on that, adding features like physical constraints and the ability to predict from socio-economic factors.                 
-            </p>
-        </div>
-
-        <div class="full">
-            <h2>How my own project move the research question forward?</h2>
-            <p>Many previous studies have primarily focused on developed countries and cities, yet there's a significant gap in research pertaining to cities in developing nations. This is especially concerning given their rapid development and the pressing need for in-depth analysis.               
-            </p>
-        </div>
-
-        <div class="full">
-            <h2>Research Method</h2>
-            <img src="data/method.png">
-        </div>
-        <div class="half">
-            <p>So the basic workflow of this project would be these 4 steps:
-            <br><b>Step 1: Gather satellite imagery data. </b>
-            Input of the project is the satellite images of the cities. Mainly are two, one is Nightlight Image from VIIRS data as the proxy for economic activities intensity, Population Image from Landscan as the proxy for demographic/ human activities intensity. As for the cities I plan to investigate the rapidly developing cities in developing countries or the global south. Then gather the Building footprint image from SAR as the proxy for urban development. 
-            </p>
-        </div>
-        <div class="half">
-            <img src="data/site.gif">
-        </div>
-        <div class="half">
-            <p>
-            <br><b>Datasets:</b>
-            <br>Nightlight:  Data-Visible Infrared Imaging Radiometer Suite (VIIRS)
-            <br>Population:  LandScan
-            <br>Building Foortfornt:  Synthetic Aperture Radar(SAR)
-            </p>
-        </div>
-        <div class="half">
-            <img src="data/dataset.gif">
-        </div>
-        <div class="half">
-            <p>
-            <b>Step 2: Generate and establish relations between demographic and economic data with urban development.</b>
-            Put the population and nightlight image into the gan model the generator generates synthetic build layout image that is very close to the real building layout. Through this process, establish the image-based regression relationship between human and economic factors with urban development.
-            </p>
-        </div>
-        <div class="half">
-            <img src="data/generate.gif">
-        </div>
-        <div class="half">
-            <p><b>Step 3: Explore similarity between cities</b>
-            During the model training process, the Dexi index can be employed to identify similarities in the growth patterns of various cities. For instance, in a prior study, the model recognized coastal cities with intricate layouts as the most similar to San Francisco, while for Paris, it identified other cities with a circular configuration. This approach allows for the categorization of cities based on their developmental trajectory. By assessing the similarities between cities, researchers can gain deeper insights into the unique growth patterns and characteristics of different urban areas.
-            </p>
-        </div>
-        <div class="half">
-            <img src="data/similar.png">
-        </div>
-        <div class="half">
-            <p><b>Step 4: Sensitive analysis and spillflow effect</b> 
-            During the training phase, we can employ backpropagation to delve into how activities in one location can influence other areas and gauge the magnitude of this impact. This offers a deeper understanding of urban patterns and growth dynamics. In secondary urbanized regions, non-zero gradient values appear outside the computed gradient areas. This indicates that local changes in population density or brightness can propagate beyond their immediate vicinity. Such insights enable a better grasp of the spatial dependencies in the urbanization process and how alterations in one area can resonate in surrounding regions. 
-            Understanding this spatial propagation is paramount for urban planning and development. It equips decision-makers with the tools to anticipate and manage the repercussions of urban sprawl and urbanization.    
-            </p>
-        </div>
-        <div class="half">
-            <img src="data/senseitive analysis.png">
-        </div>
-        <div class="full">
-            <p>
-            Reference:
-            <br>[1] M Batty. 2005. Cities and Complexity. Understanding Cities with Cellular Automata, Agent-Based Models, and Fractals. The MIT Press Cambridge, Massachusetts. 
-            <br>[2] Michael Batty and Paul A Longley. 1994. Fractal cities: a geometry of form and function. Academic Press.
-            <br>[3] I. J. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, A.
-            Courville, and Y. Bengio. 2014. Generative Adversarial Networks. ArXiv e-prints
-            (June 2014). arXiv:stat.ML/1406.2661
-            </p>
-        </div>
-        
-            <div class="full assignment">
-                <h1 id="assignment-5">2 &ndash; Typeface City</h1>
-                <h2></h2>
+            <div style="display: flex; justify-content: center; padding:0; margin: 0;">
+            <img src="data/imageofthecity.gif" style="height: 45%; display: inline-block; max-width: 50%; ">
+            <img src="data/signofthecity.gif" style="height: 45%; display: inline-block; max-width: 50%;  ">
             </div>
-            <div class="full">
-                <p>Research Background: Typography, as an essential element of urban visual culture, plays a pivotal role in shaping the identity and ambiance of a city. In bustling metropolises like New York, where billboards and signs dominate the skyline, the choice of typeface can tell a story far beyond mere words. It can reflect the city's history, its cultural melting pot, and the socio-economic dynamics of its neighborhoods. This research aims to delve deep into the typographic landscape of New York, drawing correlations between typeface choices and the demographic fabric of the city. 
-                    <br>Research Questions: 
-                    Mapping the typeface landscape of New York.
-                    Explore the typeface with demographic data (ethnicity, income)
-                    <br>Research Value: 
-                    <br>Dataset:
-                    (1)Street-view Images
-                    (2)Socio Data- Census
-                    (3)Economic Data- Census
-                    (4)Retail types
-                    <br>Method Sketch:
-                    <br>Precedents: 
-                    Senseable City Lab Typeface of London Typeface Reveals Spatial Economical Patterns
-                    ethnicity linguistic landscape data | slab
-                    FuturEats - ZY.ZHU
-                    </p>
-                    <img src="data/typeface.jpeg">    
-              </div>
-    
-              
+            <h4 class="imagecaption" style="text-align: center; margin-bottom: 20px;">The Image of the City & The Sign of the City</h4>
+            <p>
+                In the book "The Image of the City," Kevin Lynch posited that the imageability of a city is anchored in five fundamental elements: 
+                paths, edges, districts, nodes, and landmarks. This framework has profoundly influenced urban planning and design, shaping our 
+                understanding of how urban spaces are navigated and perceived. According to Lynch, a well-designed city incorporating these 
+                elements would obviate the need for additional signs, as the urban structure itself would inherently guide and inform its inhabitants. 
+                As long as you need signs, the image of the city fails.
+            </p>
+            <p>
+                However nowadays are there any modern cities with no signs? Likely no. In modern cities, people might need signs to navigate and signs can 
+                also offer insights about the local culture, commerce, and politics. So, this thesis seeks to challenge the conventional view by Kevin 
+                Lynch, by taking what he considers a failure, signs, as an advantage, to reimagine new images of cities.
+            </p>
         
 
+        <div class="full" style="margin: 60px 0;">
+            <h2>The Development of Urban Visual Information Studies</h2>
+            <img src="data/literaturereview.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px;">
+            <h4 class="imagecaption" style="text-align: center; margin-bottom: 20px;">Literature Review: the Development of Urban Visual Information Studies</h4>
+            <p>
+                The tradition of incorporating visual information runs through the history of modern urban studies. In the late 1890s, scholars such 
+                as Camilo Sitte and Ebenezer Howard began to explore the sensory experiences of pleasure in citizens, focusing primarily on the 
+                beauty, shape, and proportion within the public realm. Then, in the 1970s, scholars like Kevin Lynch emerged with new perspectives. 
+                His seminal work, 'The Image of the City,' delved into the structure and human perceptions within urban environments. This book has 
+                had a significant impact on urban planning and design, profoundly shaping our understanding of how urban spaces are navigated and 
+                perceived. Building upon these foundations, scholars in the late 20th century, such as Jack Nasar, introduced aspects of human 
+                emotions into the study of urban design and aesthetics.
+            </p>
+            <p>
+                While these studies laid the foundation for urban visual information, they primarily focused on physical aspects and human 
+                perceptions, seldom exceeding these traditional aspects and going beyond into other aspects like cultural, business, and political. 
+                Additionally, these studies often relied on traditional methodologies like field observations. With the development of AI, 
+                researchers can conduct more extensive visual studies at the street level on a larger scale, requiring less labor and time. 
+                This evolution prompts an important inquiry: How can we leverage the capabilities of AI to enhance and build upon these 
+                foundational studies, incorporating a broader spectrum of urban elements and insights?
+            </p>
         </div>
-        </div>
-      </div>
 
-      <footer></footer>
+        <div class="full" style="margin: 60px 0;">
+            <h2>Research Questions & Values</h2>
+            <p> 
+                This thesis aims to explore research questions:
+                <br>What do signs add to the image of the city?
+                <br>What new categories can signs add to the image of the city?
+                <br>How do signs affect the way people experience and remember the city?
+            </p>
+            <p>
+                The potiential research values lie in identifying the distribution of various sign categories and analyzing their 
+                impact on people's wayfinding abilities using street signs and exploring the temporary dynamics of the city with temporary signs; 
+                Or identifying the content of signs and understanding what the officials or businesses convey to the public;
+                Or identifying the languages of signs the community are using and mapping cultural hubs that have not yet been offically recognized.
+            </p>
+        </div>
+
+        <div class="full" style="margin: 60px 0;">
+            <h2>Methodology</h2>
+            <img src="data/methodology.gif" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px;">
+            <h4 class="imagecaption" style="text-align: center; margin-bottom: 20px;">Research Methodology</h4>
+            <p>
+                The methodology involves a two-step process. Initially, web-scraping techniques are employed to collect a 
+                comprehensive set of Google Street View images from the specified research site, New York City. Subsequently, these images 
+                are analyzed using Deep Learning technology, specifically the Convolutional Neural Network (CNN) algorithm, to identify and 
+                categorize the various signs depicted. Following this classification, the identified sign areas are extracted for further analysis. 
+                Optical Character Recognition (OCR) technology is then applied to these extracted segments to discern the content and language 
+                present in the signs. 
+            </p>
+        </div>
+
+        <div class="full" style="margin: 60px 0;">
+            <h2>CNN Explain</h2>
+            <img src="data/cnn.gif" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px;">
+            <h4 class="imagecaption" style="text-align: center; margin-bottom: 20px;">Heatmap of convolution calculation & Kernel sliding operation</h4>
+            <p>
+                A CNN is a neural network: an algorithm used to recognize patterns in data, widely used in computer vision tasks like image processing, 
+                segmentation, and object detection. It also lays the groundwork for numerous advanced models, such as YOLO (You Only Look Once) for object detection
+                and OCR for text recognition. 
+            </p>
+            <p>
+                CNN adjusts the weights in its kernels to learn and identify different data patterns.  For example, for object recognition, the output of each 
+                convolutional layer is derived by computing the operation between specific regions of the input image and the kernel. Different 
+                kernels can extract various features from the image. In practical applications, CNN learns patterns of features from a large 
+                dataset of labeled data, enabling it to recognize objects in new images. 
+            </p>
+        </div>
+
+        <div class="full" style="margin: 60px 0;">
+            <h2>Work in Progress</h2>
+            <p>(1) Building sign recognition training datasets</p>
+            <img src="data/labelimg.gif" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px;">
+            <h4 class="imagecaption" style="text-align: center; margin-bottom: 20px;">Labeling different signs</h4>
+            <p>
+                For this semester's research, Broadway in Manhattan was selected as the pilot site as it traverses through the borough with many 
+                different communities and income groups as you move along the street. Over 5800 Google Street View images along Broadway were 
+                collected. Each image was systematically examined, with various signs identified and labeled to enable further study.
+            </p>
+            <img src="data/signs.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px;">
+            <h4 class="imagecaption" style="text-align: center; margin-bottom: 20px;">20 sign categories</h4>
+            <p>
+                20 sign categories were identified, and they can be grouped into three main categories. The first group encompasses street signs, 
+                which include Don't block signs, Do not enter signs, All traffic signs, Street close signs, One-way signs, Parking regulation signs, 
+                Direction signs, School crossing signs, Spend limit signs, and Street Name signs. The second group consists of business-related signs, 
+                including Shop brand name signs, Shop information signs, Advertising signs, For rent signs, and Promotion signs. The third category is 
+                public infrastructure signs, including Bus stop signs, Scaffolding signs, Subway signs, Tourist signs, and Building signs.
+            </p>
+            <p>(2) Training sign recognition machine learning model</p>
+            <img src="data/yolov8.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px; ">
+            <h4 class="imagecaption" style="text-align: center; margin-bottom: 20px;">Machine learning model training</h4>
+            <p>
+                The chosen machine learning model for object detection in this study is YOLO. This model was trained using the 
+                labeled datasets collected from the Broadway Street View images. As of the current stage, the model has undergone over 200 epochs and 
+                has achieved a precision rate of 90.5%.
+            </p>
+            <p>(3) Text & language recognition</p>
+            <p>
+                For text content and language recognition, this study employs the Google Cloud Vision API, utilizing OCR technology to identify 
+                the text content. The Google Translation API is then applied to determine the language. Due to potential inaccuracies in language 
+                recognition, especially with brief sign content, any data with a confidence level below 80% is excluded from the analysis.
+            </p>
+        </div>
+
+        <div class="full" style="margin: 60px 0;">
+            <h2>Primary Analysis & Findings</h2>
+            <div style="display: flex; justify-content: center; padding:0; margin: 0;">
+            <img src="data/W.gif" style="height: 45%; display: inline-block; max-width: 50%;  ">
+            <img src="data/E.gif" style="height: 45%; display: inline-block; max-width: 50%;  ">
+            </div>
+            <h4 class="imagecaption" style="text-align: center; margin-bottom: 20px;">Signs on Broadway's west and east sides</h4>
+            <p>
+                In the categories of signs along Broadway, the most prevalent are Shop brand signs (2,154 instances), followed by One way signs 
+                (338), and Street name signs (337). Other notable categories include Parking regulation signs (141), Scaffold signs (124), Advertising 
+                signs (101), and For lease signs (100). Wayfinding signs, specifically Street name and One way signs, are uniformly distributed for 
+                effective citizen navigation. In contrast, regulatory signs like speed limit and Do not enter signs are more concentrated in Upper 
+                Manhattan. Temporary signs, such as For lease, promotion, and scaffold Signs, are predominantly found in Lower and Midtown Manhattan, 
+                with a significant presence of Scaffold Signs in the Upper West Side.
+            </p>
+            <p>
+                Regarding the content of these signs, the most commonly occurring words are 'Space', 'Retail', 'Beauty', and 'Lease', closely followed 
+                by 'Coffee', 'Rent', and 'Mobile'. The most frequently featured brands in the sign content are major banks, specifically Citi Bank, 
+                Chase Bank, and Bank of America, alongside a notable presence of Starbucks Coffee.
+            </p>
+            <p>
+                In terms of the language of these signs, English is predominant with 3,342 instances. Other languages show distinct patterns: Chinese 
+                (33) and Italian (30) signs are more evenly distributed, French signage (26) is primarily found in Midtown, and Korean signs (14) are 
+                concentrated in Lower and Upper Manhattan. Notably, Spanish signs (76) are more prevalent in Upper Manhattan, reflecting the area's diverse 
+                linguistic landscape.
+            </p>
+        </div>
+
+        <div class="full" style="margin: 60px 0;">
+            <h4>
+            Reference:
+            <br>[1] Lynch, K., 1964. The Image of the City. MIT Press.
+            <br>[2] Wang, Z.J., Turko, R., Shaikh, O., et al., 2020. CNN explainer: learning convolutional neural networks with interactive visualization. IEEE Transactions on Visualization and Computer Graphics, 27(2), pp.1396-1406.
+            <br>[3] Zhang, F., Miranda, A.S., Duarte, F., et al., 2023. Urban Visual Intelligence: Studying Cities with AI and Street-level Imagery. arXiv preprint arXiv:2301.00580.
+            </h4>
+        </div>
+        </div>
+        </div>
     </div>
+    </div>
+    <h2 style="margin-left: 25px;">Pilot Website</h2>
+      <iframe src="https://hongqianli101.github.io/signsofnyc/" style="position: relative; width: 96%; height: 110%; margin-left: auto; margin-right: auto; display: block;" frameborder="0"></iframe>
   </main>
 </body>
 
