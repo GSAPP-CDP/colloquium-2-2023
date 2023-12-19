@@ -1,57 +1,341 @@
 ---
 student: Kevin Liberman
-layout: blank.liquid
-tags:
-- students
+tags: students
+image: assets/cover.png
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Proposals</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Student work from Colloquium 2 of the Columbia GSAPP CDP Program, Fall 2023." />
+    <title>Kevin Liberman - CDP Colloquium 2</title>
+    <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2023/favicon.ico" sizes="any">
+    <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2023/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">      
+    <link href="css/output.css" rel="stylesheet"> 
+    <style>
+        section {
+            opacity: 0; /* Sections are invisible initially */
+            transition: opacity 0.5s ease-out; /* Smooth transition for the opacity change */
+        }
+        .is-active {
+            opacity: 1; /* Sections become fully visible when active */
+        }
+</style>
+    </style>   
 </head>
-<body>
-    <h1>M.S. C.D.P Colloquium II 2023</h1>
-    <h3>Kevin Liberman - Project Ideas</h3>
-
-
-
-    <div class="flex-container">
-        <div class="body-content">
-            <h2>1.	A metaproject on “Human-X-interaction”</h2>
-            <p>This project focuses on ontological discourse around human-computer-interaction (HCI), nascent variations of it, such as human-building-interaction (HBI) and explores what lies beyond HCI when we begin to merge and relate humans, computers, spaces, environments, ecologies, and materials to one another. This project will introduce a new philosophy or framework for thinking about human-X-interaction through applications or case studies. These examples will illustrate extensions of HCI past its current two-dimensional paradigm (human-computer) to include other natural and artificial systems. The implications of the proposed perspective will serve as commentary around what it means to be human, to design, and how it can play a role in imagining possible futures.</p>
+<body class="font-sans bg-gray-50">
+    <div class="container mx-auto p-8">
+        <img src="assets/cover.png" alt="cover photo, source: getty images" class="absolute top-0 left-0 w-full h-48 opacity-3 z-0">
+        <div class="z-10 relative">
+        <div class="flex justify-between items-center">
+             <div class="flex-1">
+            <h1 class="md:text-2xl lg:text-2xl font-bold mb-2">M.S. Computational Design Practices, Colloquium II</h1>
+            <h2 class="text-lg lg:text-xl mt-2">by: Kevin Liberman, Fall 2023</h2>
+            </div>
+            <!-- Vertical Navbar -->
+            <div class="fixed top-0 right-0 m-4">
+                <button id="menu-button" class="focus:outline-none">
+                    <img src="assets/menu_icon.svg" alt="Menu" class="w-8 h-8">
+                </button>
+            </div>
+            
+            <nav id="navbar" class="hidden fixed top-0 right-0 bg-gray-50 p-4 w-32 h-56">
+                <a href="#intro" class="block mb-2 hover:text-blue-500">Introduction</a>
+                <a href="#problem" class="block mb-2 hover:text-blue-500">Problem</a>
+                <a href="#precedents" class="block mb-2 hover:text-blue-500">Precedents</a>
+                <a href="#materials" class="block mb-2 hover:text-blue-500">Materials</a>
+                <a href="#proposal" class="block mb-2 hover:text-blue-500">Proposal</a>
+                <a href="#references" class="block mb-2 hover:text-blue-500">References</a>
+                </nav>
+            </div>
+            </div>
+            </div>
         </div>
-        <div class="image-content">
-            <img src="spatial_computing.jpg" alt="Image 1">
-        </div>
+        
+        <div class="container mx-auto p-8">
+        <!-- Intro / Problem Statement -->
+        <section id="intro" class="mt-48 mb-12 opacity-100">
+            <h2 class="text-2xl font-bold mb-4">Introduction</h2>
+            <p class="px-8 py-4">We are living in exciting times: architecture and computation have become more accessible and widely applied than ever before, extending their reach to an endless array of fields, including climate and environmental health.</p>
+            <p class="mt-2 px-8 py-4">Technology affords us the ability to look beyond the limits of our senses at other spatial and temporal scales, it can therefore play a key role in prompting us as a species to better understand the ecological systems that we are a part of and how they can be utilized to improve our climate response, and by consequence, our environmental health.</p>
+        </section>
+
+         <section class="h-96 container px-8 py-4" data-step="2">
+            <div class="float-right flex items-end ml-4 mb-4 my-4">
+                <div class="w-64 flex flex-col mr-8">
+                    <a href="https://en.wikipedia.org/wiki/Garden_city_movement"><img src="assets/garden_city.png" alt="Garden City vision" class="w-56 h-auto"></a>
+                    <p class="text-left text-xxs h-4 mt-2 font-light">The vision of the Garden City in early 20th century England</p>
+                </div>
+                <div class="w-64 flex flex-col">
+                <a href="https://standard.wellcertified.com/well"><img src="assets/well_standard.png" alt="WELL standard" class=" w-56 h-56"></a>
+                <p class="text-left text-xxs mt-2 h-4 font-light">WELL Rating system by the International WELL Building Institute launched in 2014</p>
+                </div>
+            </div>
+            <p class="pt-4">Although designing for health is not a new concept, the term <span class="italic">healthy architecture</span> has emerged in recent years as a response to a growing epistemology and application of architectural practices employed to improve public health outcomes.</p>
+        </section>
+
+        <!-- Air Quality -->
+        <section id="problem" class="h-96 container" data-step="2">
+                <p class="mb-24 px-8 py-4">Then came the global pandemic and this year’s wildfire season. These two phenomena, brought us to a new collective consciousness, where we all realized that our spaces, just as much as our behaviors, create an immediate and massive effect on our personal health and safety.</p>
+                <div class="flex items-center justify-center h-72 mb-96 ml-4">
+                <div class="flex flex-col mr-8">
+                    <img src="assets/pandemic.png" alt="Masking during the pandemic" class="h-auto">
+                    <p class="text-center text-xs h-4 mt-2 font-light">Masking in public during the Covid-19 Pandemic</p>
+                </div>
+                <div class="flex flex-col">
+                <img src="assets/wildfires.png" alt="Wildfire Smoke in NYC" class="h-auto">
+                <p class="text-center text-xs mt-2 h-4 font-light">Canadian wildfire smoke engulfing NYC, June 2023</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto p-8 flex items-center h-48 mt-96 mb-48" data-step="3">
+            <div class="flex-1 px-8 py-4">
+            <p class="mb-4">
+                While there are many factors in healthy architecture to study, I’m going to focus on indoor air quality.
+                The truth is that both indoor and outdoor air pollution, combined, is the third leading cause of death around the world and for a species that spends 90% of its time inside of a building, how well do we actually know our indoor air quality or attempt to change it?
+                </p><p>To learn more about indooor air pollution, such as common pollutants and sources, visit: <a href="https://www.epa.gov/report-environment/indoor-air-quality" class="text-blue-600 hover:text-blue-800">EPA's Report on the Environment</a>
+                </p></div>
+            <div class="flex-1 float-right flex flex-col items-end mb-24 ml-4">
+                <div class="mb-8">
+                    <a href="https://ourworldindata.org/grapher/number-of-deaths-by-risk-factor"><img src="assets/deaths_by_risk_factor.png" alt="Global deaths by risk factor" class="h-auto"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precedents -->
+        <section id="precedents" data-step="4">
+            <h2 class="text-2xl font-bold">Precedents</h2>        
+            <div class="container mx-auto px-8 py-4">
+                <!-- Paragraph Text -->
+                <p>There have been numerous experiments, both architectural and within the context of technology / HCI, that look at air quality.</p>
+                
+                <!-- Flex Container for Three Columns -->
+                <div class="flex flex-row justify-between mt-8">
+                    <!-- Column 1 -->
+                    <div class="flex flex-col items-center w-1/3 mx-4">
+                        <a href="https://offenhuber.net/project/staubmarke-dustmark/">
+                            <img src="assets/dustmarks.jpeg" alt="Dustmarks by Offenhuber" class="w-96 h-auto">
+                        </a>
+                        <p class="text-center text-xs font-light mt-2 text-gray-700">Staubmarke (dustmark) by Dietmar Offenhuber<br>Stuttgart, Germany 2018</p>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="flex flex-col items-center w-1/3 mx-4">
+                        <a href="http://yellowdust.intheair.es/">
+                            <img src="assets/yellow_canopy.jpg" alt="Yellow Dust" class="w-96 h-auto">
+                        </a>
+                        <p class="text-center text-xs font-light mt-2 text-gray-700">C+arquitectos/In The Air (Nerea Calvillo with Raúl Nieves, Pep Tornabell, Yee Thong Chai, Emma Garnett, Marina Fernandez)</p>
+                    </div>
+        
+                    <!-- Column 3 -->
+                    <div class="flex flex-col items-center w-1/3 mx-4">
+                        <a href="https://www.studioroosegaarde.net/project/smog-free-tower">
+                            <img src="assets/smogfreetower.jpeg" alt="Smog-Free Tower by Studio Roosegaarde" class="w-96 h-56">
+                        </a>
+                        <p class="text-center text-xs font-light mt-2 text-gray-700">Smog-Free Tower by Studio Roosegaarde;<br>the world's first smog vacuum cleaner</p>
+                    </div>
+                </div>
+                <p class="my-12">My question is: <span class="underline">are there alternate ways to improve air quality using natural building materials?</p></span>
+            </div>
+        </section>
+        
+        <!-- Use of Biomaterials -->
+        <section id="materials" class="my-12" data-step="5">
+            <h2 class="text-2xl font-bold mb-4">Use of Biomaterials + Architectural Microbiome</h2>
+            <p class="px-8 py-4">There has been a lot of advancement in the use of biomaterials for architecture. In particular, mycelium composites have been recognized for their ability to be grown and composted anywhere and sequester carbon. Mycelium composites in architecture have been looked at mainly as a low-carbon alternative for thermal insulation and acoustic insulation.</p>
+            
+            <div class="container mx-auto px-16 py-4">
+                <div class="grid md:grid-cols-2 gap-y-8 gap-x-24 items-center">
+                    <!-- Row 1 -->
+                    <p>Hy-Fi is composed of bricks grown organically from mycelium and shredded corn stalks, the bricks were later composted.</p>
+                    <a href="https://www.dezeen.com/2014/07/01/tower-of-grown-bio-bricks-by-the-living-opens-at-moma-ps1-gallery"><img src="assets/hyfi_01.jpg" alt="HyFi Pavillion" class="w-auto h-64 max-w-xs"></a>
+            
+                    <!-- Row 2 -->
+                    <p>A housing facade, fiberglass with a mycelium core will be used in an Oakland, California affordable housing project by the studio The Living.</p>
+                    <a href="https://reasonstobecheerful.world/for-more-sustainable-affordable-housing-just-add-mushrooms/
+                    "><img src="assets/housing-project-facade.jpg" alt="Oakland Housing Facade" class="w-auto h-64 max-w-xs"></a>
+            
+                    <!-- Row 3 -->
+                    <p>Alive, a pavilion for the Venice Biennale by The Living is made out of dried fibres of luffa – an inexpensive, renewable and fast-growing vegetable that grows on vines in tropical and subtropical regions. It is speculated that the pavilion can serve as a "probiotic" scaffolding for the microbiome of the space.</p>
+                    <a href="https://www.dezeen.com/2021/10/23/the-living-probiotic-architectural-alive-pavilion-venice-biennale/"><img src="assets/alive_pavilion.jpeg" alt="Alive Pavilion" class="w-auto h-64 max-w-xs"></a>
+
+                     <!-- Row 4 -->
+                     <p>Mogu is an Italian startup that makes mycelium-composite acoustic panels for wall covering.</p>
+                     <a href="https://mogu.bio/pluma-panels/"><img src="assets/mogu_pluma_panels.jpeg" alt="Mogu Mycelium acoustic panels" class="w-auto h-64 max-w-xs"></a>
+                </div>
+            </div>
+        <!-- Proposal -->
+        <div class="ml-4 mt-24 mb-24 px-8 py-4">
+            <!-- Background -->
+           <p>Mycelium composites have already been used as a thermal insulation alternative because the two materials have similar structural qualities, thermal capacity, density and porosity, as evidenced in a side-by-side comparison of their electron microscope images.</p>
+               <div class="flex items-center justify-center mt-12">
+                   <div class="flex flex-col mr-8">
+                       <img src="assets/mycelium_SEM_image.png" alt="Mycelium composite SEM image" class="h-auto">
+                   </div>
+                   <div class="flex flex-col">
+                   <img src="assets/glass_wool_SEM_image.png" alt="Glass Wool SEM image" class="h-auto">
+                   </div>
+               </div>
+        </section>
+        <section id="proposal" class="mb-8" data-step="6">
+            <h2 class="text-2xl font-bold mb-4">Proposal</h2>
+            <div class="px-8 py-4">
+                    <h2 class="text-xl mb-3">Research Question: <span class="font-semibold">Can mycelium composites be effective at filtering indoor air pollutants?</span>
+                    </h2>
+                    <span class="italic mb-6">How can we tell? Can we sense and visualize air quality in real time?</span></p>
+                    <p class="mt-4">By extension, mycelium composites can have similar structural qualities to man-made air filters. In addition, an emerging field of research is myco-remediation and myco-filtration, using fungi to clean up heavily contaminated water and soil. There has been specific research published that suggests mycelium-composite panels are effective at outdoor particulate matter adsorption.</p>
+                    <div class="flex items-center justify-center mb-24 mt-24 ml-4">
+                        <div class="flex flex-col mr-8">
+                            <img src="assets/mask_SEM_image.jpeg" alt="SEM image of a face mask" class="h-64 w-auto">
+                            <p class="text-xs font-light">SEM images of a surgical mask</p>
+                        </div>
+                        <div class="flex flex-col">
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2590048X21000418#fig3"><img src="assets/research_paper.png" alt="https://doi.org/10.1016/j.rinma.2021.100208" class="h-144 w-auto"></a>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Experimental Setup -->
+                <div class="container mx-auto">
+                <h2 class="text-2xl font-semibold mb-3">Experimental Setup</h2>
+                <p class="mb-3 px-8 py-4"> A design-build-test- and -sense system for mycelium-composite wall panels & sensing indoor air quality</p>
+                <img src="assets/system_diagram.svg" alt="System Diagram" class="h-auto mb-12">
+
+                <!-- Building Phase -->
+                <h3 class="text-xl font-semibold mb-3">Building Phase</h3>
+                <div class="grid md:grid-cols-2 gap-y-8 gap-x-24 items-start px-8 py-4">
+                    <ul class="list-disc list-inside">
+                        <li class="mb-2">Either mycelium grown from scratch using online recipes such as from the <a href="https://materiom.org/commons" class=" text-gray-600 underline hover:text-blue-500">Materiom database</a> or from pre-inoculated substrate from <a href="https://www.ecovative.com/" class="text-gray-600 underline hover:text-blue-500">Ecovative</a></li>
+                        <li class="mb-2">Test different substrates (if feasible), densities, and additives.</li>
+                        <li class="mb-2"> CNC-mill molds to apply different textures, can be modelled parametrically using data informed by the IAQ sensors</li>
+                    </ul>
+                <img src="assets/building_phase.svg" alt="Building Phase" class="my-4 h-96 w-auto"></div>
+
+                <!-- Sensing Phase -->
+                <h3 class="text-xl font-semibold mb-3">Sensing Phase [In Progress]</h3>
+                    <ul class="list-disc list-inside px-8 py-4">
+                        <li class="mb-2">Connect indoor air quality sensors (either DIY, commercial, or hybrid)</li>
+                        <li class="mb-2">Using <a href="https://www.openaq.org/" class="text-gray-600 underline hover:text-blue-500">OpenAQ</a> data schema, stream data to web application</li>
+                        <li class="mb-2">Visualize the present and historical readings
+                        </li>
+                    </ul>
+                    <p class="mt-8"><a href="https://kevinlib.github.io/air-quality/index.html" class="text-gray-600 hover:text-blue-500">Example user interface</a> streaming data from an outdoor sensor</p>
+                <iframe src="https://kevinlib.github.io/air-quality/index.html" alt="user interface example" class="my-4 w-full" height="600"></iframe>
+
+                <!-- Testing Environment -->
+                <h3 class="text-xl font-semibold mb-3 mt-12">Testing Environment</h3>
+                <div class="grid md:grid-cols-2 gap-y-8 gap-x-24 items-start px-8 py-4">
+                    <ul class="list-disc list-inside">
+                        <li class="mb-2">Prototype testing begins with small air chamber, if the results are meaningful testing may change scale later on</li>
+                        <li class="mb-2">Test panels are tested against an alternative and control</li>
+                        <li class="mb-2">Alternative could be another bio-based material, in particular, cellulose based such as wood, hemp, flax etc.</li>
+                        <li class="mb-2">Control is conventional dry-wall</li>
+                    </ul>
+                <img src="assets/testing_phase.svg" alt="Testing Phase" class="my-4 w-auto">
+                
+                </div>
+                </div>
+        </section>
+
+        <!-- Possible Extensions -->
+        <section class="mb-8" data-step="8">
+            <h2 class="text-2xl font-bold mb-4">Possible Extensions</h2>
+            <div class="container mx-auto px-8 py-4">
+                <p>Lastly, a possible future extension of this work could be making the mycelium itself, at least a live section of it, be the sensor. This is inspired by computational research compiled into a book called Fungal Machines. The research shows it's possible to measure pressure, humidity, and other variables. If reliable, the mycelium would act as both sensor and actuator, creating a living architecture that could tell us directly how it’s interacting with the space instead of having to infer it from external conditions.</p>
+                <!-- Flex Container for Three Columns -->
+                <div class="flex flex-row justify-between mt-8">
+                    <!-- Column 1 -->
+                    <div class="flex flex-col items-center w-1/3 mx-4">
+                        <a href="https://link.springer.com/book/10.1007/978-3-031-38336-6">
+                            <img src="assets/fungal_machines_book.png" alt="Fungal Machines" class="w-72 h-96">
+                        </a>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="flex flex-col items-center w-1/3 mx-4">
+                            <a href="https://www.nature.com/articles/s41598-022-20080-3"><img src="assets/nature_article.png" class="w-96 h-auto"></a>
+                        <p class="text-xs font-light mt-2 text-gray-700">Mining logical circuits in fungi, published in <span class="italic">Nature: Scientific Reports</span>, 2022</p>
+                    </div>
+        
+                    <!-- Column 3 -->
+                    <div class="flex flex-col items-center w-1/3 mx-4">
+                            <img class="mt-24" src="assets/fungal_electrodes.png" class="w-96 h-72">
+                    </div>
+                </div>
+        </section>
+
+        <!-- References -->
+        <section id="references" class="mb-8 opacity-100" data-step="9">
+            <h2 class="text-2xl font-bold mb-4">References</h2>
+            <ol class="list-decimal list-inside">
+                <li><a href="https://ourworldindata.org/indoor-air-pollution" target="_blank">ourworldindata.org/indoor-air-pollution</a></li>
+                <li><a href="https://www.archdaily.com/521266/hy-fi-the-organic-mushroom-brick-tower-opens-at-moma-s-ps1-courtyard" target="_blank">archdaily.com/521266/hy-fi-the-organic-mushroom-brick-tower</a></li>
+                <li><a href="https://reasonstobecheerful.world/for-more-sustainable-affordable-housing-just-add-mushrooms/" target="_blank">reasonstobecheerful.world/for-more-sustainable-affordable-housing-just-add-mushrooms</a></li>
+                <li><a href="https://www.dezeen.com/2021/10/23/the-living-probiotic-architectural-alive-pavilion-venice-biennale/" target="_blank">dezeen.com/2021/10/23/the-living-probiotic-architectural-alive-pavilion-venice-biennale</a></li>
+                <li><a href="https://openaq.org/" target="_blank">openaq.org</a></li>
+                <li><a href="https://www.mdpi.com/2073-4360/14/22/4926" target="_blank">mdpi.com/2073-4360/14/22/4926</a></li>
+                <li><a href="https://www.nature.com/articles/s41598-022-22102-6" target="_blank">nature.com/articles/s41598-022-22102-6</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S2590048X21000418" target="_blank">sciencedirect.com/science/article/pii/S2590048X21000418</a></li>
+                <li><a href="https://www.brunel.ac.uk/news-and-events/news/articles/Mushrooms-work-magic-on-air-pollution" target="_blank">brunel.ac.uk/news-and-events/news/articles/Mushrooms-work-magic-on-air-pollution</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S0950061823036590" target="_blank">sciencedirect.com/science/article/pii/S0950061823036590</a></li>
+                <li>Karana, Elvin & Blauwhoff, Davine & Hultink, Erik-Jan & Camere, Serena. (2018). When the material grows: A case study on designing (with) mycelium-based materials. International Journal of Design. 12. 119-136.</li>
+                <li><a href="https://offenhuber.net/project/staubmarke-dustmark/" target="_blank">offenhuber.net/project/staubmarke-dustmark</a></li>
+            </ol>
+        </section>
     </div>
-
-    <div class="flex-container">
-        <div class="body-content">
-            <h2>2.	Constructions and Demolitions</h2>
-            <p>The building sector consumes a vast amount of natural resources. In fact, construction is the primary source of waste produced in the European Union. Too often though, this consumption is hidden from us behind site fences, wooden panels, and red tape. This project emphasizes the built environment as an active, longitudinal process. Interactive visualizations compiled of satellite imagery and Google Street View data will show the cellular automata created by constructions and demolitions. This project will explore if there is emergent behavior from this zoomed out scale, either by self-evident patterns or learned algorithms, and what (if any) insights can be drawn from this behavior.</p>
-
-        </div>
-        <div class="image-content">
-            <img src="construction_timelapse.gif" alt="Image 2">
-        </div>
     </div>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+        var scroller = scrollama();
+    
+        function handleStepEnter(response) {
+            response.element.classList.add('is-active');
+        }
+    
+        function handleStepExit(response) {
+            // Optionally keep the section visible after exiting, or
+            // response.element.classList.remove('is-active'); to make it fade out
+        }
+    
+        scroller.setup({
+            step: 'section', // Assuming each 'section' tag is a step
+            offset: 0.5, // Trigger at the middle of the viewport
+            once: false // Change to true if you want the effect to occur only once
+        })
+        .onStepEnter(handleStepEnter)
+        .onStepExit(handleStepExit);
+    
+        window.addEventListener('resize', scroller.resize);
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    
+    const menuButton = document.getElementById('menu-button');
+    const navbar = document.getElementById('navbar');
 
-    <div class="flex-container">
-        <div class="body-content">
-            <h2>3. Digital Strata</h2>
-            <p>
-                Re>crete> (by Charles Goldman) is a type of custom-made concrete that creatively reuses day-to-day waste (e.g. shredded newspaper, junk-mail, ground-up Styrofoam, discarded electronic wires, credit cards, CDs, lint, etc.) as aggregate. Digital Strata is an installation that spans physical and virtual space. A sculpture reinforces the strength and durability of the material and invites the audience to inspect it with immediacy. Meanwhile, digital immersive media provides the audience with context, metadata on the junk (What is it? Where did it come from? Who did it belong to?), crafting a retelling of our material attachment in society and playing with our sense of memory and time. At once, the once-forgotten scrap serves as both building material and archaelogical evidence, geological and digital stratification.
-                </p>
-        </div>
-        <div class="image-content">
-            <img src="recrete.jpeg" alt="Image 3">
-        </div>
-    </div>
+     // Show navbar on menu button hover
+     menuButton.addEventListener('mouseenter', function() {
+        navbar.classList.remove('hidden');
+    });
+
+    // Hide navbar when mouse leaves the navbar area
+    navbar.addEventListener('mouseleave', function() {
+        navbar.classList.add('hidden');
+    });
+    </script>
+    
+    
 </body>
 </html>
-
-
