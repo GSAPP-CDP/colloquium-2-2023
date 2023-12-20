@@ -1107,3 +1107,7 @@ button:focus-visible {
 #double-trouble{
   position: relative;
 }
+
+.front-matter {
+  display: none;
+}
