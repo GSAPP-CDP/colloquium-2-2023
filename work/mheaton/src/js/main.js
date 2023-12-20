@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function createImageDiv(filename) {
     const div = document.createElement("div");
     div.classList.add("image");
-    div.style.backgroundImage = `url('/image/photo/${filename}')`;
+    div.style.backgroundImage = `url('../../../public/image/photo/${filename}')`;
     return div;
   }
 
@@ -437,28 +437,29 @@ document.addEventListener("DOMContentLoaded", () => {
   // Image information
   const imageInfo = [
       {
-      src: '/image/photo/davis_healy_rivalta_2019.png',
+      src: '../../../public/image/photo/davis_healy_rivalta_2019.png',
       caption: 'Davis, Healy, & Rivalta 2019'
       },
       {
-        src: '/image/photo/furuno_rado.png',
+        src: '../../../public/image/photo/furuno_rado.png',
+
 
         caption: 'Linear Frequency Modulated Pulse Waveform Radar Novikov & Osipov 2019'
       },
       {
-        src: '/image/photo/fairbairn_1949.png',
+        src: '../../../public/image/photo/fairbairn_1949.png',
         caption: 'Fairbairn, 1949'
       },
       {
-        src: '/image/photo/fairbairn_1949-2.png',
+        src: '../../../public/image/photo/fairbairn_1949-2.png',
         caption: 'Fairbairn, 1949'
       },
       {
-        src: '/image/photo/fairbairn_1949-3.png',
+        src: '../../../public/image/photo/fairbairn_1949-3.png',
         caption: 'Fairbairn, 1949'
       },
       {
-        src: '/image/photo/fairbairn_1949-4.png',
+        src: '../../../public/image/photo/fairbairn_1949-4.png',
         caption: 'Fairbairn, 1949'
       },
     ];
