@@ -3,7 +3,7 @@ import p5 from 'p5';
 export function wavetable(containerId) {
   new p5((p) => {
     let cols, rows;
-    let scl = 10; // scale of each cell
+    let scl = 12; // scale of each cell
     let w; // width of the wave field
     let h; // height of the wave field
     let margin = 0; // margin around the wave field
@@ -23,7 +23,8 @@ export function wavetable(containerId) {
 
 
     p.setup = () => {
-      p.frameRate(10);
+      p.pixelDensity(1)
+      p.frameRate(8);
       let rect = containerDiv.getBoundingClientRect();
       w = rect.width - (margin * 2); 
       h = rect.height - (margin * 2);
