@@ -1,0 +1,1109 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  background: linear-gradient(
+    to bottom,
+    rgba(60, 60, 60, 0.95) 50%,
+    rgba(45, 45, 45, 0.95) 100%
+  );
+  color-scheme: light dark;
+  color: rgb(200, 200, 200);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  cursor: url("/src/cursor/arrow.cur"), auto;
+  overscroll-behavior: none;
+  overflow: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  font-size: 1em;
+  hyphens: none;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: inline-block;
+  min-width: 100vw;
+  /* mix-blend-mode: screen; */
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: rgb(200, 200, 200);
+}
+
+body {
+  font-family: "IBM Plex Sans", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  display: block;
+  position: inherit;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  word-wrap: normal;
+  word-break: normal;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0.3) 0%,
+    rgba(100, 100, 100, 0.3) 25%,
+    rgba(150, 150, 150, 0.3) 50%,
+    rgba(60, 60, 60, 0.3) 100%
+  );
+}
+
+/* containers */
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  z-index: 50000;
+  padding: 10vh 0 10vh 0;
+  min-height: fit-content;
+  /* border: #ffffff;
+  border-style: double; */
+  text-shadow: 1px 2px 2px rgb(20,20,20);
+  transition:
+    opacity 2s linear,
+    visibility 0s linear 2s; /* Delay visibility transition */
+  /* position: relative; */
+}
+
+
+.container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.container.grouped {
+  margin-top: -5vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.container.double-wide {
+  width: 100vw; /* Set width to 100% of the viewport width */
+  max-width: none; /* Remove any max-width constraints */
+  margin: 0; /* Reset margins if needed */
+  padding: 0; /* Reset padding if needed */
+  height: fit-content;
+}
+
+/* type */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,600&display=swap");
+
+h1,
+h2 {
+  font-weight: 700;
+  mix-blend-mode: luminosity;
+  width: 100%;
+  word-break: normal;
+  word-wrap: normal;
+  hyphens: none;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.8em;
+  text-shadow: 5px 5px rgba(50, 50, 50, 0.8);
+}
+
+
+.subtitle {
+  font-size: 1.8em;
+  color: rgb(200, 200, 200);
+  margin-top: 1em;
+}
+
+.small-text {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* figs */
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.figure img {
+  max-width: 100%;
+  max-height: 50vh;
+  object-fit: scale-down;
+  display: block;
+}
+
+
+figcaption {
+  color: rgb(20, 20, 20);
+  border: rgb(20, 20, 20);
+  border-width: 0.2em;
+  border-style: groove;
+  background-color: rgba(200, 200, 200, 0.3);
+  display: inline-flex; /* Makes the element only as wide as its content */
+  justify-content: center; /* Center content for inline-flex */
+  align-items: center; /* Align items vertically for inline-flex */
+  font-size: clamp(0.8em, 1vw, 0.85em);
+  padding: 0 0.25em;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: fit-content;
+  margin-top: 0.5em;
+  text-shadow: 0px 0px 2px rgb(20,20,20,0.5);
+  word-wrap: normal; /* Change this */
+  word-break: normal; /* Change this */
+}
+
+/* buttons */
+
+button {
+  background-color: rgba(0, 0, 0, 0.666);
+  color: cyan;
+  padding: 5px;
+  margin: 1%;
+  cursor: url("/src/cursor/point.cur"), auto;
+  border-style: groove;
+  border-width: 2px;
+  border-color: cyan;
+  font-size: 1em;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #000000;
+}
+
+/* media query */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #ececec;
+    background-color: #1f1f1f;
+  }
+  a:hover {
+    color: #000000;
+  }
+  button {
+    background-color: #000000;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #info-container {
+    font-size: 12px;
+  }
+}
+
+/* misc */
+
+.header,
+.footer {
+  /* background-color: #000000; */
+  text-align: left;
+  font-weight: 750;
+  /* background-color: rgba(40, 40, 40, 0.85);
+  border-color: rgb(230, 230, 230);
+  border-style:ridge;
+  border-radius: 0.02px; */
+  width: 100%;
+  text-shadow: 5px 5px rgba(50, 50, 50, 0.8);
+  padding-left: 2vw;
+}
+
+#intro {
+  background: linear-gradient(
+    to bottom,
+    rgba(100, 100, 100, 0.5) 60%,
+    rgba(20, 20, 20, 0) 100%
+  );
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+#intro.span {
+  /* bottom: 500px; */
+  /* background: linear-gradient(to bottom, rgba(20, 20, 20, 0.5) 66%, rgba(50, 50, 50, 0) 100%);  */
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0) 0%,
+    rgba(50, 50, 50, 0.3) 25%,
+    rgba(50, 50, 50, 0.3) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.span {
+  object-fit: cover;
+  padding-top: 10vh;
+  padding-bottom: 30vh;
+  width: 100vw;
+  height: 50vh;
+  position: relative; /* Use relative for positioning child elements absolutely within it */
+}
+
+.centered {
+  text-align: center;
+  /* top: 50%; */
+  width: 100%;
+  height: 100%;
+  /* padding-top: 15vh; */
+}
+
+.inset {
+}
+
+#intro > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0px;
+  z-index: 2;
+}
+
+.title-container {
+  padding: 1em;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  max-width: max-content;
+  transform: translate(-50%, -25%);
+  text-align: right;
+  z-index: 2;
+  /* background-color: none; */
+}
+
+.title {
+  -webkit-text-stroke-width: 0.2vw;
+  -webkit-text-stroke-color: rgb(20, 20, 20);
+  -webkit-text-fill-color: #00000000;
+  font-size: 5vw;
+  margin: 0; /* Removes default margins */
+}
+
+.subtitle-container {
+  padding: 5% 15% 5% 15%;
+  position: relative;
+  /* top: 50%;
+  left: 50%; */
+  /* max-width: max-content; */
+  width: auto;
+  /* transform: translate(-50%, -50%); */
+  text-align: right;
+  z-index: 2;
+  /* background-color: none; */
+}
+
+
+.hidden {
+  opacity: 0; /* Fully transparent */
+  visibility: hidden;
+  transition:
+    opacity 2s linear,
+    visibility 0s linear 0s; /* No delay when hiding */
+}
+
+#text-content {
+}
+
+#text-content .column {
+  height: 100%;
+  flex-grow: 1; /* Allow columns to grow to fill the container */
+  margin: 2%; /* Spacing between columns, adjust as needed */
+  box-sizing: border-box; /* Include padding and borders in width */
+}
+
+#text-content .column:last-child {
+  margin-right: 0; /* Remove margin for the last column */
+}
+
+#text-content .text {
+  position: relative;
+  flex-basis: 40%; /* 1/3 of the container */
+  max-width: 40%; /* Ensure it does not grow beyond 1/3 */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  cursor: text;
+  padding: 0 2% 0 2%;
+  z-index: 123412354534;
+  align-items: center;
+  /* cursor: url('/src/cursor/iBeam.cur'), auto; */
+  /* cursor: text; */
+}
+
+p, ul{
+  text-transform: lowercase;
+
+}
+
+#text-content .text p {
+  /* border: rgba(0, 0, 0, 0.4); */
+  /* border-radius: 0.8em;
+  border-style: inset; */
+  padding: 2%;
+  margin-top: -2%;
+  /* background-color: rgba(40, 40, 40, 0.333); */
+}
+
+#text-content .figure {
+  height: fit-content;
+  flex-basis: 60%; /* 2/3 of the container */
+  max-width: 60%; /* Ensure it does not grow beyond 2/3 */
+  /* max-height: 80vh; */
+  box-sizing: border-box; /* Include any border or padding in the width calculation */
+  margin: 2%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.full-width-figure {
+  width: 100%;
+  position: relative;
+  margin:0;
+}
+
+.centered-text-overlay {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  text-align: center; /* Center text alignment */
+  color: rgb(
+    200,
+    200,
+    200
+  ); /* Choose a color that contrasts with the background */
+  z-index: 2; /* Ensure it's above the figure content */
+  /* background-color: rgba(200, 200, 200, 0.3); */
+}
+
+.lower-text-overlay {
+  position: absolute;
+  bottom: 0; /* Align with the bottom of the parent container */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for horizontal centering */
+  text-align: center; /* Center text alignment */
+  color: rgb(20, 20, 20, 0.95);
+  z-index: 2; /* Ensure it's above the figure content */
+  /* background-color: rgba(200, 200, 200, 0.3); */
+  width: auto;
+}
+
+.centered-text-overlay h2, .centered-text-overlay p{
+  color: rgb(230, 230, 230);
+  text-shadow: 2px 4px 2px rgb(20, 20, 20, 0.8);}
+
+
+::selection {
+  background: rgba(100, 100, 100, 0.85);
+}
+
+.p5 {
+  /* border: #818181;
+  border-style:ridge; */
+  /* border-width: 2px; */
+  /* background-color: #c4c4c44f */
+  min-height: 50vh;
+  max-height: 100vh;
+  min-width: 100%;
+  /* margin: 0; */
+  /* margin: 2%; */
+}
+
+#app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  cursor: url("/src/cursor/whiteCrosshair.cur"), auto;
+  transition: filter 0.25s linear; /* Transition applies to the filter property */
+  /* z-index: 1; Lower than #intro */
+}
+
+/* Slider container */
+#resolution-controls {
+  width: 200px; /* Adjust as necessary */
+}
+
+/* The slider itself */
+#resolution-slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  height: 8px; /* Slider height */
+  background: #ddd; /* Slider background */
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+/* Slider thumb */
+#resolution-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  background: #444; /* Thumb color */
+  cursor: url("/src/cursor/point.cur"), auto;
+}
+
+#resolution-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #444;
+  cursor: url("/src/cursor/point.cur"), auto;
+}
+
+#three-container {
+  width: 100%; /* Full width of its parent container */
+  height: 100%;
+  position: absolute;
+  overflow: hidden; /* Add this to prevent any overflow */
+}
+
+#three-container canvas {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  image-rendering: pixelated !important;
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Puts the background behind your content */
+  opacity: 50%;
+  filter: grayscale(100%);
+  transition: filter 0.5s linear; /* Transition for the filter effect over 2 seconds */
+  /* margin: 20%; */
+}
+
+#fullscreenButton {
+  position: fixed;
+  text-align: right;
+  bottom: 0%;
+  right: 1%;
+  z-index: 1000000000;
+  opacity: 0; /* Start fully transparent */
+  visibility: hidden; /* Start invisible */
+  transition:
+    opacity 0.25s,
+    visibility 0.25s; /* Transition for both opacity and visibility */
+}
+
+#info-button {
+  text-align: right;
+  position: absolute;
+  bottom: 5%;
+  right: 1%;
+  display: block;
+  margin: 0.5em;
+}
+
+/* Hide the info-button when the background class is active on the parent */
+#app.background #info-button {
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    visibility 0s,
+    opacity 0.5s linear;
+}
+
+/* Show the info-button when the background class is not active */
+#app:not(.background) #info-button {
+  visibility: visible;
+  opacity: 1;
+  transition:
+    visibility 0s,
+    opacity 0.5s linear;
+}
+
+#info-container {
+  opacity: 1; /* Start fully visible */
+  visibility: visible;
+  transition: opacity 0.15s ease; /* Smooth transition for fade effect */
+  position: absolute;
+  bottom: 1%;
+  left: 5%; /* Adjust this to position the box to the right of the pan controls */
+  z-index: 10;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  /* padding: 10px; */
+  border-radius: 5px;
+  font-size: medium; /* Adjust the font size as needed */
+  max-width: 250px; /* Set a max-width for the container */
+  cursor: url("/src/cursor/point.cur"), auto;
+}
+
+#info-container ul {
+  padding-left: 20px;
+  opacity: 1; /* Start fully visible */
+  visibility: visible;
+}
+
+/* #camera-lock{
+
+  
+} */
+
+#three-container,
+#pan-controls,
+#info-button {
+  pointer-events: none;
+  opacity: 0.5; /* Make it look disabled */
+}
+
+#start-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 100; /* Make sure it's above other elements */
+}
+
+button#start-button {
+  /* padding: 10px 20px; */
+  font-size: 1.5em;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: url("/src/cursor/point.cur"), auto;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.small-text {
+  font-size: 14; /* Smaller text for additional info */
+  opacity: 0.8; /* Slightly faded text */
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.666);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: cyan;
+  padding: 5px;
+  margin: 1%;
+  z-index: 5000001;
+  cursor: url("/src/cursor/point.cur"), auto;
+  filter: none;
+  border-style: groove;
+  border-width: 2px;
+  border-color: cyan;
+  /* border: 1px solid transparent; */
+  padding: 0.2em 0.4em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: url("/src/cursor/point.cur"), auto;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #000000;
+}
+button:focus,
+button:focus-visible {
+  outline: 1px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #ececec;
+    background-color: #1f1f1f;
+  }
+  a:hover {
+    color: #000000;
+  }
+  button {
+    background-color: #000000;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Stack columns vertically on small screens */
+  }
+  #info-container {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+}
+
+@keyframes spin {
+  0% {
+    content: "←";
+  }
+  12.5% {
+    content: "↖";
+  }
+  25% {
+    content: "↑";
+  }
+  37.5% {
+    content: "↗";
+  }
+  50% {
+    content: "→";
+  }
+  62.5% {
+    content: "↘";
+  }
+  75% {
+    content: "↓";
+  }
+  87.5% {
+    content: "↙";
+  }
+  100% {
+    content: "←";
+  }
+}
+
+#progress-bar::after {
+  display: inline-block;
+  animation: spin 700ms steps(8, end) infinite;
+  content: "←"; /* Initial character */
+  transform: translateZ(0);
+}
+
+/* custom legend checkbox */
+
+.hidden-checkbox {
+  display: none;
+}
+
+.custom-checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.custom-checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: url("/src/cursor/point.cur"), auto;
+  margin-right: 5px;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  margin-right: 5px;
+  /* // Space between the checkbox and the label text */
+}
+
+.hidden-checkbox:checked + .custom-checkbox-label .custom-checkbox::before {
+  content: "𐄂";
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 12.5px; /* Align the 'X' vertically */
+  font-family: serif;
+}
+
+/* Optional: Add some hover effect */
+.custom-checkbox:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Light white background on hover */
+}
+
+/* cursor styling */
+
+/* CSS for different cursor transparencies */
+.cursor-transparent {
+  cursor: none; /* Fully transparent cursor */
+}
+
+.cursor-default {
+  cursor: url("/src/cursor/whiteCrosshair.cur"), auto; /* 15% transparent cursor */
+  opacity: 85%;
+}
+
+#terrainContainer1 {
+  cursor: url("/src/cursor/point.cur"), auto;
+  position: absolute; /* Make it positioned absolutely */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  z-index: 1; /* Lower z-index */
+  opacity: 0.9;
+}
+
+#isoCubeContainer1 {
+  cursor: url("/src/cursor/point.cur"), auto;
+  margin: 2%;
+  /* filter: grayscale(1); */
+}
+
+#wavetableContainer1 {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+}
+
+#wavetableContainer2 {
+  width: 100%;
+  height: 100%;
+
+  /* top: 2%;
+  rotate: 180deg; */
+}
+
+.pointer {
+  cursor: pointer; /* Or use a custom cursor file */
+}
+
+.cursor-trail {
+  position: absolute;
+  width: 22px; /* Adjust size to match your cursor */
+  height: 38px; /* Adjust size to match your cursor */
+  background-size: cover;
+  pointer-events: none;
+  animation: fadeOut 1s forwards;
+}
+
+/* Style for default cursor trail */
+.default-cursor-trail {
+  /* ... common styles ... */
+  background-image: url("/src/cursor/arrow.png");
+}
+
+/* Style for pointer cursor trail */
+.pointer-cursor-trail {
+  /* ... common styles ... */
+  background-image: url("/src/cursor/point.png");
+}
+
+/* Style for text cursor trail */
+.text-cursor-trail {
+  /* ... common styles ... */
+  background-image: url("/src/cursor/ibeam.png");
+}
+
+/* Style for crosshair cursor trail */
+.crosshair-cursor-trail {
+  /* ... common styles ... */
+  background-image: url("/src/cursor/whiteCrosshair.png");
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1.1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate-oscillation {
+  0%,
+  100% {
+    transform: rotate(-5deg) translateY(-2px);
+  }
+  50% {
+    transform: rotate(5deg) translateY(2px);
+  }
+}
+
+.rotate-animate {
+  display: inline-block;
+  animation: rotate-oscillation ease-in-out infinite;
+}
+
+#peripheralTransmissions {
+  width: 100%;
+  filter: contrast(3) brightness(1.5)
+  opacity(0.9)
+}
+
+.grayscale {
+  filter: grayscale() contrast(1.125) brightness(0.9);
+}
+
+.grayscale-background {
+  filter: grayscale() contrast(1.125) brightness(0.9);
+  background-color: rgba(200, 200, 200, 1);
+}
+
+.grayscale-invert {
+  filter: grayscale() contrast(1.125) brightness(0.9) invert(0.75);
+}
+
+.grayscale-invert-background {
+  /* background-color: rgba(20, 20, 20, 0.7); */
+  filter: grayscale() contrast(1.125) brightness(0.9) invert(0.8);
+}
+
+.inverted-text p, .inverted-text h2{
+  font-weight: bolder;
+  color: rgba(20,20,20,0.9);
+  text-shadow: 1px 2px 2px rgb(200,200,200);
+}
+
+#FM-contours {
+  filter: invert(0.6);
+  width: 50%;
+  /* max-width: 100%; */
+}
+
+@keyframes rotateAndScale {
+  0%,
+  100% {
+    transform: scale(0.95);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1);
+  }
+}
+
+.static-image {
+  animation: rotateAndScale 60s infinite linear;
+  object-fit: contain; /* Ensures the image is contained within the element's box */
+  max-width: 100%;
+}
+
+#gallery-container {
+  position: relative;
+  width: 100vw; /* Full width of the viewport */
+  margin-top: -25vh;
+  top: 25vh;
+  height: 25vh; /* Height of the chyron */
+  /* overflow: hidden; */
+}
+
+.image {
+  position: absolute;
+  height: 100%; /* Full height of the container */
+  width: 21vw; /* Adjusted width to account for margins */
+  margin-right: 4vw; /* 4% margin to the right of each image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(200, 200, 200, 0.75);
+  transform: translate3d(0, 0, 0); /* Encourage GPU acceleration */
+  will-change: transform;
+}
+
+#MST {
+  width: 150%;
+  height: 150%;
+  opacity: 0.8;
+}
+
+#pointOfEntry {
+  margin-bottom: -5%;
+  padding-top: 10vh;;
+}
+
+#FM_towers {
+  padding-bottom: 25vh;
+  height: 100vh;
+  display: flex;
+  position: inherit;
+  align-items: center;
+  justify-content: top;
+  /* padding-top: 5vh auto; */
+  /* position: relative; Set relative positioning for child absolute positioning */
+}
+
+.image-container {
+  position: relative;
+  width: 50%;
+  left: 5%;
+}
+
+.central-image {
+  width: 100%; /* Adjust size as needed */
+  display: block;
+  margin: 0 auto;
+  transform: translateX(105%);
+}
+
+.side-image {
+  position: absolute;
+  top: 50%; /* Start at the vertical center */
+}
+
+.left-image {
+  width: 70%; /* 80% of the central image size */
+  /* left: -20%; */
+  transform: translateY(0);
+}
+
+.right-image {
+  width: 50%; /* 50% of the central image size */
+  right: -70%;
+  transform: translateY(-33%); 
+}
+
+.text-container {
+  text-align: left;
+  flex-basis: 30%;
+  padding: 5%;
+  /* top: 0;
+  left: 0; */
+  z-index: 1000;
+}
+
+#barrett {
+  margin-bottom: -25vh;
+}
+
+#sonicParametersContainer {
+  height: 100vh;
+  margin: 0;
+  margin-bottom: -20%;
+  width: 200vw;
+  align-items: center;
+  padding: 0;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  background-color: #fefefe00;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: left;
+  height: fit-content;
+  color: #888;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 0, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.asterisk {
+  position: absolute;
+  bottom: 4vh; /* Adjust these values as needed */
+  right: -1vw; /* Moves the asterisk to the right of the title */
+  -webkit-text-stroke-width: 0.2vw;
+  -webkit-text-stroke-color: rgb(20, 20, 20);
+  -webkit-text-fill-color: #00000000;
+  font-size: 4vw;
+  margin: 0; /* Removes default margins */
+}
+.asterisk:hover {
+  position: absolute;
+  bottom: 4vh; /* Adjust these values as needed */
+  right: -1vw; /* Moves the asterisk to the right of the title */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(0, 255, 255);
+  -webkit-text-fill-color: #00000000;
+  font-size: 4vw;
+  margin: 0; /* Removes default margins */
+}
+
+.ticker-container {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  
+}
+
+.ticker-text {
+  position: absolute;
+  display: inline-block;
+  color: rgb(200, 200, 200, 0.85);
+  font-style: oblique;
+}
+
+#sonar {
+  animation: spin 30s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#electromagnetism{
+    position: relative; /* or absolute, depending on your layout */
+    z-index: 2; /* Higher z-index */
+
+}
+  
+
+#double-trouble{
+  position: relative;
+}

@@ -1,0 +1,34 @@
+{
+  "name": "isolines-3d",
+  "private": true,
+  "version": "0.0.0",
+  "homepage": "https://math-eaton.github.io/3D_mapping/",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "prettier": "3.1.1",
+    "vite": "^4.5.0"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^18.6.4",
+    "ascii-progress": "^2.0.0",
+    "chroma": "^0.0.1",
+    "chroma-js": "^2.4.2",
+    "convex-hull": "^1.0.3",
+    "d3": "^7.8.5",
+    "delaunator": "^5.0.0",
+    "graphology": "^0.25.4",
+    "p5": "^1.9.0",
+    "proj4": "^2.9.2",
+    "three": "^0.158.0",
+    "tween": "^0.9.0",
+    "tween.js": "^16.6.0"
+  }
+}
