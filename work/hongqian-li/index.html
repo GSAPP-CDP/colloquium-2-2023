@@ -13,6 +13,7 @@ image: data/signs.gif
   content="Student work from Colloquium 1 of the Columbia GSAPP CDP Program in 2023." />
   <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2023/favicon.ico" sizes="any">
   <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2023/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/base.css" rel="stylesheet" />
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/main.css" rel="stylesheet" />
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/colloquium1.css" rel="stylesheet" />
@@ -53,7 +54,7 @@ image: data/signs.gif
             </p>
             <p>
                 However nowadays are there any modern cities with no signs? Likely no. In modern cities, people might need signs to navigate and signs can 
-                also offer insights about the local culture, commerce, and politics. So, this thesis seeks to challenge the conventional view by Kevin 
+                also offer insights about the local culture, commerce, and politics. Therefore, this thesis seeks to challenge the conventional view by Kevin 
                 Lynch, by taking what he considers a failure, signs, as an advantage, to reimagine new images of cities.
             </p>
         
@@ -66,7 +67,7 @@ image: data/signs.gif
                 The tradition of incorporating visual information runs through the history of modern urban studies. In the late 1890s, scholars such 
                 as Camilo Sitte and Ebenezer Howard began to explore the sensory experiences of pleasure in citizens, focusing primarily on the 
                 beauty, shape, and proportion within the public realm. Then, in the 1970s, scholars like Kevin Lynch emerged with new perspectives. 
-                His seminal work, 'The Image of the City,' delved into the structure and human perceptions within urban environments. This book has 
+                His seminal work, 'The Image of the City,' delved into the structure and human perceptions within urban environments, which has 
                 had a significant impact on urban planning and design, profoundly shaping our understanding of how urban spaces are navigated and 
                 perceived. Building upon these foundations, scholars in the late 20th century, such as Jack Nasar, introduced aspects of human 
                 emotions into the study of urban design and aesthetics.
@@ -165,9 +166,10 @@ image: data/signs.gif
 
         <div class="full" style="margin: 60px 0;">
             <h2>Primary Analysis & Findings</h2>
-            <div style="display: flex; justify-content: center; padding:0; margin: 0;">
-            <img src="data/W.gif" style="height: 45%; display: inline-block; max-width: 50%;  ">
-            <img src="data/E.gif" style="height: 45%; display: inline-block; max-width: 50%;  ">
+            <div class="video-wrapper" style="position: relative;">
+                <video id="myVideo" style="margin: 10px;" controls autoplay loop muted>
+                    <source src="data/broadway.mp4" type="video/mp4">
+                </video>
             </div>
             <h4 class="imagecaption" style="text-align: center; margin-bottom: 20px;">Signs on Broadway's west and east sides</h4>
             <p>
@@ -206,6 +208,6 @@ image: data/signs.gif
     <h2 style="margin-left: 25px;">Pilot Website</h2>
       <iframe src="https://hongqianli101.github.io/signsofnyc/" style="position: relative; width: 96%; height: 800px; margin-left: auto; margin-right: auto; display: block;" frameborder="0"></iframe>
   </main>
+  <script src="script.js"></script>
 </body>
-
 </html>

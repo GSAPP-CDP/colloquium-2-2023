@@ -1,0 +1,15 @@
+@media (max-width: 800px) {
+    .container {
+        width: 100% !important;
+    }
+}
+
+.video-wrapper {
+    transition: margin-bottom 0.8s ease; 
+}
+
+#myVideo {
+    width: 100%; 
+    transition: transform 0.8s ease; 
+    transform-origin: top; 
+}
