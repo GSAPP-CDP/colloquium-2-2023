@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function createImageDiv(filename) {
     const div = document.createElement("div");
     div.classList.add("image");
-    div.style.backgroundImage = `url('/public/image/photo/${filename}')`;
+    div.style.backgroundImage = `url('/image/photo/${filename}')`;
     return div;
   }
 
