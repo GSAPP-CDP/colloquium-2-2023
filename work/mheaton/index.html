@@ -1,333 +1,627 @@
----
-student: Matthew Heaton
-tags:
-- students
-image: combined.gif
----
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="css/os-gui/windows-default.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script> -->
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/image/icon/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iso 3D</title>
+  <link rel="stylesheet" type="text/css" href="src/css/style.css">
 </head>
 <body>
-    
-<div class="window-body" id="splash-window">
-    <textarea id="command-prompt" rows="25" cols="80" autofocus>C:\> MS CDP_HEATON Startup Menu
-        =============================
-        1. Normal
-        2. Logged (\BOOTLOG.TXT)
-        3. Safe Mode
-        4. Step-by-step confirmation
-        5. Command prompt only
-        6. Safe mode command prompt only
+  <main class="" id="text-content">
 
-        F5=Safe Mode Shift+F5=Command prompt Shift+F8= Step-by-step confirmation [N]
-        
-or press escape to continue to webpage</textarea>
-</div>
+    <div class="centered" id="intro">
+      <p class="header" style="padding-left: 10px;">
+        matthew heaton | columbia gsapp m.s. cdp | colloquium ii: explore, explain, propose
+      </p>
+      
+      <!-- Title container -->
+      <div class="title-container full-width-figure">
+        <h1 class="title">REMOTE SENSING</h1>
+        <div id="asterisk" class="asterisk pointer">*</div>
+      </div>
 
-<!-- <div class="windows-container">
-    <div class="window" style="margin: 10px;">
-        <div class="title-bar">
-        <div class="title-bar-text">A Window With Tabs and Groups</div>
-        <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <p>most of the contents of this webpage have been lifted from my end of semester review notes
+            <br><br>more formal text to come...
+          </p>
         </div>
-        </div>
-        <div class="window-body">
-        <menu role="tablist">
-            <button aria-selected="true" aria-controls="music">Music</button>
-            <button aria-controls="dogs">Dogs</button>
-            <button aria-controls="food">Food</button>
-        </menu>
-        <article role="tabpanel" id="" style="width: 100%;">
-            <p>PANELPANELPANELPANELPANELPANELPANELPANELPANEL</p>
-            </article>
+      </div>
     
-        <article role="tabpanel" hidden id="dogs">
-            <img style="width: auto" src=na/>
-        </article>
-    
-        <article role="tabpanel" hidden id="food">
-            <p>
-            You create the content for each tab by using an <code>article</code> tag.
-            </p>
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/TODJBQ0tnow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <section class="field-row" style="justify-content: flex-end">
-            <button>OK</button>
-            <button>Cancel</button>
-        </section>
-        </div>
+      
+      <div class="centered p5" id="wavetableContainer1"></div>
     </div>
-</div> -->
+
+    <div class="container pointer" id="double-trouble">
+
+    <div class="span">
   
 
-<div class="windows-container">
-    <div class="window half" id="bio">
-        <div class="title-bar">
-            <div class="title-bar-text">Assignment 01: PROPOSAL ONE</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize" class="maximize-button"></button>
-                <button aria-label="Restore" class="restore-button"></button>
-                <button aria-label="Close"></button>
-            </div>
-        </div>
-        <div class="window-body text-content">
-            <div class="">
-                <p>I am interested in constructing a custom instrument-device that sonifies+graphs parameters exposed by the FCC open data portal + atmospheric, terrain, and other conditions local to each node in the vast physical network of US telecommunications. The instrument close a recursive loop between space, sound, and transmission + integrate the performer/performance as a breakpoint.
-                </p>
-                <p>To do this, I would design and fabricate a physical device (modeled loosely after an &quot;etch-a-sketch&quot;) that allows a user to tune their device to &quot;survey&quot; a network of internet radio nodes. Tune along the interpolated lines between nearest nodes; rescale the map using sliders on the X and Y axes of the central &quot;sketch&quot; screen, which in turn adjusts sonic responsiveness between stations; switch between user-controlled scan/pan behavior and an auto-pan that creates an effect like finding yourself between stations on a road trip. 
-                </p>
-                <p>The instrument will be standalone 3D printed or CNC cut physical interface with simple OLED display that enables adjustment of the application&apos;s parameters with encoders and sliders. Most likely it will be driven by an Arduino microprocessor, although designing with discrete components on a printed circuit board would be a fun reach project.
-                </p>
-                <br>    
-            </div>
-        </div>
-        </div>
+      <div class="subtitle-container">
+
+        <div style="text-align: left;">        
+          <h3>to a geographer, the internet is a challenging object of inquiry
+             . . . the web flattens the intuitive experience of space while its users and infrastructure still have a measurable position in the real world 
+        </h3>
+        <h3>this project attempts to parse this dissonance by asking:
+        </h3>
+        </div>  
+
+
+        <h5 class="subtitle">how can we measure digital connectivity as it relates to a physical world?</h5>
+        <h5 class="subtitle">where are the furthest corners of the internet?</h5>
+        <h5 class="subtitle">where are the furthest corners <em style="text-decoration: underline">from</em> the internet?</h5>
+        <h5 class="subtitle"><em>how can we listen to the mechanisms that determine access?</em></h5>
+
+      </div>
+
+    </div>
+
+    <!-- Terrain Subsection -->
+<div class="container">
+  <figure class="full-width-figure" id="terrainContainer1">
+      <div class="centered-text-overlay">
+          <!-- <h2>text</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...</p> -->
+      </div>
+  </figure>
 </div>
 
-    <div class="windows-container">
-        <div class="window half about" style="left: 15%">
-            <div class="title-bar">
-                <div class="title-bar-text">Assignment 01: PROPOSAL TWO</div>
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize" class="maximize-button"></button>
-                    <button aria-label="Restore" class="restore-button"></button>
-                    <button aria-label="Close"></button>
-                </div>
-            </div>
-            <div class="window-body text-content">
-                <p>A second project could bridge the divide between analog terrestrial radio infrastructure and intangible digital streaming infrastructures, specifically as they relate to discovery.
-                </p>
-                <p>In the context of popular music (in contrast to "classical"), this act of discovery has meaningful cultural, social, cultural, and financial consequences as artists and listeners alike rely on centralized platforms for transmission. Whereas conventional radio and its listeners are intractably linked to a geographic center, streaming platforms typically prompt the discovery of music and speech through opaque, aspatial metadata-based systems of recommendation. 
-                </p>
-                <p>This project could attempt to reclaim (or reconceptualize) the deeply geographic and spatial methods in which an artist or musician practices their craft. how far does the internet go? *where* are genre linkages in the post-streaming/file sharing age...how can we think about +visualize the linkages?
-                </p>
-            </div>
-        </div>
+  </div>
     
-        <div class="window quarter about" style="right: 10%";>
-            <div class="title-bar">
-                <div class="title-bar-text">Assignment 01: PROPOSAL THREE</div>
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize" class="maximize-button"></button>
-                    <button aria-label="Restore" class="restore-button"></button>
-                    <button aria-label="Close"></button>
-                </div>
-            </div>
-            <div class="window-body text-content">
-                <p>A third idea could concern other generalizable methods of spatial data sonification - how can we hear a map, and what are the creative+practical uses of cross-sensory thinking and navigation? How can multi sensory interpretation of space and place alter a person&apos;s cognition and perception? Are there ramifications on attention+memory?
-                </p>
-                <p>Eg: the frequency of contour lines on a topographic map (or bands in a DEM) could be interpreted as pitches in a scale (frequency of change). Or the terrain can be sampled as a graphic &quot;wavetable&quot; and generate a waveform for a digital oscillator.
-                </p>
-                <p>......a place can be mapped onto a piece of music, and vice-versa.
-                </p>
-            </div>
+    <!-- Subsection 0 -->
+      <div class="container" id="barrett">
+        <div class="column text">
+          <!-- <h2>text</h2> -->
+          <p>
+            I could conceive of connectivity like Barrett Lyon - his map of the internet presents a network topology of nodes and edges (or portals and linkages)
+            that define its virtual quote-unquote “space.” 
+            But this type of spatiality is defined more through metaphor than felt experience. 
+            
+            As a 'spatial scientist', I prefer to think about this much more literally: 
+                        
+          </p>
         </div>
+        <figure class="column figure">
+          <img class="static-image"  src="public/image/photo/barrett_lyon_mapOfInternet.png">
+          <figcaption>BARRETT LYON:
+            MAPPING THE INTERNET <em>(2022)</em>
+            </figcaption>
+        </figure>
+    </div>
+
+
+<!-- cell towers subsection -->
+<div id="FM_towers" class="">
+  <div class="image-container">
+    <div class="text-container">
+      <h2>FM RADIO TOWER LOCATIONS AND THEIR SIGNAL PROPAGATION CURVES 
+      </h2>
+    <p>this is from a project I worked on over the summer in colloquium i -
+
+      <br><br>Using US Federal Communications data, I extracted imagery from FM radio transmitters, as well as the estimated propagation distance of each transmitter signal. One can clearly see the relationship between the landscape and shape of each signal contour
+      
+      <br><br>I find that phenomenon of electro-physical interference compelling, so I’m digging in
+      
+      </p>    
+    </div>    
+    <figure class="figure side-image left-image">
+      <img class="grayscale-invert-background" src="/public/gif/processed_imagery_area.gif">
+      <figcaption>propagation area extent</figcaption>
+  </figure>
+    <!-- Central image with caption -->
+    <figure class="figure central-image">
+      <img class="grayscale-invert-background"  src="/public/gif/processed_imagery_polyline_dithered.gif">
+      <figcaption>propagation contour</figcaption>
+  </figure>
+  <figure class="figure side-image right-image">
+    <img class="grayscale-invert-background"  src="/public/gif/processed_imagery_point.gif">
+    <figcaption>transmitter location: zoom level 15</figcaption>
+</figure>
+</div>
+</div>
+
+
+
+    <!-- point of entry -->
+
+    <div class="centered" >
+      <div id="gallery-container">
+
+      </div>
+    </div>
+
+    <div class="container" id="pointOfEntry">
+      <div class="column text">
+        <h2>point of entry</h2>
+        <p>pictured : an old hunting camp built by my grandpa in the adirondack mountains
+
+          <br><br>until recently, there has never been an internet connection anywhere nearby
+          
+          <br><br>cell service is still largely nonexistent within a couple miles’ drive, but we put a landline broadband hookup there a couple years ago
+          
+          <br><br>i have a complicated relationship with this newfound connection: i lost my ability (and excuse) to definitively sign off for a while, but it’s enabled more visits with flexible work arrangements . . . etc . . .
+          
+          <br><br>i still leave my phone in the car once i arrive
+        </p>
+      </div>
+      <figure class="column figure">
+      </figure>
+  </div>
+
+      <!-- proof of concept -->
+      <div class="container">
+        <div class="column text">
+          <h2>proof of concept</h2>
+          <p>As an exploratory exercise, and to wireframe potential interface design for my final output, I’ve been developing a three dimensional mapping browser-based application to place built cell and radio topology in the context of the physical landscape. 
+
+            <br><br>New York State is my primary study area
+
+            <br><br>Nearest-neighbor connections give a sense of cardinality for these line of sight dependent propagation signals
+
+            <br><br>Lines of sight are fundamental to this modeling methodology
+
+            <br><br>I’ve estimated potential cell phone dead zones to highlight areas of interest for later investigation
+
+            <br><br>This was part proof of concept, part data explorer tool, mostly a learning exercise: figuring out how to reproject 2D geospatial data, 
+            which I’m used to working with, into a three dimensional space where signals propagate in all directions
+
+            <br><br>click the <span style="color: rgb(0, 255, 255)">'fullscreen map'</span> button, bottom right, to explore
+            
+            </p>
+        </div>
+        <figure class="column figure">
+          <img class="grayscale-background" id="MST" style="object-fit: fill;" src="/public/gif/hideshow3_dithered.gif">
+          <figcaption>MINIMUM SPANNING TREES: FM & CELL TOWER NETWORK, NYS</figcaption>
+        </figure>
+    </div>
+
+    <!-- form factor -->
+    <div class="container">
+      <div class="column text">
+        <h2>form factor
+        </h2>
+        <p>
+          i make maps for a living, but they’re are about as conventional as they come, out of necessity: GIS input, output to PDF, print on a plotter, send to the field
+
+      <br><br>for my capstone i’m eager to envision new methods of describing geographic information - specifically one that de-emphasizes the visual in favor of other sensory perspectives. 
+      ideally, too, my map-as-instrument would encourage discovery and play
+
+        </p>
+      </div>
+    <figure class="figure">
+      <img class="grayscale-background" src="/public/gif/norns_ex1_dithered.gif" alt="Monome Norns Shield">
+      <figcaption>monome norns shield, an open-source diy sound computer</figcaption>
+    </figure>
+    <figure class="figure">
+      <img class="grayscale-background" src="/public/gif/adafruit_dithered.gif" alt="Teensy Microcontroller">
+      <figcaption>a teensy microcontroller driving a liquid crystal monochrome 'memory display'</figcaption>
+    </figure>
+    </div>
+
+  <div class="container grouped">
+    <div class="column text">
+      <p>
+        I spend quite a bit of my free time tinkering with electronic instruments in my studio, often soldering my own, so incorporating that ethic into my cartographic practice is an exciting opportunity. 
+        This is also informed by my experience writing music first with virtual instruments and eventually being able to afford tactile interfaces. There is definitely a difference in the experience and output.
+        
+        <br><br>Likely the platform for this map will have a similar form factor to a GPS receiver (or etch-a-sketch) and will be raspberry pi or arduino based: I feel strongly about having a sort of “artifact” to hold and interact with
+              </p>
+    </div>
+    <figure class="figure">
+      <img class="static-image grayscale-invert" style="object-fit: scale-down;" src="/public/image/photo/rpi.png">
+      <figcaption>monome norns shield, an open-source diy sound computer</figcaption>
+    </figure>
+    <figure class="figure">
+      <img class="static-image grayscale-invert-background" id="" src="/public/image/photo/synths.png">
+      <figcaption>my disposable income</figcaption>
+    </figure>
+</div>
+
+<!-- methods -->
+<div id="tickerContainer1" class="container ticker-container"></div>
+
+<div class="container">
+  <figure class="full-width-figure" id="">
+    <img class="grayscale" style="width: 100%;" src="/public/image/photo/travelTimetoCities.png">
+    <div class="centered-text-overlay">
+      <h2>accessibility modelling</h2>
+      <p>Here is a map of global travel time to the nearest high-density urban center, which is how this particular study operationalized remoteness
+
+        Isochrone maps like these are commonplace: they estimate a person’s traversal time through a given geographic unit (cell) based on its characteristics
+        
+        <br><br>This typically includes ground cover, slope, presence and conditions of roads, vegetation density, and so on 
+
+        <br><br>I’d like to apply this same logic of gridded “friction surfacing” to the electronic domain. 
+        
+        <br><br>By assigning weights to these different dimensions, I can run a sort of composite site “unsuitability” analysis within my study area, 
+        where each geographic study area (grid cells, townships, census tracts, or some other unit) will have a relative isolation score
+
+        </p>
+    </div>
+  </figure>
+</div>
+
+
+ 
+
+  <!-- Subsection FAR -->
+  <div class="container">
+    <div class="column text">
+      <h2>central and remote</h2>
+      <p>
+        The US department of agriculture bins zip codes into four increasing intensities of “FAR” (frontier and remote, ha!) 
+        depending on their distance from high-order specialized (level 1) to low-order necessary (level 4) goods and services
+        
+        <br>this includes
+        <ul>emergency services</ul>
+        <ul>places of commerce</ul>
+        <ul>transport hubs</ul>
+                
+        </p>
+    </div>
+    <div class="column figure">
+      <figure class="">
+        <img class="grayscale" id="" src="/public/image/photo/usda_slide.png">
+        <figcaption>usda 'frontier and remote' aka FAR places</figcaption>
+      </figure>
+      <!-- Uncomment and wrap with figure if needed -->
+      <!-- <figure class="figure">
+        <img class="p5" src="/public/image/photo/abletonWavetables.jpeg">
+        <figcaption></figcaption>
+      </figure> -->
+    </div>
+    </div>
+
+
+
+      <!-- Subsection electromagnetism -->
+  <div class="container" id="electromagnetism">
+    <div class="column text">
+      <h2>signal erosion</h2>
+      <p>
+        I am applying the same logic that defines physical accessibility to explore electromagnetic signal as an electronic shadow. 
+        (Ironically I’m calling these literally <em>analog</em> waveforms “digital” in this case)
+        
+        <br><br>These signals use the earth as transmission substrate, either directly via lines of sight (their viewshed) or passively through the soil or ionosphere. The same physical phenomena that affect FM radio also affect cell signal.
+        
+        <br><br>Radio signal - and signal loss - is thus a useful proxy to operationalize and investigate electronic isolation 
+                        
+        </p>
+    </div>
+    <div class="column figure">
+      <figure class="">
+        <img class="grayscale-invert-background" id="" src="/public/image/photo/Gabin_radio_mast2.png">
+        <!-- <figcaption>gabon radio mast</figcaption> -->
+      </figure>
+    </div>
+  </div>
+
+
+  <!-- Subsection cells -->
+  <div class="container">
+    <div class="column text">
+      <h2>signal: sightlines</h2>
+      <p>Drawing inspiration from my earlier terrestrial radio experiments, I’m most interested in signals that propagate through the air and how their signals decay or interfere with one another
+
+      <br><br>Plus, there isn’t a ton of complete reporting done on cell dead zones, since the FCC allows telecomms to self-report and then uses those reports to make their coverage maps. Networks will model their network coverage based on perfect physical conditions on the ground
+                 
+      <br><br>for reference, relative propagation distances per cell frequency band:
+      <ul>2G (~50km)</ul>
+      <ul>3G (~30km)</ul>
+      <ul>4G (5-15km)</ul>
+      <ul>5G (1-3km)</ul>    
+        </p>
+    </div>
+
+    <div class="column figure">
+      <figure class="figure">
+        <img class="grayscale-background"  src="/public/image/photo/cellQuality_nyc.png">
+        <figcaption>cellular antennae: manhattan, nyc</figcaption>
+      </figure>
+      <figure class="figure">
+        <img class="grayscale-background"  src="/public/image/photo/cellQuality_adk.png">
+        <figcaption>cellular antennae: blue mountain lake, adk</figcaption>
+      </figure>
+    </div>
+    </div>
+
     
-        <!-- <div class="windows-container">
-            <div class="window half about" style="left: 15%; width:50%">
-                <div class="title-bar">
-                    <div class="title-bar-text">A note on AI authorship</div>
-                    <div class="title-bar-controls">
-                        <button aria-label="Minimize"></button>
-                        <button aria-label="Maximize" class="maximize-button"></button>
-                        <button aria-label="Restore" class="restore-button"></button>
-                        <button aria-label="Close"></button>
-                    </div>
-                </div>
-                <div class="window-body" id="content-container">           
-                        </div>
-                </div>
-            </div>
-            -->
+
+  <!-- Subsection broadband -->
+  <div class="container">
+    <div class="column text">
+      <h2>signal: landlines</h2>
+      <p>Broadband access is of course fundamental to digital accessibility
+        
+        <br><br>Since this signal travels through hard wires, its transmission properties are much more easily monitored. Therefore, spatial coverage is well documented, like in this data explorer tool created by the new york state Public Service Commission
+      </p>
+    </div>
+
+    <div class="column figure">
+      <figure class="figure">
+        <img class="grayscale"  src="/public/image/photo/landlines.png">
+        <figcaption>geocoded broadband data explorer<br>nys Public Service Commission 2023</figcaption>
+      </figure>
+    </div>
     </div>
 
 
-<div class="windows-container">
-    <div class="window half" id="bio">
-        <div class="title-bar">
-            <div class="title-bar-text">Review 01</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize" class="maximize-button"></button>
-                <button aria-label="Restore" class="restore-button"></button>
-                <button aria-label="Close"></button>
-            </div>
-        </div>
-        <div class="window-body text-content">
-            <div class="">
-                <a href="https://docs.google.com/document/d/13INDqTf2GcjcwHOXjmIx8lWKisPALoLSkM1JO42uqqY/edit">TEXT AND THOUGHTS AND IMAGES HERE</a>
-                <br>    
-            </div>
-        </div>
-        </div>
+<!-- Extraterrestrial -->
+<div class="container">
+  <div class="column text">
+    <h2>signal: extraterrestrial lines</h2>
+    <p>
+
+      another dimension worth noting is connectivity via satellite
+     <br><br> In addition to GPS and television constellations, EUTELSAT ONEWEB AND SPACEX STARLINK operate in the broadband domain
+      <br><br>Their orbital positions are available via NORAD
+
+  </div>
+  <div class="column figure">
+    <figure>        
+      <img class="figure grayscale-invert-background" src="public/gif/satellite_starlink_dithered.gif">
+      <figcaption>SPACEX STARLINK</figcaption>
+    </figure>
+    <figure>       
+      <img class="figure grayscale-invert-background" src="public/gif/satellite_oneweb_dithered.gif">
+        <figcaption>EUTELSAT ONEWEB</figcaption>
+    </figure>
+  </div>
 </div>
 
 
-    <div class="window" id="window-ticker">
-        <div class="title-bar">
-            <div class="title-bar-text">A Very Important Message</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize" class="maximize-button"></button>
-                <button aria-label="Restore" class="restore-button"></button>
-                <button aria-label="Close"></button>
-            </div>
-        </div>
-        <div class="window-body ticker-container text-content">
-            <h1 class="ticker-text">I LOVE TO MAKE WEBSITES NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
-        </div>
-        <div class="window-body ticker-container text-content">
-            <h1 class="ticker-text">                           <br>UPDATE OCTOBER 2023: NEVERMIND!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
-        </div>
-        <div class="status-bar">
-            <p class="status-bar-field" id="cpu">CPU Usage: 1000000000000000000000000000000000000%</p>
-        </div>
+  <!-- Lines of sight -->
+  <div class="container">
+    <div class="column text">
+      <h2>lines of sight</h2>
+      <p>
+        cell signals use the earth as transmission substrate, either directly via lines of sight (viewshed) or passively through the soil or ionosphere. 
+        The same physical phenomena that affect FM radio also affect cell signal.
+
+        <br><br>Radio signal - and signal loss - is thus a useful proxy to operationalize and investigate electronic isolation 
+
+        <br><br>one method of roughly modelling megahertz level signal propagation is through a viewshed analysis. 
+        by placing a cell network in 3d space with a digital elevation model (DEM), one can estimate a receiver's signal on the ground
+        
+        <br><br>cell signals technically can penetrate solids, but there is immediate signal absorption and refraction
+
+      </p>
+    </div>
+    <div class="column figure">
+      <figure class="p5 pointer" id="isoCubeContainer1">
+      </figure>
+      <figcaption>bounding network nodes in three dimensions using convex hulls
+        <br>this technique can be used to visualize cellular network catchment areas
+      </figcaption>
+      <figure>       
+        <img class="figure grayscale-invert-background static-image" src="public/image/photo/viewshed_demo.png">
+          <!-- <figcaption>viewsheds</figcaption> -->
+      </figure>    
+    </div>
+  </div>
+
+
+
+<!-- camp case study -->
+
+
+<div class="container">
+  <figure class="full-width-figure" id="">
+    <img class="grayscale" style="width: 100%;" src="public/image/photo/nys_viewshed.png">
+    <div class="centered-text-overlay inverted-text" style="background-color: rgba(200,200,200,0.3);">
+      <h2>ground truth</h2>
+      <p>my assumptions re: lines of sight as shorthand for cellular reception are corroborated by my own experience referenced earlier</p>
+
+      <p>triangles on this map are cell locations<p>
+
+        <p>darker areas are places out of view from any cell towers within 45 miles, the maximum potential propagation distance for 2G cellular signals under ideal conditions
+          <br><br>true dead zones are likely more expansive
+
+        <p>click the <span style="color: rgb(0, 255, 255);text-shadow: 1px 2px 2px rgb(20,20,20)">'fullscreen map'</span> button, bottom right, to explore this map in three dimensions</p>
+    </div>  
+  </figure>
+</div>
+  
+
+<div class="container">
+  <div class="figure">
+    <figure>        
+      <img class="full-width-figure" src="public/image/photo/adk_satellite.png">
+      <figcaption>the cyan circle is the location of my family's adirondack camp</figcaption>
+    </figure>
+    <figure>       
+      <img class="full-width-figure" src="public/image/photo/adk_viewshed_positive.png">
+        <figcaption>white areas are raster cells out of view from the nearest cell tower</figcaption>
+    </figure>
+  </div>
+</div>
+
+
+
+<div id="tickerContainer2" class="container ticker-container"></div>
+
+      
+<!-- Peripheral Subsection -->
+<div class="container">
+  <figure class="full-width-figure" id="">
+    <img class="" id="peripheralTransmissions" src="/public/gif/peripheralTransmissions.gif">
+    <div class="centered-text-overlay">
+      <h2>the map as instrument</h2>
+      <h2>and measurement as performance technique</h2>
+
+      <p>What comes next? When exploring ways to measure, simulate, and visualize communications infrastructure so far this year, my methods have been exclusively graphical
+        
+        <br><br>Next, I hope to develop a data sonification engine that maps audio parameters onto spatial ones
+
+      <br><br>Here is a capture from a project where I built a “tunable” map that crossfades between recordings scraped from radio stations based at each node</p>
+          </div>
+    <!-- <figcaption>IMAGINARY LANDSCAPE GENERATED BY PERLIN NOISE FIELD</figcaption> -->
+  </figure>
+</div>
+
+
+
+
+
+  <!-- sonification intro -->
+  <div class="container">
+      <div class="column text">
+        <h2>sonification</h2>
+        <p>
+          since my phenomena of interest - sound + signal - are physically waves there is a surprising amount of semantic overlap
+          
+          <br><br>for example:
+
+          <ul>Sonic and electromagnetic waves reflect and refract similarly, so sound propagation models may be helpful</ul>
+          <ul>Amplitude modulation (AM, like the radio) and frequency modulation (FM) are critical to radio signal propagation 
+            as well as common methods to modify a sonic palette. 
+          In both contexts, there are fundamental “carrier” waves that are affected by an external “modulator” waveform</ul>
+          <ul>Signal strength measured in decibels (just like loudness level on a stereo)</ul>
+          <ul>Wave interference between competing bands produces eerie and unique audio fingerprints</ul>
+          <ul>noise is decoded by signal receivers in similar ways - think about white noise static
+        </ul>
+          </p>
+      </div>
+      <figure class="figure">
+        <img class="grayscale-invert" id="" src="/public/image/photo/aesthetic_sonification.png">
+        <figcaption>AN ‘ÆSTHETIC PERSPECTIVE SPACE’ FOR CLASSIFYING AUDITORY DISPLAYS IN THE ARS MUSICA DOMAIN 
+          <br>(VICKERS & HOGG, 2006) 
+        </figcaption>
+      </figure>
+</div>
+
+
+  
+<!-- Sonification types Subsection -->
+<div class="container">
+  <figure class="full-width-figure" id="sonicParametersContainer">
+    <figcaption style="bottom: 30%;" class="lower-text-overlay">
+      mapping potential sonic parameters onto physical attributes
+    </figcaption>
+  </figure>
+</div>
+
+
+    <!-- Sonic elements -->
+    <div class="container">
+      <div class="column text">
+        <h2>sound, signal, terrain</h2>
+        <p>“wavetables” are quasi-periodic sound-shapes that can be navigated through at high frequencies to produce distinctive sonic timbres - mountains of signal
+
+          <br><br>a sonic map could reverse engineer the concept to decode physical landscapes through sound
+          
+        </p>
+      </div>
+      <div class="full-width-figure">
+        <figure class="figure">
+          <figure class="p5" id="wavetableContainer2"></figure>
+          <figcaption></figcaption>
+        </figure>
+        <figure class="figure">
+          <img class="grayscale-invert" id="circle-sin" src="/public/gif/Circle_cos_sin_dithered_noRefresh_dithered.gif">
+        </figure>
+      </div>
+    </div>
+
+    <!-- Precedents -->
+    <div class="container">
+      <div class="column text">
+        <h2>precedents</h2>
+        <p>plenty others have explored the similarities between musical composition, performance, and the science of transmission. There is a rich precedent in the “transmission arts,” but it typically refers to terrestrial radio transmission
+          <br><br>i'd like to take it a step further and examine other modalities of transmission: cellular, wifi, bluetoothnpnpnpnnndsaasdfasdf
+          </p>
+      </div>
+      <div class="column figure">
+        <figure class="">
+          <img class="grayscale" id="" src="/public/image/photo/precedents.png">
+        </figure>
+      </div>
     </div>
     
+      
+     <!-- Sensation -->
+     <div class="container">
+      <div class="column text">
+        <h2>alternative semiotics</h2>
+        <p>the map as instrument is not a spatial chopping block
+        <br><br>I hope to try and subvert the ingrained behavior of the map as a tool for creating and perpetuating arbitrary divisions in space
 
-    <div class="windows-container">
+          <br><br>For instance, analog radio propagation signal contours don’t represent a harsh dropoff of signal, but rather the range without signal interference. 
+          I’m trying to think about sound, signal values, and space in terms of interfering wave patterns.
+          
+          <br><br>Compared to the continuity of signal waves, Digital signal receivers have a cardinality: the device is linked to one and only one signal. 
+          
+          <br><br>Treating the map user as a signal receiver, my map will have a method of sonifying this switching mechanism which would be difficult to understand visually. 
+          </p>
 
-        <div class="window full" id="">
-            <div class="title-bar">
-                <div class="title-bar-text">AM radio propagation based on terrain</div>
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize" class="maximize-button"></button>
-                    <button aria-label="Restore" class="restore-button"></button>
-                    <button aria-label="Close"></button>
-                </div>
-            </div>
-            <div class="window-body img">
-                <div class="">
-                    <img class="" src="assets/images/sketches_oct23-03.jpg"></img>
-                </div>
-            </div>
-            </div>
+         <br><br>some things to think about:
+          <ul>a place’s audio fingerprint vs arbitrary lines</ul>
+          <ul>interfering signals vs. binary dropoffs
+          aka continuous gradients </ul>
+          <uL>+ rhythmic oscillations vs discrete edges</uL>
+          </p>
+      </div>
+      <div class="column figure">
+        <figure id="image-container">
+          <img class="grayscale-invert-background" src="">
+          <figcaption></figcaption>
+        </figure>
+      </div>
+      </div>
 
 
-        <div class="window half" id="">
-            <div class="title-bar">
-                <div class="title-bar-text">IMAGEOSC - oscillator frequency related to pixel color</div>
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize" class="maximize-button"></button>
-                    <button aria-label="Restore" class="restore-button"></button>
-                    <button aria-label="Close"></button>
-                </div>
-            </div>
-            <div class="window-body img">
-                <div class="">
-                    <img class="" src="assets/gifs/imgOSC.gif"></img>
-                </div>
-            </div>
-            </div>
+    
+    
+    <div class="footer">
+      <p style="padding-left: 10px;">dec. 2023</p>
+    </div>  
+    
+    
+  </main>
+
+  <!-- three.js map -->
+  <div id="app" class="background crosshair">
+    <div id="three-container" class="pixelated"></div> <!-- Three.js background -->
+    <div id="start-container">
+      <button id="start-button">START</button>
     </div>
 
-    <div class="windows-container">
+    <!-- <div id="progress-bar"></div> -->
+    
 
-
-    <div class="window half" id="" style="left: 2%;">
-        <div class="title-bar">
-            <div class="title-bar-text">OPTIMIZATION STRATEGIES FOR MINIMAL COMPUTING</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize" class="maximize-button"></button>
-                <button aria-label="Restore" class="restore-button"></button>
-                <button aria-label="Close"></button>
-            </div>
+    <!-- Additional interactive elements -->
+    <button id="info-button" style="opacity: 0;">map legend</button>
+    <div id="info-container" class="hidden">
+      <ul>
+        <div id="legend-controls">
+          <!-- legend items added here in js -->
         </div>
-        <div class="window-body img">
-            <div class="">
-                <img class="" src="assets/images/sketches_oct23-02.jpg"></img>
-            </div>
+      </ul>
+      <div class="small-text">
+        <p>uncheck or use num keys to toggle layers<br>'y' key to toggle auto-rotate</p>
+        <div id="resolution-controls">
+          <label for="resolution-slider">scale resolution:</label>
+          <input type="range" id="resolution-slider" min="2" max="10" step="1" value="2">
+          <p id="resolution-display">resolution: </p>
         </div>
-        </div>
-
-        <div class="window half" id="">
-            <div class="title-bar">
-                <div class="title-bar-text">sample visualisation of elevation contours + cell towers</div>
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize" class="maximize-button"></button>
-                    <button aria-label="Restore" class="restore-button"></button>
-                    <button aria-label="Close"></button>
-                </div>
-            </div>
-            <div class="window-body img">
-                <div class="">
-                    <img class="" src="assets/images/contours_with_towers.png"></img>
-                </div>
-            </div>
-            </div>
+      </div>
+      <span id="hide-legend" class="small-text" style="text-decoration: underline;">click anywhere to hide</span>
     </div>
-</div>
-</div>
 
 
+  </div>
 
-<div class="window half" style="margin: 8%; width: 250px; height: 105px;">
-    <div class="title-bar">
-        <div class="title-bar-text">
-            Hello people
-        </div>
-        <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-        </div>
-    </div>
-    <div class="window-body" style="bottom: 8px;">
-        <div style="text-align: center">
-            <img class="" src="assets/gifs/link.gif"></img>
-            <img class="" src="assets/gifs/cd.gif"></img>
-            <img class="" src="assets/gifs/link.gif"></img>
-            </div>
-        <section class="field-row" style="justify-content: center;">
-            <button id="refresh-button">OK</button>
-        </section>
-    </div>
-</div>
+  <div class="footer" style="position: relative;">
+    <!-- Scroll Up Button -->
+    <button id="fullscreenButton">fullscreen map</button>
+    <!-- <button id="fullscreenButton">&lt;&lt;&lt; fullscreen map &gt;&gt;&gt;</button> -->
+  </div>
 
 
-<div class="window" style="margin: 8%; width: 250px; height: 105px; left: 60%;">
-    <div class="title-bar">
-        <div class="title-bar-text">
-            That's it for now
-        </div>
-        <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-        </div>
-    </div>
-    <div class="window-body" style="bottom: 8px;">
-        <p>see you later!</p>
-        <section class="field-row" style="justify-content: center;">
-            <button id="refresh-button-2">bye</button>
-        </section>
-    </div>
-</div>
-
-
-<div class="bouncing-container"></div>
-
-<script src="js/script.js"></script>
-
+  <script type="module" src="/src/js/iso3D.js" defer></script>
+  <script type="module" src="/src/js/main.js" defer></script>
 </body>
 </html>
